@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(valac --version)",
+      "Bash(git clone *)"
+    ]
+  }
+}
