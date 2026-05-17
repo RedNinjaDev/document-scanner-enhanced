@@ -13,7 +13,7 @@
 private const int DEFAULT_TEXT_DPI = 150;
 private const int DEFAULT_PHOTO_DPI = 300;
 
-[GtkTemplate (ui = "/io/github/SimpleScanEnhanced/ui/app-window.ui")]
+[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/app-window.ui")]
 public class AppWindow : Adw.ApplicationWindow
 {
     private const GLib.ActionEntry[] action_entries =
@@ -170,7 +170,7 @@ public class AppWindow : Adw.ApplicationWindow
 
     public AppWindow ()
     {
-        settings = new Settings ("io.github.SimpleScanEnhanced");
+        settings = new Settings ("org.gnome.SimpleScan");
 
         device_model = new ListStore (typeof (ScanDevice));
         device_drop_down.model = device_model;
@@ -1269,24 +1269,21 @@ public class AppWindow : Adw.ApplicationWindow
 
     private void show_about ()
     {
-        string[] authors = {
-            "Robert Ancell <robert.ancell@canonical.com>",
-            "Document Scanner Enhanced contributors"
-        };
+        string[] authors = { "Robert Ancell <robert.ancell@canonical.com>" };
 
         var about = new Adw.AboutDialog ()
         {
             developers = authors,
             translator_credits = _("translator-credits"),
-            copyright = "Copyright © 2009-2018 Canonical Ltd.\nCopyright © 2026 Document Scanner Enhanced contributors",
+            copyright = "Copyright © 2009-2018 Canonical Ltd.",
             license_type = Gtk.License.GPL_3_0,
-            application_name = _("Document Scanner Enhanced"),
-            application_icon = "io.github.SimpleScanEnhanced",
+            application_name = _("Document Scanner"),
+            application_icon = "org.gnome.SimpleScan",
             version = VERSION,
-            website = "https://github.com/simple-scan-enhanced",
-            issue_url = "https://github.com/simple-scan-enhanced/issues",
+            website = "https://gitlab.gnome.org/GNOME/simple-scan",
+            issue_url = "https://gitlab.gnome.org/GNOME/simple-scan/-/issues/",
         };
-        
+
         about.present (this);
     }
 
@@ -1354,15 +1351,8 @@ public class AppWindow : Adw.ApplicationWindow
         update_page_menu ();
     }
 
-    /* Runs on every freshly-scanned page after the raw scan completes.
-     * Honors the auto-straighten and auto-crop preferences. Auto-crop
-     * sets a Custom Crop rectangle, so the user can still drag the
-     * handles to nudge it. Pages loaded from disk (which never fire
-     * scan_finished) are untouched. */
     private void apply_auto_postprocess (Page page)
     {
-        // Only ever post-process a given page once; subsequent scan
-        // restarts of the same page object should not reapply.
         page.scan_finished.disconnect (apply_auto_postprocess);
 
         bool do_crop = settings.get_boolean ("auto-crop");
@@ -1374,9 +1364,6 @@ public class AppWindow : Adw.ApplicationWindow
         if (result == null)
             return;
 
-        // Apply skew correction first — the rotation invalidates any
-        // bounding box derived from the original buffer, so we re-detect
-        // afterwards for an accurate crop.
         if (do_straighten && Math.fabs (result.skew_degrees) >= 0.1)
         {
             DocumentDetector.deskew (page, result.skew_degrees);
@@ -1392,8 +1379,6 @@ public class AppWindow : Adw.ApplicationWindow
             page.set_custom_crop_region (result.crop_x, result.crop_y, result.crop_width, result.crop_height);
         }
 
-        // Refresh the crop toggle and page menu in case the freshly-set
-        // crop applies to the page the user is currently looking at.
         update_page_menu ();
     }
 
@@ -1418,7 +1403,7 @@ public class AppWindow : Adw.ApplicationWindow
     {
         preferences_dialog = new PreferencesDialog (settings);
 
-        Gtk.Window.set_default_icon_name ("io.github.SimpleScanEnhanced");
+        Gtk.Window.set_default_icon_name ("org.gnome.SimpleScan");
 
         var app = Application.get_default () as Gtk.Application;
 
@@ -1464,7 +1449,7 @@ public class AppWindow : Adw.ApplicationWindow
         section.append (_("_Preferences"), "app.preferences");
         section.append (_("_Keyboard Shortcuts"), "app.shortcuts");
         section.append (_("_Help"), "app.help");
-        section.append (_("_About Document Scanner Enhanced"), "app.about");
+        section.append (_("_About Document Scanner"), "app.about");
         menu_button.set_menu_model (gear_menu);
 
         app.add_window (this);

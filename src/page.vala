@@ -392,10 +392,6 @@ public class Page : Object
         crop_changed ();
     }
 
-    /* Set a Custom Crop rectangle in one call, in page coordinates.
-     * Used by auto-crop so the rectangle is fully populated before the
-     * crop_changed signal fires (otherwise observers see a partially-set
-     * crop). The rectangle is clamped to the page bounds. */
     public void set_custom_crop_region (int x, int y, int w, int h)
     {
         return_if_fail (w >= 1);
@@ -567,9 +563,6 @@ public class Page : Object
         return pixels;
     }
 
-    /* Public RGB pixel read at page-coordinate (x,y). Writes 3 bytes
-     * (R,G,B) into rgb[0..2]. Out-of-range coordinates produce white,
-     * matching the get_image() padding convention. */
     public void get_pixel_rgb (int x, int y, uchar[] rgb)
     {
         if (x < 0 || y < 0 || x >= width || y >= height)
@@ -580,11 +573,6 @@ public class Page : Object
         get_pixel (x, y, rgb, 0);
     }
 
-    /* Replace the page's raw pixel data with a fresh 8-bit buffer in
-     * page-coordinate (top-to-bottom) order. Used by auto-straighten,
-     * which rotates the scan into a new buffer. Resets any existing
-     * crop and forces scan_direction back to TOP_TO_BOTTOM so callers
-     * can write the new buffer as if it were freshly scanned. */
     public void replace_image (int new_width,
                                int new_height,
                                int new_n_channels,

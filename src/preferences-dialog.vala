@@ -40,7 +40,7 @@ const string SIDE_ID_FRONT = "front";
 const string SIDE_ID_BACK = "back";
 const string SIDE_ID_BOTH = "both";
 
-[GtkTemplate (ui = "/io/github/SimpleScanEnhanced/ui/preferences-dialog.ui")]
+[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/preferences-dialog.ui")]
 private class PreferencesDialog : Adw.PreferencesDialog
 {
     private Settings settings;

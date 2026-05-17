@@ -9,7 +9,7 @@
  * license.
  */
 
-[GtkTemplate (ui = "/io/github/SimpleScanEnhanced/ui/reorder-pages-item.ui")]
+[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/reorder-pages-item.ui")]
 private class ReorderPagesItem : Gtk.Button
 {
     [GtkChild]
@@ -39,7 +39,7 @@ private class ReorderPagesItem : Gtk.Button
 }
 
 
-[GtkTemplate (ui = "/io/github/SimpleScanEnhanced/ui/reorder-pages-dialog.ui")]
+[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/reorder-pages-dialog.ui")]
 private class ReorderPagesDialog : Gtk.Window
 {
     [GtkChild]

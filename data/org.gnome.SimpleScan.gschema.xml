@@ -1,11 +1,11 @@
 <schemalist>
-  <enum id="io.github.SimpleScanEnhanced.PageSide">
+  <enum id="org.gnome.SimpleScan.PageSide">
     <value value="0" nick="front"/>
     <value value="1" nick="back"/>
     <value value="2" nick="both"/>
   </enum>
 
-  <schema id="io.github.SimpleScanEnhanced" path="/io/github/SimpleScanEnhanced/" gettext-domain="simple-scan">
+  <schema id="org.gnome.SimpleScan" path="/org/gnome/simple-scan/" gettext-domain="simple-scan">
     <key name="selected-device" type="s">
       <default>''</default>
       <summary>Device to scan from</summary>
@@ -50,7 +50,7 @@
       <summary>Resolution for image scans</summary>
       <description>The resolution in dots-per-inch to use when scanning images.</description>
     </key>
-    <key name="page-side" enum="io.github.SimpleScanEnhanced.PageSide">
+    <key name="page-side" enum="org.gnome.SimpleScan.PageSide">
       <default>'both'</default>
       <summary>Page side to scan</summary>
       <description>The page side to scan.</description>

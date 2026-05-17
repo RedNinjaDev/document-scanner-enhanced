@@ -13,7 +13,16 @@
       "Bash(git rm *)",
       "Bash(glib-compile-schemas --dry-run data/)",
       "Bash(git add *)",
-      "Bash(git -c commit.gpgsign=false commit -q -m 'Rebrand to Document Scanner Enhanced + add auto-crop/auto-straighten *)"
+      "Bash(git -c commit.gpgsign=false commit -q -m 'Rebrand to Document Scanner Enhanced + add auto-crop/auto-straighten *)",
+      "Bash(git checkout *)",
+      "Bash(pkg-config --modversion gtk4 libadwaita-1 sane-backends)",
+      "Bash(pkg-config --modversion gtk4)",
+      "Bash(pkg-config --modversion libadwaita-1)",
+      "Bash(pkg-config --modversion sane-backends)",
+      "Bash(command -v meson)",
+      "Bash(command -v valac)",
+      "Bash(command -v ninja)",
+      "Bash(git -c commit.gpgsign=false commit -q -m 'Slim rebrand back to MR-friendly minimum *)"
     ]
   }
 }

@@ -13,7 +13,7 @@ if webp_dep.found () and (not colord_dep.found () or webpmux_dep.found ()) # Web
     dependencies += [ webp_dep, webpmux_dep ]
 endif
 
-simple_scan = executable ('simple-scan-enhanced',
+simple_scan = executable ('simple-scan',
                           [ 'config.vapi',
                             'app-window.vala',
                             'authorize-dialog.vala',
