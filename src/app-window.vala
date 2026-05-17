@@ -1366,7 +1366,7 @@ public class AppWindow : Adw.ApplicationWindow
 
         if (do_straighten && Math.fabs (result.skew_degrees) >= 0.1)
         {
-            DocumentDetector.deskew (page, result.skew_degrees);
+            DocumentDetector.deskew (page, result.skew_degrees, result.background_luminance);
             if (do_crop)
             {
                 var r2 = DocumentDetector.detect (page, false);

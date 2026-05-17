@@ -18,6 +18,10 @@ public class DocumentDetectionResult : Object
     public int crop_height;
     public double skew_degrees;
     public double document_fraction;
+    // Mean luminance of pixels outside the detected bbox — the scanner
+    // background ("bed") on most scans. Used by deskew so the corners
+    // revealed by rotation are filled to match, rather than always white.
+    public uchar background_luminance;
 }
 
 public class DocumentDetector
@@ -26,7 +30,28 @@ public class DocumentDetector
     private const double MIN_DOCUMENT_FRACTION = 0.05;
     private const double MAX_DOCUMENT_FRACTION = 0.99;
     private const double SKEW_RANGE_DEGREES = 10.0;
-    private const double CROP_PADDING_FRACTION = 0.005;
+
+    // Shrink the detected bbox by this fraction on every side so the
+    // returned crop sits just inside the paper edge.
+    private const double CROP_INSET_FRACTION = 0.005;
+
+    // Floor for the document/background threshold (0..255). Otsu can drift
+    // low on text-heavy pages, classifying middle-gray scanner artefacts
+    // (e.g. the DS-720D end-of-sheet calibration strip at ~150) as part
+    // of the document. Demanding at least this much luminance keeps those
+    // strips out of the mask without rejecting any real paper.
+    private const int MIN_DOCUMENT_LUMINANCE = 180;
+
+    // A row (or column) is treated as "page-like" when at least this
+    // fraction of its width (or height) is bright in the mask. Higher =
+    // tighter band, fewer noisy edge rows included.
+    private const double BAND_FILL_FRACTION = 0.20;
+
+    // Maximum dark gap (as a fraction of the perpendicular dimension)
+    // that is bridged when both ends are inside a bright band. Keeps
+    // the longest-band scan from being split by full-width interior
+    // dark features — header bars, ruled lines, banner backgrounds.
+    private const double GAP_FILL_FRACTION = 0.05;
 
     private static uint8[] downsample_luminance (Page page,
                                                  out int out_w,
@@ -101,6 +126,65 @@ public class DocumentDetector
         return m;
     }
 
+    // Longest contiguous run of indices where values[i] >= threshold,
+    // bridging interior dark gaps of length <= max_gap so that full-
+    // width dark features inside a page don't split the band.
+    private static void longest_band (int[] values, int len,
+                                      int threshold, int max_gap,
+                                      out int start, out int end)
+    {
+        bool[] passed = new bool[len];
+        for (int i = 0; i < len; i++)
+            passed[i] = values[i] >= threshold;
+
+        int idx = 0;
+        while (idx < len)
+        {
+            if (!passed[idx])
+            {
+                int j = idx;
+                while (j < len && !passed[j]) j++;
+                if (idx > 0 && j < len && passed[idx - 1] && passed[j]
+                    && (j - idx) <= max_gap)
+                {
+                    for (int k = idx; k < j; k++) passed[k] = true;
+                }
+                idx = j;
+            }
+            else
+            {
+                idx++;
+            }
+        }
+
+        start = -1; end = -1;
+        int best_start = -1, best_len = 0;
+        int cur_start = -1;
+        for (int i = 0; i < len; i++)
+        {
+            if (passed[i])
+            {
+                if (cur_start == -1) cur_start = i;
+            }
+            else if (cur_start != -1)
+            {
+                int run = i - cur_start;
+                if (run > best_len) { best_len = run; best_start = cur_start; }
+                cur_start = -1;
+            }
+        }
+        if (cur_start != -1)
+        {
+            int run = len - cur_start;
+            if (run > best_len) { best_len = run; best_start = cur_start; }
+        }
+        if (best_start >= 0)
+        {
+            start = best_start;
+            end = best_start + best_len - 1;
+        }
+    }
+
     private static bool bounding_box (uint8[] mask, int w, int h,
                                       out int x0, out int y0,
                                       out int x1, out int y1)
@@ -121,23 +205,16 @@ public class DocumentDetector
             row_sum[y] = rs;
         }
 
-        int max_col = 0;
-        for (int x = 0; x < w; x++) if (col_sum[x] > max_col) max_col = col_sum[x];
-        int max_row = 0;
-        for (int y = 0; y < h; y++) if (row_sum[y] > max_row) max_row = row_sum[y];
+        // Use width/height-relative thresholds so the longest band picks
+        // the page even when the calibration strip is also "bright": the
+        // strip is a thin band so it loses to the page on row-count.
+        int col_cut = (int) (h * BAND_FILL_FRACTION);
+        int row_cut = (int) (w * BAND_FILL_FRACTION);
+        int row_gap = (int) (h * GAP_FILL_FRACTION);
+        int col_gap = (int) (w * GAP_FILL_FRACTION);
 
-        int col_cut = (int) (max_col * 0.10);
-        int row_cut = (int) (max_row * 0.10);
-
-        x0 = -1; x1 = -1; y0 = -1; y1 = -1;
-        for (int x = 0; x < w; x++)
-            if (col_sum[x] > col_cut) { x0 = x; break; }
-        for (int x = w - 1; x >= 0; x--)
-            if (col_sum[x] > col_cut) { x1 = x; break; }
-        for (int y = 0; y < h; y++)
-            if (row_sum[y] > row_cut) { y0 = y; break; }
-        for (int y = h - 1; y >= 0; y--)
-            if (row_sum[y] > row_cut) { y1 = y; break; }
+        longest_band (col_sum, w, col_cut, col_gap, out x0, out x1);
+        longest_band (row_sum, h, row_cut, row_gap, out y0, out y1);
 
         return x0 >= 0 && y0 >= 0 && x1 > x0 && y1 > y0;
     }
@@ -163,20 +240,22 @@ public class DocumentDetector
             }
         }
 
+        // Variance across ALL bins — including the zero-filled ones above
+        // and below the projected page. Excluding zeros was wrong: a
+        // straight page produces uniform full-count bins (variance≈0) and
+        // the algorithm then chases extreme angles, where the page outline
+        // smears across many partial-count bins and inflates variance.
+        if (n_bins == 0) return 0;
         double sum = 0;
-        int filled = 0;
-        for (int i = 0; i < n_bins; i++)
-            if (proj[i] > 0) { sum += proj[i]; filled++; }
-        if (filled == 0) return 0;
-        double mean = sum / filled;
+        for (int i = 0; i < n_bins; i++) sum += proj[i];
+        double mean = sum / n_bins;
         double variance = 0;
         for (int i = 0; i < n_bins; i++)
-            if (proj[i] > 0)
-            {
-                double d = proj[i] - mean;
-                variance += d * d;
-            }
-        return variance / filled;
+        {
+            double d = proj[i] - mean;
+            variance += d * d;
+        }
+        return variance / n_bins;
     }
 
     private static double estimate_skew (uint8[] mask, int w, int h)
@@ -211,9 +290,14 @@ public class DocumentDetector
         if (ds_w < 16 || ds_h < 16)
             return null;
 
-        int threshold = otsu_threshold (lum);
+        int threshold = int.max (otsu_threshold (lum), MIN_DOCUMENT_LUMINANCE);
 
-        if (threshold < 32)
+        // If we had to clamp the threshold higher than the brightest pixel
+        // in the scan there is nothing bright enough to plausibly be paper
+        // — fall back to no crop rather than guessing.
+        int max_lum = 0;
+        foreach (uint8 v in lum) if (v > max_lum) max_lum = v;
+        if (max_lum < MIN_DOCUMENT_LUMINANCE)
         {
             var r = new DocumentDetectionResult ();
             r.found_document = false;
@@ -245,13 +329,13 @@ public class DocumentDetector
 
         int box_w_ds = x1 - x0 + 1;
         int box_h_ds = y1 - y0 + 1;
-        int pad_x = (int) (box_w_ds * CROP_PADDING_FRACTION);
-        int pad_y = (int) (box_h_ds * CROP_PADDING_FRACTION);
+        int inset_x = (int) (box_w_ds * CROP_INSET_FRACTION);
+        int inset_y = (int) (box_h_ds * CROP_INSET_FRACTION);
 
-        int page_x0 = int.max (0, (x0 - pad_x) * step);
-        int page_y0 = int.max (0, (y0 - pad_y) * step);
-        int page_x1 = int.min (page.width - 1, (x1 + pad_x) * step);
-        int page_y1 = int.min (page.height - 1, (y1 + pad_y) * step);
+        int page_x0 = int.max (0, (x0 + inset_x) * step);
+        int page_y0 = int.max (0, (y0 + inset_y) * step);
+        int page_x1 = int.min (page.width - 1, (x1 - inset_x) * step);
+        int page_y1 = int.min (page.height - 1, (y1 - inset_y) * step);
 
         result.found_document = true;
         result.crop_x = page_x0;
@@ -260,10 +344,27 @@ public class DocumentDetector
         result.crop_height = page_y1 - page_y0 + 1;
         result.skew_degrees = want_skew ? estimate_skew (mask, ds_w, ds_h) : 0;
 
+        // Estimate background by averaging downsampled-luma pixels that
+        // fall outside the detected bbox. Falls back to black on a full-
+        // coverage scan (no outside pixels).
+        int bg_sum = 0; int bg_count = 0;
+        for (int y = 0; y < ds_h; y++)
+        {
+            int row = y * ds_w;
+            bool y_in = (y >= y0 && y <= y1);
+            for (int x = 0; x < ds_w; x++)
+            {
+                if (y_in && x >= x0 && x <= x1) continue;
+                bg_sum += lum[row + x];
+                bg_count++;
+            }
+        }
+        result.background_luminance = bg_count > 0 ? (uchar)(bg_sum / bg_count) : 0;
+
         return result;
     }
 
-    public static void deskew (Page page, double degrees)
+    public static void deskew (Page page, double degrees, uchar fill_luminance = 0)
     {
         if (Math.fabs (degrees) < 0.05)
             return;
@@ -318,9 +419,9 @@ public class DocumentDetector
 
                         if (xx < 0 || yy < 0 || xx >= src_w || yy >= src_h)
                         {
-                            r += (int) (255 * w);
-                            g += (int) (255 * w);
-                            b += (int) (255 * w);
+                            r += (int) (fill_luminance * w);
+                            g += (int) (fill_luminance * w);
+                            b += (int) (fill_luminance * w);
                         }
                         else
                         {
