@@ -181,6 +181,44 @@
             <property name="title" translatable="yes" comments="Preferences Dialog: Section label for postprocessing settings">Postprocessing</property>
             <child>
               <object class="AdwActionRow">
+                <property name="title" translatable="yes" comments="Switch to enable automatic page cropping">_Auto-Crop</property>
+                <property name="subtitle" translatable="yes" comments="Subtitle for auto-crop switch">Place a Custom Crop around the detected document on each new scan</property>
+                <property name="use_underline">True</property>
+                <property name="activatable_widget">auto_crop_box</property>
+                <child>
+                  <object class="GtkBox" id="auto_crop_box">
+                    <property name="valign">center</property>
+                    <property name="homogeneous">True</property>
+                    <child>
+                      <object class="GtkSwitch" id="auto_crop_switch">
+                        <property name="hexpand">False</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow">
+                <property name="title" translatable="yes" comments="Switch to enable automatic page deskew">Auto-_Straighten</property>
+                <property name="subtitle" translatable="yes" comments="Subtitle for auto-straighten switch">Rotate each new scan to correct mild skew (±10°) before cropping</property>
+                <property name="use_underline">True</property>
+                <property name="activatable_widget">auto_straighten_box</property>
+                <child>
+                  <object class="GtkBox" id="auto_straighten_box">
+                    <property name="valign">center</property>
+                    <property name="homogeneous">True</property>
+                    <child>
+                      <object class="GtkSwitch" id="auto_straighten_switch">
+                        <property name="hexpand">False</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow">
                 <property name="title" translatable="yes" comments="Switch to enable postprocessing">_Enable Postprocessing</property>
                 <property name="use_underline">True</property>
                 <property name="activatable_widget">postproc_enable_box</property>

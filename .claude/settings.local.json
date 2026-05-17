@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "Bash(valac --version)",
-      "Bash(git clone *)"
+      "Bash(git clone *)",
+      "Bash(git mv *)",
+      "Bash(apt list *)",
+      "Bash(xmllint --noout data/io.github.SimpleScanEnhanced.gschema.xml)",
+      "Bash(xmllint --noout data/ui/preferences-dialog.ui)",
+      "Bash(xmllint --noout data/ui/app-window.ui)",
+      "Bash(xmllint --noout data/io.github.SimpleScanEnhanced.metainfo.xml.in)",
+      "Bash(xmllint --noout data/simple-scan.gresource.xml)",
+      "Bash(git rm *)",
+      "Bash(glib-compile-schemas --dry-run data/)",
+      "Bash(git add *)",
+      "Bash(git -c commit.gpgsign=false commit -q -m 'Rebrand to Document Scanner Enhanced + add auto-crop/auto-straighten *)"
     ]
   }
 }

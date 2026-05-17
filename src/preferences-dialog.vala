@@ -40,7 +40,7 @@ const string SIDE_ID_FRONT = "front";
 const string SIDE_ID_BACK = "back";
 const string SIDE_ID_BOTH = "both";
 
-[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/preferences-dialog.ui")]
+[GtkTemplate (ui = "/io/github/SimpleScanEnhanced/ui/preferences-dialog.ui")]
 private class PreferencesDialog : Adw.PreferencesDialog
 {
     private Settings settings;
@@ -78,6 +78,10 @@ private class PreferencesDialog : Adw.PreferencesDialog
     private unowned Gtk.Entry postproc_args_entry;
     [GtkChild]
     private unowned Gtk.Switch postproc_keep_original_switch;
+    [GtkChild]
+    private unowned Gtk.Switch auto_crop_switch;
+    [GtkChild]
+    private unowned Gtk.Switch auto_straighten_switch;
 
     static string get_dpi_label (DpiItem device) {
         return device.label;
@@ -222,6 +226,18 @@ private class PreferencesDialog : Adw.PreferencesDialog
         postproc_keep_original_switch.set_state(postproc_keep_original);
         postproc_keep_original_switch.state_set.connect ((is_active) => {   settings.set_boolean("postproc-keep-original", is_active);
                                                                             return true; });
+
+        auto_crop_switch.set_active (settings.get_boolean ("auto-crop"));
+        auto_crop_switch.state_set.connect ((is_active) => {
+            settings.set_boolean ("auto-crop", is_active);
+            return false;
+        });
+
+        auto_straighten_switch.set_active (settings.get_boolean ("auto-straighten"));
+        auto_straighten_switch.state_set.connect ((is_active) => {
+            settings.set_boolean ("auto-straighten", is_active);
+            return false;
+        });
     }
 
     private void toggle_postproc_visibility(bool enabled) {

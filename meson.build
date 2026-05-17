@@ -1,5 +1,5 @@
-project ('simple-scan', ['vala', 'c'],
-         version: '50.0',
+project ('simple-scan-enhanced', ['vala', 'c'],
+         version: '50.0.0',
          license: 'GPLv3+',
          default_options: [
              'warning_level=1',
@@ -10,13 +10,13 @@ project ('simple-scan', ['vala', 'c'],
 gnome = import ('gnome')
 i18n = import ('i18n')
 
-app_id = 'org.gnome.SimpleScan'
+app_id = 'io.github.SimpleScanEnhanced'
 
 # Paths
 mandir = join_paths (get_option ('prefix'), get_option ('mandir'))
 localedir = join_paths (get_option ('prefix'), get_option ('localedir'))
 datadir = join_paths (get_option ('prefix'), get_option ('datadir'))
-icondir = join_paths (datadir, 'simple-scan', 'icons')
+icondir = join_paths (datadir, 'simple-scan-enhanced', 'icons')
 
 # Dependencies
 glib_dep = dependency ('glib-2.0', version: '>= 2.76')

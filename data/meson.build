@@ -4,21 +4,21 @@ install_data (join_paths ('icons', 'hicolor', 'scalable', '@0@.svg'.format(app_i
 install_data (join_paths ('icons', 'hicolor', 'symbolic', '@0@-symbolic.svg'.format(app_id)),
               install_dir: join_paths (datadir, 'icons', 'hicolor', 'symbolic', 'apps'))
 
-install_data ('org.gnome.SimpleScan.gschema.xml',
+install_data ('io.github.SimpleScanEnhanced.gschema.xml',
               install_dir: join_paths (datadir, 'glib-2.0', 'schemas'))
 
 gnome.post_install (glib_compile_schemas: true,
                     gtk_update_icon_cache: true)
 
-i18n.merge_file (input: 'org.gnome.SimpleScan.desktop.in',
-                 output: 'org.gnome.SimpleScan.desktop',
+i18n.merge_file (input: 'io.github.SimpleScanEnhanced.desktop.in',
+                 output: 'io.github.SimpleScanEnhanced.desktop',
                  install: true,
                  install_dir: join_paths (datadir, 'applications'),
                  po_dir: '../po',
                  type: 'desktop')
 
-metainfo_file = i18n.merge_file (input: 'org.gnome.SimpleScan.metainfo.xml.in',
-                 output: 'org.gnome.SimpleScan.metainfo.xml',
+metainfo_file = i18n.merge_file (input: 'io.github.SimpleScanEnhanced.metainfo.xml.in',
+                 output: 'io.github.SimpleScanEnhanced.metainfo.xml',
                  install: true,
                  install_dir: join_paths (datadir, 'metainfo'),
                  po_dir: '../po')
@@ -32,7 +32,7 @@ if appstreamcli.found()
         depends: metainfo_file)
 endif
 
-install_man ('simple-scan.1')
+install_man ('simple-scan-enhanced.1')
 
 resource_files = files([
     'icons/scalable/actions/scan-type-adf-symbolic.svg',

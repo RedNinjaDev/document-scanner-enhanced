@@ -682,7 +682,7 @@ private class BookSaver
                    xmlns:xmp="http://ns.adobe.com/xap/1.0/">
     <pdfaid:part>1</pdfaid:part>
     <pdfaid:conformance>A</pdfaid:conformance>
-    <xmp:CreatorTool>Simple Scan %s</xmp:CreatorTool>
+    <xmp:CreatorTool>Document Scanner Enhanced %s</xmp:CreatorTool>
     <xmp:CreateDate>%s</xmp:CreateDate>
     <xmp:ModifyDate>%s</xmp:ModifyDate>
     <xmp:MetadataDate>%s</xmp:MetadataDate>
@@ -815,7 +815,7 @@ private class BookSaver
         writer.start_object (info_number);
         writer.write_string ("%u 0 obj\n".printf (info_number));
         writer.write_string ("<<\n");
-        writer.write_string ("/Creator (Simple Scan %s)\n".printf (VERSION));
+        writer.write_string ("/Creator (Document Scanner Enhanced %s)\n".printf (VERSION));
         writer.write_string (">>\n");
         writer.write_string ("endobj\n");
 

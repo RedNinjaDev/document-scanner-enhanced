@@ -9,7 +9,7 @@
  * license.
  */
 
-[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/drivers-dialog.ui")]
+[GtkTemplate (ui = "/io/github/SimpleScanEnhanced/ui/drivers-dialog.ui")]
 private class DriversDialog : Gtk.Window
 {
     [GtkChild]

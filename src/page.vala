@@ -392,6 +392,36 @@ public class Page : Object
         crop_changed ();
     }
 
+    /* Set a Custom Crop rectangle in one call, in page coordinates.
+     * Used by auto-crop so the rectangle is fully populated before the
+     * crop_changed signal fires (otherwise observers see a partially-set
+     * crop). The rectangle is clamped to the page bounds. */
+    public void set_custom_crop_region (int x, int y, int w, int h)
+    {
+        return_if_fail (w >= 1);
+        return_if_fail (h >= 1);
+
+        var pw = width;
+        var ph = height;
+
+        if (x < 0) { w += x; x = 0; }
+        if (y < 0) { h += y; y = 0; }
+        if (x >= pw) x = pw - 1;
+        if (y >= ph) y = ph - 1;
+        if (x + w > pw) w = pw - x;
+        if (y + h > ph) h = ph - y;
+        if (w < 1) w = 1;
+        if (h < 1) h = 1;
+
+        crop_name = null;
+        has_crop = true;
+        crop_x = x;
+        crop_y = y;
+        crop_width = w;
+        crop_height = h;
+        crop_changed ();
+    }
+
     public void set_custom_crop (int width, int height)
     {
         return_if_fail (width >= 1);
@@ -535,6 +565,54 @@ public class Page : Object
     public unowned uchar[] get_pixels ()
     {
         return pixels;
+    }
+
+    /* Public RGB pixel read at page-coordinate (x,y). Writes 3 bytes
+     * (R,G,B) into rgb[0..2]. Out-of-range coordinates produce white,
+     * matching the get_image() padding convention. */
+    public void get_pixel_rgb (int x, int y, uchar[] rgb)
+    {
+        if (x < 0 || y < 0 || x >= width || y >= height)
+        {
+            rgb[0] = rgb[1] = rgb[2] = 0xFF;
+            return;
+        }
+        get_pixel (x, y, rgb, 0);
+    }
+
+    /* Replace the page's raw pixel data with a fresh 8-bit buffer in
+     * page-coordinate (top-to-bottom) order. Used by auto-straighten,
+     * which rotates the scan into a new buffer. Resets any existing
+     * crop and forces scan_direction back to TOP_TO_BOTTOM so callers
+     * can write the new buffer as if it were freshly scanned. */
+    public void replace_image (int new_width,
+                               int new_height,
+                               int new_n_channels,
+                               owned uchar[] new_pixels)
+    {
+        return_if_fail (new_width >= 1);
+        return_if_fail (new_height >= 1);
+        return_if_fail (new_n_channels == 1 || new_n_channels == 3);
+
+        has_crop = false;
+        crop_name = null;
+        crop_x = crop_y = crop_width = crop_height = 0;
+
+        scan_direction_ = ScanDirection.TOP_TO_BOTTOM;
+        scan_width = new_width;
+        scan_height = new_height;
+        n_channels = new_n_channels;
+        depth = 8;
+        rowstride = new_width * new_n_channels;
+        pixels = (owned) new_pixels;
+        expected_rows = new_height;
+        scan_line = new_height;
+        has_data = true;
+
+        size_changed ();
+        scan_direction_changed ();
+        crop_changed ();
+        pixels_changed ();
     }
 
     // FIXME: Copied from page-view, should be shared code

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/gnome/SimpleScan">
+  <gresource prefix="/io/github/SimpleScanEnhanced">
     <file preprocess="xml-stripblanks">ui/app-window.ui</file>
     <file preprocess="xml-stripblanks">ui/preferences-dialog.ui</file>
     <file preprocess="xml-stripblanks">ui/authorize-dialog.ui</file>

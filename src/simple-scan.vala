@@ -41,9 +41,9 @@ public class SimpleScan : Adw.Application
     {
         Object (
             /* The inhibit () method use this */
-            application_id: "org.gnome.SimpleScan",
+            application_id: "io.github.SimpleScanEnhanced",
             /* Icon resources will be looked up starting from here */
-            resource_base_path: "/org/gnome/SimpleScan"
+            resource_base_path: "/io/github/SimpleScanEnhanced"
         );
         register_session = true;
 
