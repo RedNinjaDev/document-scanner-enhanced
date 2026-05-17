@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="hu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at ubuntu dot com</mal:email>
+      <mal:years>2014, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Meskó Balázs</mal:name>
+      <mal:email>mesko dot balazs at fsf dot hu</mal:email>
+      <mal:years>2021.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Automatikus dokumentumadagoló használata</title>
+
+    <p>Ha szkennere rendelkezik automatikus dokumentumadagolóval, akkor az összes oldalt beolvastathatja a következő módszerek használatával:</p>
+      <steps>
+	<title>Gyorsbillentyűk</title>
+	<item>
+	  <p>Nyomja meg a <keyseq><key>Ctrl</key><key>F</key></keyseq> kombinációt</p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Eszköztár</title>
+	<item>
+          <p>Kattintson a <gui style="button">Szkennelés</gui> gomb jobb oldalán lévő fogaskerékre.</p>
+	</item>
+	<item>
+	  <p>Válassza a <gui style="button">Minden oldal az adagolóból</gui> gombot.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Alapesetben a lap mindkét oldala beolvasásra kerül, ha a szkenner képes erre. Csak az egyik oldal beolvasásához:</p>
+    <steps>
+      <item>
+        <p>Nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <gui style="menuitem">Beállítások</gui> menüpontot.</p>
+      </item>
+      <item>
+        <p>A <gui style="group">Szkennelés</gui> szakaszban változtassa meg az <gui>Oldalak szkennelése</gui> értéket.</p>
+      </item>
+      <item>
+        <p>Zárja be a párbeszédablakot.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

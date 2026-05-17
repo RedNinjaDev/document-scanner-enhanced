@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="fr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Recadrage</title>
+
+    <p>La fonction recadrage vous permet de n’utiliser qu’une partie d’une image numérisée. Vous pouvez activer le recadrage avant ou après la numérisation d’une page et vous pouvez toujours changer les dimensions du recadrage. Lorsque le recadrage est activé, un masque apparaîtra sur la page en cours, la zone non utilisée sera grisée. Vous pouvez activer le recadrage et choisir les dimensions souhaitées via l’une des méthodes suivantes :</p>
+    
+    <steps>
+      <title>Utiliser le clic droit</title>
+      <item><p>Faites un clic droit à n’importe quel endroit de la page.</p></item>
+      <item><p>Sélectionnez <gui style="menuitem">Recadrer</gui>.</p></item>
+      <item><p>Choisissez l’un des cadres fixes ou sélectionnez « Personnalisé » pour définir manuellement les dimensions du cadre en faisant glisser ses bords.</p></item>
+      <item><p>Cliquez et maintenez le cadre pour le déplacer sur la position désirée.</p></item>
+      <item><p>Faites glisser les bords du cadre pour définir les dimensions souhaitées.</p></item>
+    </steps>
+
+    <steps>
+      <title>Utiliser la barre d’outils</title>
+      <item><p>Cliquez sur le bouton <gui style="button">Recadrer la page sélectionnée</gui> situé dans la barre d’outils.</p>
+	    <note style="tip"><p>Ceci revient au même que de choisir « Personnalisé » à l’étape 2 des méthodes mentionnées ci-dessus.</p></note></item>      
+      <item><p>Cliquez et maintenez le cadre pour le déplacer sur la position désirée.</p></item>
+      <item><p>Faites glisser les bords du cadre pour définir les dimensions souhaitées.</p></item>
+    </steps>
+    
+    <note><p>Chaque nouvelle page numérisée utilisera le recadrage précédent.</p></note>
+</page>

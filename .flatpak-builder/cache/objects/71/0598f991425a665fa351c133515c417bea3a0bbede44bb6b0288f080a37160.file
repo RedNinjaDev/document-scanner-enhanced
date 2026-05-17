@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="uk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрій Чорноіван</mal:name>
+      <mal:email>yurchor@ukr.net</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Надсилання зображень електронною поштою</title>
+
+    <p>Щоб надіслати поточний документ електронною поштою, натисніть кнопку меню у верхньому правому куті вікна програми і виберіть <gui style="menuitem">Надіслати ел. поштою</gui>. Крім того можна натиснути <keyseq><key>Ctrl</key><key>E</key></keyseq>. У відповідь на ці дії буде запущено типову програму для роботи з електронною поштою. До нового повідомлення буде одразу долучено сканований документ.</p>
+    <p>Якщо встановлено тип документів «Текст», до повідомлення електронної пошти буде долучено файл PDF для кожної засканованої сторінки. Так само, якщо типом документа є «Зображення», до повідомлення електронної пошти буде долучено зображення JPEG для кожної сторінки.</p>
+    <p>Докладніші дані щодо форматів файлів викладено у розділі <link xref="save"/>.</p>
+</page>

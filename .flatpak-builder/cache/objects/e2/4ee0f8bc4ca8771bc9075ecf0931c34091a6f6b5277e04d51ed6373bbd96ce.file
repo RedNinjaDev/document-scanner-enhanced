@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="fr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Envoi par courriel</title>
+
+    <p>Pour envoyer le document actuel par courriel, cliquez sur le bouton de menu situé dans le coin supérieur droit de la fenêtre et sélectionnez <gui style="menuitem">Courriel</gui>. Vous pouvez également appuyer sur <keyseq><key>Ctrl</key><key>E</key></keyseq>. Votre logiciel de messagerie électronique s’ouvrira avec un nouveau message qui contiendra le document numérisé en pièce jointe.</p>
+    <p>Si le type de document a été réglé sur « Texte », le courriel aura une pièce jointe PDF pour chaque page. À l’inverse, si le type de document a été réglé sur « Image », le courriel aura une pièce jointe JPEG pour chaque page.</p>
+    <p>Consultez <link xref="save"/> pour plus d’informations à propos des formats de fichiers.</p>
+</page>

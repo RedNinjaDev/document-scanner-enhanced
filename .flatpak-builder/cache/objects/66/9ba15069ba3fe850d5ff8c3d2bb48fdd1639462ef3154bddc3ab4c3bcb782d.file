@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="sr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Исецање</title>
+
+    <p>Могућност исецања вам омогућава да користите само део скениране слике. Можете омогућити исецање пре или након скенирања странице, а увек можете променити димензије оквира за исецање. Када је исецање омогућено, преко тренутне странице ће се појавивити маска, при чему ће део који се не користи бити приказан сивом бојом. Можете омогућити исецање и изабрати жељене димензије на један од следећих начина:</p>
+    
+    <steps>
+      <title>Коришћење десног клика</title>
+      <item><p>Десним кликом притисните било где на страници.</p></item>
+      <item><p>Изаберите <gui style="menuitem">Исеци</gui>.</p></item>
+      <item><p>Изаберите један од фиксних оквира исецања, или изаберите „Произвољно“ да ручно подесите димензије оквира исецања превлачењем његових ивица.</p></item>
+      <item><p>Кликните и држите оквир да га померите на жељени положај.</p></item>
+      <item><p>Превуците ивице оквира да подесите жељене димензије.</p></item>
+    </steps>
+
+    <steps>
+      <title>Коришћење траке алата</title>
+      <item><p>Притисните дугме <gui style="button">Исеци изабрану страницу</gui> у траци алата.</p>
+	    <note style="tip"><p>Ово је исто као и бирање опције „Произвољно“ у 2. кораку поменутих метода.</p></note></item>      
+      <item><p>Кликните и држите оквир да га померите на жељени положај.</p></item>
+      <item><p>Превуците ивице оквира да подесите жељене димензије.</p></item>
+    </steps>
+    
+    <note><p>Свака нова скенирана страница ће користити претходно исецање.</p></note>
+</page>

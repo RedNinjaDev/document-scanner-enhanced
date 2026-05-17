@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="hu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at ubuntu dot com</mal:email>
+      <mal:years>2014, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Meskó Balázs</mal:name>
+      <mal:email>mesko dot balazs at fsf dot hu</mal:email>
+      <mal:years>2021.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>A beolvasás felbontásának beállítása</title>
+
+    <p>A <gui><em>Szöveg</em></gui> dokumentumtípus alapértelmezett felbontása 150 dpi (képpont hüvelykenként), a <gui><em>Kép</em></gui> dokumentumtípusé pedig 300 dpi. A beállítások módosításához:</p>
+
+    <steps>
+      <item>
+        <p>Nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <gui style="menuitem">Beállítások</gui> menüpontot.</p>
+      </item>
+      <item>
+        <p>A <gui style="group">Minőség</gui> szakaszban változtassa meg a <gui>Szöveg felbontása</gui> vagy a <gui>Kép felbontása</gui> értéket.</p>
+      </item>
+      <item>
+        <p>Zárja be a párbeszédablakot.</p>
+      </item>
+    </steps>
+    
+    <p>Az elérhető szkennelési felbontások mindkét dokumentumtípus (szöveg és kép) esetén azonosak, ezeket a következő táblázat tartalmazza:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Szöveg felbontása</em></p></td>
+		<td><p><em>Kép felbontása</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 DPI (piszkozat)</p></td>
+		<td><p>75 DPI (piszkozat)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 DPI (alapértelmezett)</p></td>
+		<td><p>150 DPI</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 DPI</p></td>
+		<td><p>300 DPI (alapértelmezett)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 DPI</p></td>
+		<td><p>600 DPI</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 DPI (nagy felbontás)</p></td>
+		<td><p>1200 DPI (nagy felbontás)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 DPI</p></td>
+		<td><p>2400 DPI</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>A <gui><em>szöveges</em></gui> dokumentumok mindig fekete-fehérben kerülnek beolvasásra, míg a <gui><em>képek</em></gui> mindig színesben, bármely felbontás esetén.</p>
+    </note>
+
+</page>

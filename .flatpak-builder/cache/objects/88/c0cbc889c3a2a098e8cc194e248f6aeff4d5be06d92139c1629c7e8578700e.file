@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="de">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2021, 2024</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jürgen Benvenuti</mal:name>
+      <mal:email>gastornis@posteo.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Scan-Auflösung einstellen</title>
+
+    <p>Die voreingestellte Auflösung für den Dokumenttyp <gui><em>Text</em></gui> ist 150 dpi (Punkte pro Zoll) und 300 dpi für den Dokumenttyp <gui><em>Bild</em></gui>. So ändern Sie diese Einstellungen:</p>
+
+    <steps>
+      <item>
+        <p>Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und wählen Sie <gui style="menuitem">Einstellungen</gui>.</p>
+      </item>
+      <item>
+        <p>Ändern Sie im Abschnitt <gui style="group">Qualität</gui> einen der Werte <gui>Textauflösung</gui> oder <gui>Bildauflösung</gui>.</p>
+      </item>
+      <item>
+        <p>Schließen Sie den Dialog.</p>
+      </item>
+    </steps>
+    
+    <p>Die verfügbaren Scanauflösungen sind gleichermaßen für beide Dokumenttypen verfügbar (Text und Bild) und in der folgenden Tabelle aufgelistet:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Textauflösung</em></p></td>
+		<td><p><em>Bildauflösung</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (Vorschau)</p></td>
+		<td><p>75 dpi (Vorschau)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (Standard)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (Standard)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (Hochauflösend)</p></td>
+		<td><p>1200 dpi (Hochauflösend)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p><gui><em>Text</em></gui>dokumente werden stets in Schwarzweiß eingescannt, während <gui><em>Bild</em></gui>dokumente immer farbig eingescannt werden, in jeder Auflösung!</p>
+    </note>
+
+</page>

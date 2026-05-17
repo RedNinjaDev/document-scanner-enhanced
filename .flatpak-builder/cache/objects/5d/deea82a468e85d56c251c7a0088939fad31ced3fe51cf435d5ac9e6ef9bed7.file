@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="pl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Kadrowanie</title>
+
+    <p>Funkcja kadrowania umożliwia użycie tylko części zeskanowanego obrazu. Można włączyć kadrowanie przed lub po zeskanowaniu strony, i zawsze można zmienić wymiary kadrowanej części. Po włączeniu kadrowania pojawia się maska nad bieżącą stroną, a nieużywany obszar jest szary. Można to zrobić za pomoc jednego z tych sposobów:</p>
+    
+    <steps>
+      <title>Kliknięcie prawym przyciskiem myszy</title>
+      <item><p>Kliknij gdziekolwiek na stronie prawym przyciskiem myszy.</p></item>
+      <item><p>Wybierz <gui style="menuitem">Kadruj</gui>.</p></item>
+      <item><p>Wybierz jeden z ustalonych wymiarów lub „Niestandardowy”, aby ręcznie ustawić wymiary przeciągając krawędzie ramki.</p></item>
+      <item><p>Kliknij i przytrzymaj ramkę, aby przenieść ją w odpowiednie miejsce.</p></item>
+      <item><p>Przeciągnij krawędzie ramki, aby ustawić odpowiednie wymiary.</p></item>
+    </steps>
+
+    <steps>
+      <title>Pasek narzędziowy</title>
+      <item><p>Kliknij przycisk <gui style="button">Kadruj zaznaczoną stronę</gui> na pasku narzędziowym.</p>
+	    <note style="tip"><p>To odpowiednik wybrania „Niestandardowy” w drugim kroku poprzednich sposobów.</p></note></item>      
+      <item><p>Kliknij i przytrzymaj ramkę, aby przenieść ją w odpowiednie miejsce.</p></item>
+      <item><p>Przeciągnij krawędzie ramki, aby ustawić odpowiednie wymiary.</p></item>
+    </steps>
+    
+    <note><p>Każda nowo zeskanowana strona będzie używała poprzednio wybranego kadrowania.</p></note>
+</page>

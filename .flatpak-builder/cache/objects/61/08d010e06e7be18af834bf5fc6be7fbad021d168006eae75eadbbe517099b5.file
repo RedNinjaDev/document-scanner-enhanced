@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="fr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Configuration de la résolution du périphérique de numérisation</title>
+
+    <p>La résolution par défaut pour un document <gui><em>Texte</em></gui> est de 150 ppp (points par pouce), pour un document <gui><em>Image</em></gui>, elle est de 300 ppp. Pour modifier ces réglages :</p>
+
+    <steps>
+      <item>
+        <p>Cliquez sur le bouton de menu situé dans le coin supérieur droit de la fenêtre et sélectionnez <gui style="menuitem">Préférences</gui>.</p>
+      </item>
+      <item>
+        <p>Dans la section <gui style="group">Qualité</gui>Modifiez la valeur de <gui>Résolution du texte</gui> ou de <gui>Résolution de l’image</gui>.</p>
+      </item>
+      <item>
+        <p>Fermez la boîte de dialogue.</p>
+      </item>
+    </steps>
+    
+    <p>Les résolutions de numérisation disponibles pour les deux types de documents (textes et images) sont les mêmes et sont listées dans le tableau suivant :</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Résolution du texte</em></p></td>
+		<td><p><em>Résolution de l’image</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 ppp (brouillon)</p></td>
+		<td><p>75 ppp (brouillon)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 ppp (par défaut)</p></td>
+		<td><p>150 ppp</p></td>
+	</tr>
+	<tr>
+		<td><p>200 ppp</p></td>
+		<td><p>200 ppp</p></td>
+	</tr>
+	<tr>
+		<td><p>300 ppp</p></td>
+		<td><p>300 ppp (par défaut)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 ppp</p></td>
+		<td><p>600 ppp</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 ppp (haute résolution)</p></td>
+		<td><p>1200 ppp (haute résolution)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 ppp</p></td>
+		<td><p>2400 ppp</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Les documents <gui><em>Texte</em></gui> sont toujours numérisés en noir et blanc alors que les documents <gui><em>Image</em></gui> sont toujours numérisés en couleur, quelle que soit la résolution !</p>
+    </note>
+
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="cs">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Odeslání přes e-mail</title>
+
+    <p>Pro odeslání aktuálního dokumentu e-mailem zmáčkněte tlačítko nabídky v pravém horním rohu okna a vyberte <gui style="menuitem">E-mail</gui>. Případně zmáčkněte kombinaci kláves <keyseq><key>Ctrl</key><key>E</key></keyseq>. Otevře se poštovní program s novou zprávou, která bude obsahovat naskenovaný dokument jako přílohu.</p>
+    <p>Pokud byl typ dokumentu nastaven na „Text“, bude mít e-mail jednu přílohu PDF pro všechny stránky. Naopak, pokud byl typ dokumentu nastaven na „Obrázek“, bude mít e-mail jednotlivé přílohy JPEG pro každou ze stránek.</p>
+    <p>Více o souborových formátech viz <link xref="save"/>.</p>
+</page>

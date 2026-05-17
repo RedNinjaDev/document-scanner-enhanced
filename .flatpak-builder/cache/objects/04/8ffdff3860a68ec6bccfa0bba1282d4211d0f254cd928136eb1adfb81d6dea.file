@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="nl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Een scanner selecteren</title>
+
+    <p>Als u meerdere scanapparaten hebt kunt u van apparaat wisselen op het hoofdscherm.</p>
+
+    <p>Lokale scanners worden automatisch gedetecteerd telkens u <app>Documentenscanner</app> opstart en telkens u een USB-scanner aansluit. Als u een netwerkscanner aansluit zult u <app>Documentenscanner</app> opnieuw moeten starten om de scanner te detecteren.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

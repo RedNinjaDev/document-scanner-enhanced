@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="tr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sabri Ünal</mal:name>
+      <mal:email>libreajans@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Sayfayı Döndürmek</title>
+
+    <p>Sayfanın yönünü, taramadan önce ya da sonra değiştirebilirsiniz. Sayfayı döndürmenin dört yolu bulunmaktadır:</p>
+    
+    <steps>
+      <title>Araç Çubuğunu Kullanarak</title>
+      <item><p>Döndürmek istediğiniz sayfanın üzerine bir kez tıklayarak seçin.</p></item>
+      <item><p>Sayfayı dilediğiniz yönde döndürmek için araç çubuğundaki oklardan birine basın.</p></item>
+    </steps>
+    <steps>
+      <title>Sağ Tıklamayı Kullanarak</title>
+      <item><p>Döndürmek istediğiniz sayfanın üstünde sağ tıklayın.</p></item>
+      <item><p><gui style="menuitem">Sola Döndür</gui> ya da <gui style="menuitem">Sağa Döndür</gui> seçeneğini seçin.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Kısayolları Kullanarak</title>
+      <item><p>Döndürmek istediğiniz sayfanın üzerine bir kez tıklayarak seçin.</p></item>
+      <item><p>Aşağıdaki kısayol tuşlarından birine basın:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Komut</em></p></td>
+		<td><p><em>Kısayol Tuşu</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Sola Döndür</p></td>
+		<td><p><key>[</key> (sol köşeli parentez)</p></td>
+	</tr>
+	<tr>
+		<td><p>Sağa Döndür</p></td>
+		<td><p><key>]</key> (sağ köşeli parantez)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Taranan her yeni sayfa önceki döndürmeyi kullanır.</p></note>
+</page>

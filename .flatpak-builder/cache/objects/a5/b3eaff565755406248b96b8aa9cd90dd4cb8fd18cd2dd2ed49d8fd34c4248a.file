@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="es">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2017 - 2021</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Recorte</title>
+
+    <p>La función de recorte le permite usar solo una parte de una imagen escaneada. Puede activar el recorte antes o después de escanear una página y siempre puede cambiar las dimensiones del marco de recorte. Cuando el recorte está activado, aparecerá una máscara sobre la página actual con el área que no se está usando mostrada en gris. Puede activar el recorte y elegir las dimensiones que quiera mediante uno de los siguientes métodos:</p>
+    
+    <steps>
+      <title>Usar clic derecho</title>
+      <item><p>Pulse con el botón derecho en cualquier parte de la imagen.</p></item>
+      <item><p>Seleccione <gui style="menuitem">Cortar</gui>.</p></item>
+      <item><p>Elija uno de los marcos de recorte fijos o seleccione «Personalizado» para establecer manualmente las dimensiones del marco de recorte tirando de sus bordes.</p></item>
+      <item><p>Pulse y mantenga el marco para moverlo a la posición elegida.</p></item>
+      <item><p>Arrastre los bordes del marco para establecer el tamaño elegidas.</p></item>
+    </steps>
+
+    <steps>
+      <title>Usar la barra de botones</title>
+      <item><p>Pulse el botón <gui style="button">Recortar</gui> en la barra de herramientas.</p>
+	    <note style="tip"><p>Esto es lo mismo que seleccionar «Personalizado» en el paso 2 de los métodos anteriormente mencionados.</p></note></item>      
+      <item><p>Pulse y mantenga el marco para moverlo a la posición elegida.</p></item>
+      <item><p>Arrastre los bordes del marco para establecer el tamaño elegidas.</p></item>
+    </steps>
+    
+    <note><p>Cada nueva página escaneada usará el recorte previo.</p></note>
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="it">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Inviare via email</title>
+
+    <p>Per inviare tramite e-mail il documento corrente, premere il pulsante del menu nell'angolo in alto a destra della finestra e selezionare <gui style="menuitem">Email</gui>. Oppure premere <keyseq><key>Ctrl</key><key>E</key></keyseq>. Il proprio programma di posta elettronica verrà aperto con un nuovo messaggio contenente il documento acquisito come allegato.</p>
+    <p>Se il tipo di documento è stato impostato su "Testo", l'e-mail avrà un allegato PDF per ogni pagina. Al contrario, se il tipo di documento è stato impostato su "Immagine", l'e-mail avrà un allegato JPEG per ogni pagina.</p>
+    <p>Consultare <link xref="save"/> per ulteriori informazioni sui formati di file.</p>
+</page>

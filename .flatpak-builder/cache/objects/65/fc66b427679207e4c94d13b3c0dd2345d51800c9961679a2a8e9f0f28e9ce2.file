@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="ca">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Jorba</mal:name>
+      <mal:email>jaume.jorba@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Miquel-Àngel Burgos i Fradeja</mal:name>
+      <mal:email>miquel.angel.burgos@gmail.com</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Victor Dargallo</mal:name>
+      <mal:email>victordargallo@disroot.org</mal:email>
+      <mal:years>2025</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Escapçar</title>
+
+    <p>La característica d'escapçament us permet utilitzar només una part d'una imatge escanejada. Podeu habilitar l'escapçament abans o després d'escanejar una pàgina, i sempre podeu canviar les dimensions del marc d'escapçament. Quan l'escapçament està habilitat, apareixerà una màscara sobre la pàgina actual, amb l'àrea que no s'està utilitzant en gris. Podeu habilitar l'escapçament i triar les dimensions desitjades mitjançant un dels mètodes següents:</p>
+    
+    <steps>
+      <title>Utilitzant el botó de la dreta</title>
+      <item><p>Feu clic dret a qualsevol lloc de la pàgina.</p></item>
+      <item><p>Seleccioneu <gui style="menuitem">Escapça</gui>.</p></item>
+      <item><p>Trieu un dels marcs d'escapçament fixos o seleccioneu «Personalitzat» per a establir manualment les dimensions del marc d'escapçament arrossegant-ne les vores.</p></item>
+      <item><p>Feu clic al marc i manteniu-lo premut per a moure'l a la posició desitjada.</p></item>
+      <item><p>Arrossegueu les vores del marc per a definir les dimensions desitjades.</p></item>
+    </steps>
+
+    <steps>
+      <title>Utilitzant la barra d'eines</title>
+      <item><p>Premeu el botó <gui style="button">Escapça la pàgina seleccionada</gui> de la barra d'eines.</p>
+	    <note style="tip"><p>És el mateix que triar «Personalitzat» al pas 2 dels mètodes abans esmentats.</p></note></item>      
+      <item><p>Feu clic al marc i manteniu-lo premut per a moure'l a la posició desitjada.</p></item>
+      <item><p>Arrossegueu les vores del marc per a definir les dimensions desitjades.</p></item>
+    </steps>
+    
+    <note><p>Cada nova pàgina escanejada utilitzarà l'anterior retall.</p></note>
+</page>

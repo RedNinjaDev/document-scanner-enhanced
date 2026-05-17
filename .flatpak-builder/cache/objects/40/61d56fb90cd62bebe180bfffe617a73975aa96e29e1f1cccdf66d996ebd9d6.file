@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="uk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрій Чорноіван</mal:name>
+      <mal:email>yurchor@ukr.net</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Обертання сторінки</title>
+
+    <p>Ви можете змінити кут обертання сторінки до або після сканування сторінки. У поточній версії передбачено чотири способи обертання сторінки:</p>
+    
+    <steps>
+      <title>За допомогою панелі інструментів</title>
+      <item><p>Виберіть сторінку, яку слід обертати, одинарним клацанням на ній.</p></item>
+      <item><p>Натисніть одну зі стрілочок на панелі інструментів для обертання сторінки у бажаному напрямку.</p></item>
+    </steps>
+    <steps>
+      <title>За допомогою клацання правою кнопкою миші</title>
+      <item><p>Клацніть правою кнопкою миші на сторінці, яку ви хочете обертати.</p></item>
+      <item><p>Виберіть у меню пункт <gui style="menuitem">Обернути ліворуч</gui> або <gui style="menuitem">Обернути праворуч</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>За допомогою клавіатури</title>
+      <item><p>Виберіть сторінку, яку слід обертати, одинарним клацанням на ній.</p></item>
+      <item><p>Натисніть одну з таких клавіш:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Команда</em></p></td>
+		<td><p><em>Клавіатурне скорочення</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Обернути ліворуч</p></td>
+		<td><p><key>[</key> (ліва квадратна дужка)</p></td>
+	</tr>
+	<tr>
+		<td><p>Обернути праворуч</p></td>
+		<td><p><key>]</key> (права квадратна дужка)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Для нових сканованих сторінок буде використано попередні параметри обертання.</p></note>
+</page>

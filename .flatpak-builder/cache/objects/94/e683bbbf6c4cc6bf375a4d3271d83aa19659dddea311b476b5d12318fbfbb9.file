@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="ru">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Выбор разрешения сканирования</title>
+
+    <p>Разрешение по умолчанию для типа документа <gui><em>Текст</em></gui> составляет 150 dpi (точек на дюйм), а для типа документа <gui><em>Изображение</em></gui> 300 точек на дюйм. Чтобы изменить эти параметры, выполните следующие действия:</p>
+
+    <steps>
+      <item>
+        <p>Нажмите кнопку меню в правом верхнем углу окна и выберите <gui style="menuitem">Параметры</gui>.</p>
+      </item>
+      <item>
+        <p>В разделе <gui style="group">Качество</gui> измените значение <gui>Разрешение текста</gui> или <gui>Разрешение изображения</gui>.</p>
+      </item>
+      <item>
+        <p>Закройте диалоговое окно.</p>
+      </item>
+    </steps>
+    
+    <p>Доступные разрешения сканирования для обоих типов документов (текст и изображение) одинаковы и перечислены в следующей таблице:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Текстовое разрешение</em></p></td>
+		<td><p><em>Разрешение изображения</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 точек на дюйм (черновой вариант)</p></td>
+		<td><p>75 точек на дюйм (черновой вариант)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 точек на дюйм (по умолчанию)</p></td>
+		<td><p>150 точек на дюйм</p></td>
+	</tr>
+	<tr>
+		<td><p>200 точек на дюйм</p></td>
+		<td><p>200 точек на дюйм</p></td>
+	</tr>
+	<tr>
+		<td><p>300 точек на дюйм</p></td>
+		<td><p>300 точек на дюйм (по умолчанию)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 точек на дюйм</p></td>
+		<td><p>600 точек на дюйм</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 точек на дюйм (высокое разрешение)</p></td>
+		<td><p>1200 точек на дюйм (высокое разрешение)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p><gui><em>Текст</em></gui> документы всегда сканируются в черно-белом режиме, в то время как <gui><em>Изображение</em></gui> документы всегда сканируются в цвете, с любым разрешением!</p>
+    </note>
+
+</page>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="kk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Файлға сақтау</title>
+
+    <steps>
+      <item>
+	<p>Терезенің жоғарғы панеліндегі <gui style="button">Құжатты файлға сақтау</gui> батырмасын басыңыз (немесе <keyseq><key>Ctrl</key><key>S</key></keyseq> басыңыз).</p>
+      </item>
+      <item>
+	<p>Қолдау көрсетілетін файл түрлерінің бірін таңдаңыз немесе <gui>Аты</gui> өрісінде файл кеңейтуін өзгертіңіз.</p>
+      </item>
+      <item>
+	<p><gui style="button">Сақтау</gui> батырмасын басыңыз.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Қолдау көрсетілетін файл түрлері</title>
+	<tr>
+		<td><p><em>Түрі</em></p></td>
+		<td><p><em>Қысқаша сипаттамасы</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>PDF кітап сияқты бірнеше беттен тұруы мүмкін және оны тарату оңай. Тек аз ғана linux бағдарламалары PDF құжаттарын өзгерте алады, сондықтан бұл пішім ең алдымен архивтеу үшін ұсынылады. PDF құжатының өлшеміне <link xref="quality">сурет сапасы</link> әсер етеді. Қосымша ақпарат алу үшін <link href="https://en.wikipedia.org/wiki/PDF">PDF Wikipedia бетін</link> қараңыз.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>JPEG — бұл цифрлық камералар суреттерді сақтау үшін пайдаланатын файл пішімі. JPEG файлы салыстырмалы түрде шағын, таратуға өте оңай және әлеуметтік желілерге жүктеп салуға қолайлы. Көптеген операциялық жүйелерде әдепкі бойынша JPEG редакторы болады. Егер сіз бірнеше бетті сканерлесеңіз, әр бет үшін JPEG файлы жасалады. Сканерленген суреттерді өзгерткіңіз немесе жүктеп салғыңыз келсе, осы файл түрін пайдаланыңыз. JPEG файлының өлшеміне <link xref="quality">сурет сапасы</link> әсер етеді. Қосымша ақпарат алу үшін <link href="https://en.wikipedia.org/wiki/JPEG">JPEG Wikipedia бетін</link> қараңыз.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>PNG файлдары деректерді жоғалтусыз сығуды қолдайды. Бұл файлдардың өте үлкен болуына әкелуі мүмкін және таратуға қолайсыз болады. Егер сіз бірнеше бетті сканерлесеңіз, әр бет үшін PNG файлы жасалады. Қосымша ақпарат алу үшін <link href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">PNG Wikipedia бетін</link> қараңыз.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

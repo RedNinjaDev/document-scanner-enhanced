@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="bg">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Избиране на скенер</title>
+
+    <p>Ако имате няколко устройства за сканиране, може да промените устройството на основната страница.</p>
+
+    <p>Локалните в мрежата скенери се откриват автоматично при всяко стартиране на „<app>Сканиране на документи</app>“ и при всяко включване на USB скенер. Ако свържете мрежов скенер, ще трябва да рестартирате„<app>Сканиране на документи</app>“, за да бъде открит скенерът.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

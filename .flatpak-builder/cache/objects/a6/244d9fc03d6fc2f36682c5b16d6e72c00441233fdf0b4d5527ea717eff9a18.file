@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="id">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2020, 2021, 2023.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Mengirim melalui Surel</title>
+
+    <p>Untuk mengirim surel dokumen saat ini, tekan tombol menu di pojok kanan atas jendela dan pilih <gui style="menuitem">Surel</gui>. Atau, tekan (<keyseq><key>Ctrl</key><key>E</key></keyseq>). Program surel Anda akan dibuka dengan pesan baru yang berisi dokumen yang dipindai sebagai lampiran.</p>
+    <p>Jika jenis dokumen ditetapkan ke "Text", surel akan memiliki lampiran PDF untuk setiap halaman. Sebaliknya, jika jenis dokumen ditetapkan ke "Citra", surel akan memiliki lampiran JPEG untuk setiap halaman.</p>
+    <p>Lihat <link xref="save"/> untuk informasi lebih lanjut tentang format berkas.</p>
+</page>

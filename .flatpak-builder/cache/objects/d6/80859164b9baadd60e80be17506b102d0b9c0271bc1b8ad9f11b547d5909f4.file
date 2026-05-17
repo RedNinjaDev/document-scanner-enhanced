@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="sk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Tlač</title>
+
+    <p>Môžete priamo vytlačiť naskenovaný dokument bez toho, aby ste ho museli najprv uložiť. Toto je vhodné na robenie kópií dokumentov alebo fotografií.</p>
+    <steps>
+      <title>Ako vytlačiť dokument</title>
+      <item>
+	<p>Stlačte tlačidlo ponuky v pravom hornom rohu okna a vyberte <gui style="menuitem">Tlačiť</gui>. Prípadne stlačte <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Vyberte požadované nastavenia tlače a/alebo náhľad dokumentu a potom stlačte tlačidlo <gui style="button">Tlačiť</gui>.</p>
+        <note><p>Ďalšie všeobecné informácie o tlači nájdete v <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">pomocnej príručke pre plochu</link>.</p></note>
+      </item>
+     </steps>
+</page>

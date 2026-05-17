@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="ca">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Jorba</mal:name>
+      <mal:email>jaume.jorba@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Miquel-Àngel Burgos i Fradeja</mal:name>
+      <mal:email>miquel.angel.burgos@gmail.com</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Victor Dargallo</mal:name>
+      <mal:email>victordargallo@disroot.org</mal:email>
+      <mal:years>2025</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Desar a un fitxer</title>
+
+    <steps>
+      <item>
+	<p>Premeu el botó <gui style="button">Desa el document en un fitxer</gui> de la barra superior de la finestra (o premeu <keyseq><key>Ctrl</key><key>S</key></keyseq>).</p>
+      </item>
+      <item>
+	<p>Seleccioneu un dels tipus de fitxers admesos o canvieu l'extensió del fitxer al camp <gui>Nom</gui>.</p>
+      </item>
+      <item>
+	<p>Premeu el botó <gui style="button">Desa</gui>.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Tipus de fitxers suportats</title>
+	<tr>
+		<td><p><em>Tipus</em></p></td>
+		<td><p><em>Breu descripció</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>Un PDF pot contenir diverses pàgines, com ara un llibre, i és fàcil de distribuir. Només un petit nombre de programes del Linux poden modificar documents PDF, de manera que aquest format es recomana principalment per a arxivar. La mida del document PDF es veu afectada per la <link xref="quality">qualitat de la imatge </link>. Vegeu la <link href="https://ca.wikipedia.org/wiki/PDF">pàgina de la Viquipèdia del PDF</link> per a més informació.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>El JPEG és el format de fitxer utilitzat per les càmeres digitals per a desar fotografies. Un fitxer JPEG és relativament petit, molt fàcil de distribuir i apte per a la càrrega a les xarxes socials. La majoria de sistemes operatius inclouen un editor de JPEG per defecte. Si heu escanejat diverses pàgines, es crearà un fitxer JPEG per cada pàgina. Utilitzeu aquest tipus de fitxer si voleu modificar o carregar les imatges escanejades. La mida del fitxer JPEG es veu afectada per la <link xref="quality">qualitat de la imatge</link>. Vegeu la <link href="https://ca.wikipedia.org/wiki/JPEG">pàgina de la Viquipèdia del JPEG</link> per a més informació.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>Els fitxers PNG admeten compressió de dades sense pèrdua. Això els fa molt grans i inadequats per a la distribució. Si heu escanejat diverses pàgines, es crearà un fitxer PNG per cada pàgina. Vegeu la <link href="https://ca.wikipedia.org/wiki/PNG">pàgina de la Viquipèdia del PNG</link> per a més informació.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

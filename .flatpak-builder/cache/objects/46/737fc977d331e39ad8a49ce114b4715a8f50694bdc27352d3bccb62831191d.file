@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="eu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Eskanerra hautatzea</title>
+
+    <p>Eskaneatzeko gailu anitz badituzu, gailua aldatu dezakezu orrialde nagusian.</p>
+
+    <p>Eskaner lokalak automatikoki detektatzen dira <app>Dokumentuen eskanerra</app> abiarazten denean eta USD eskaner bat konektatzen denean. Sareko eskaner bat konektatzen bada, <app>Dokumentuen eskanerra</app> berrabiarazi beharko da eskaner berria detektatua izan dadin.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

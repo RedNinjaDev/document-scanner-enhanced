@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="sr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Слање е-поштом</title>
+
+    <p>Да бисте послали тренутни документ е-поштом, притисните дугме изборника у горњем десном углу прозора и изаберите <gui style="menuitem">Е-пошта</gui>. Алтернативно, притисните <keyseq><key>Ctrl</key><key>E</key></keyseq>. Ваш програм за е-пошту ће бити отворен са новом поруком која садржи скенирани документ као прилог.</p>
+    <p>Ако је врста документа постављена на „Текст“, е-пошта ће имати ПДФ прилог за сваку страницу. Насупрот томе, ако је врста документа постављена на „Слика“, е-пошта ће имати ЈПЕГ прилог за сваку страницу.</p>
+    <p>Погледајте <link xref="save"/> за више информација о форматима датотека.</p>
+</page>

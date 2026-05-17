@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="es">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2017 - 2021</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Enviar por correo electrónico</title>
+
+    <p>Para enviar por correo electrónico el documento actual pulse el botón de menú en la esquina superior derecha de la ventana y elija <gui style="menuitem">Correo electrónico</gui>. También puede pulsar <keyseq><key>Ctrl</key><key>E</key></keyseq>. Se abrirá en su programa de correo electrónico un mensaje nuevo que contendrá el documento escaneado en forma de archivo adjunto.</p>
+    <p>Si el tipo de documento se estableció en «Texto», el correo electrónico tendrá un archivo PDF adjunto para cada página. Por el contrario, si el tipo de documento se estableció en «Foto», el correo electrónico tendrá un archivo JPEG adjunto para cada página.</p>
+    <p>Consulte <link xref="save"/> para más información sobre los formatos de archivo.</p>
+</page>

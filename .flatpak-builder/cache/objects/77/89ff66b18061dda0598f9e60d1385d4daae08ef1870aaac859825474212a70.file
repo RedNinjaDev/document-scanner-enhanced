@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanning" xml:lang="ru">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <title type="sort">0</title>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <title type="sort" its:translate="no">0</title>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Сканирование страницы</title>
+
+    <p>Чтобы отсканировать документ:</p>
+    <steps>
+      <item><p>Подключите сканер к компьютеру и включите его.</p></item>
+      <item><p> <app>Сканер документов</app>.</p></item>
+      <item><p>Щелкните шестерёнку справа от кнопки <gui style="button">Сканировать</gui>.</p></item>
+      <item><p>Выберите тип сканируемого документа: <gui style="button">Текст</gui> или <gui style="button">Изображение</gui>.</p>
+	     <media type="image" src="figures/scan_toolbar.png"/></item>
+      <item><p>Нажмите кнопку «Сканировать» на панели инструментов (или нажмите кнопку <keyseq><key>Ctrl</key><key>1</key></keyseq>).</p></item>
+    </steps>
+
+    <note><p>Страница будет отображаться по мере сканирования. Чтобы остановить сканирование в любой момент, нажмите клавишу <key>Esc</key> на клавиатуре. Каждая отсканированная страница помещается в конец документа.</p></note>
+
+    <p>Чтобы изменить качество отсканированной страницы, см. <link xref="dpi"/>.</p>
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="sv">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Isak Östlund</mal:name>
+      <mal:email>translate@catnip.nu</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Ställa in bildkvaliteten</title>
+
+    <p>Du kan justera bildkvaliteten som används när skanningen konverteras till en fil genom att ändra inställningen i inställningsdialogen. Låg kvalitet resulterar i liten filstorlek men kan göra bilden suddig eller blockeffekter synliga. Hög kvalitet behåller all skannad information men kräver en större filstorlek. Läs <link href="https://sv.wikipedia.org/wiki/Destruktiv_komprimering">Wikipedias artikel om destruktiv komprimering</link> för mer information.</p>    
+
+    <steps>
+        <item>
+          <p>Tryck på menyknappen i fönstrets övre högra hörn och välj <gui style="menuitem">Inställningar</gui>.</p>
+        </item>
+        <item>
+          <p>Dra i skjutreglaget för <gui>Komprimering</gui> i avsnittet <gui style="group">Kvalitet</gui>.</p>
+        </item>
+        <item>
+          <p>Stäng dialogrutan.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

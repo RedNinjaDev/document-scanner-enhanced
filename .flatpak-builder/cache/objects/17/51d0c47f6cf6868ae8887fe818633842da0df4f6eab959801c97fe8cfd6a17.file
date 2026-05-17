@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanning" xml:lang="uk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <title type="sort">0</title>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <title type="sort" its:translate="no">0</title>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрій Чорноіван</mal:name>
+      <mal:email>yurchor@ukr.net</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Сканування сторінки</title>
+
+    <p>Щоб виконати сканування документа за допомогою сканера, виконайте такі дії:</p>
+    <steps>
+      <item><p>З'єднайте сканер із вашим комп'ютером і увімкніть його.</p></item>
+      <item><p>Запустіть програму <app>Засіб для сканування документів</app>.</p></item>
+      <item><p>Натисніть зубчик праворуч від кнопки <gui style="button">Сканувати</gui>.</p></item>
+      <item><p>Виберіть тип документа, який будете сканувати, — <gui style="button">Текст</gui> або <gui style="button">Зображення</gui>.</p>
+	     <media type="image" src="figures/scan_toolbar.png"/></item>
+      <item><p>Натисніть кнопку «Сканувати» на панелі інструментів (або натисніть комбінацію клавіш <keyseq><key>Ctrl</key><key>1</key></keyseq>).</p></item>
+    </steps>
+
+    <note><p>Програма показуватиме результати сканування у інтерактивному режимі. Щоб зупинити сканування, ви будь-коли можете натиснути клавішу <key>Esc</key> на клавіатурі. Кожну наступну сторінку програма розташовуватиме наприкінці документа.</p></note>
+
+    <p>Щоб змінити якість сканування сторінки, скористайтеся порадами з розділу <link xref="dpi"/>.</p>
+</page>

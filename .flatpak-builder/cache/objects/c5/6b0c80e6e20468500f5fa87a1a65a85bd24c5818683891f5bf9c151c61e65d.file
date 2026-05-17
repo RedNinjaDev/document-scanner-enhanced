@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="sk">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Nastavenie kvality obrázka</title>
+
+    <p>Zmenou nastavení v dialógovom okno predvolieb môžete upraviť kvalitu obrázka, ktorá sa používa pri konverzii skenu do súboru. Použitie nízkej kvality vedie k malej veľkosti súboru, ale prejaví sa rozmazaním alebo „kockatosťou“ obrazu. Vysoká kvalita zachová všetky naskenované informácie, no na úkor väčšej veľkosť súboru. Ďalšie informácie nájdete na stránke <link href="https://en.wikipedia.org/wiki/Lossy_compression">Stránka Wikipédie o stratovej kompresii</link>.</p>    
+
+    <steps>
+        <item>
+          <p>Stlačte tlačidlo ponuky v pravom hornom rohu okna a vyberte <gui style="menuitem">Nastavenia</gui>.</p>
+        </item>
+        <item>
+          <p>V sekcii <gui style="group">Kvalita</gui> posúvajte posuvník <gui>Komprimácia</gui>.</p>
+        </item>
+        <item>
+          <p>Zatvorte dialógové okno.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

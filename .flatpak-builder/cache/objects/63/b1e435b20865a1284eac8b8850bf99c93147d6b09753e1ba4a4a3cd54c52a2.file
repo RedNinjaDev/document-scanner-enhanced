@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="id">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2020, 2021, 2023.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Mengatur Resolusi Pemindaian</title>
+
+    <p>Resolusi baku untuk dokumen jenis <gui><em>Teks</em></gui> adalah 150 dpi (titik per inci) dan untuk jenis dokumen <gui><em>Citra</em></gui> 300 dpi. Untuk mengubah pengaturan ini:</p>
+
+    <steps>
+      <item>
+        <p>Tekan tombol menu di pojok kanan atas jendela dan pilih <gui style="menuitem">Preferensi</gui>.</p>
+      </item>
+      <item>
+        <p>Dalam bagian <gui style="group">Kualitas</gui> ubah nilai <gui>Resolusi Teks</gui> atau <gui>Resolusi Citra</gui>.</p>
+      </item>
+      <item>
+        <p>Tutup dialog.</p>
+      </item>
+    </steps>
+    
+    <p>Resolusi pemindaian yang tersedia untuk kedua jenis dokumen (Teks dan Citra) adalah sama dan tercantum dalam tabel berikut ini:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Resolusi Teks</em></p></td>
+		<td><p><em>Resolusi Citra</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (draf)</p></td>
+		<td><p>75 dpi (draf)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (baku)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (baku)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (resolusi tinggi)</p></td>
+		<td><p>1200 dpi (resolusi tinggi)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Dokumen <gui><em>Teks</em></gui> selalu dipindai dalam hitam dan putih, sementara dokumen <gui><em>Citra</em></gui> selalu dipindai dalam warna, pada resolusi apapun!</p>
+    </note>
+
+</page>

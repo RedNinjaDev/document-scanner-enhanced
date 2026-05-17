@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanning" xml:lang="sv">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <title type="sort">0</title>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <title type="sort" its:translate="no">0</title>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Isak Östlund</mal:name>
+      <mal:email>translate@catnip.nu</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Skanna en sida</title>
+
+    <p>För att skanna ett dokument från din bildläsare:</p>
+    <steps>
+      <item><p>Koppla in bildläsaren till din dator och starta den.</p></item>
+      <item><p>Öppna <app>Dokumentbildläsare</app>.</p></item>
+      <item><p>Klicka på kugghjulet till höger om knappen <gui style="button">Skanna</gui>.</p></item>
+      <item><p>Välj vilken typ av dokument du skannar: <gui style="button">Text</gui> eller <gui style="button">Bild</gui>.</p>
+	     <media type="image" src="figures/scan_toolbar.png"/></item>
+      <item><p>Klicka på knappen "Skanna" i verktygsfältet (eller tryck <keyseq><key>Ctrl</key><key>1</key></keyseq>).</p></item>
+    </steps>
+
+    <note><p>Sidan visas medan den skannas. För att när som helst avbryta skanningen, tryck på tangenten <key>Esc</key>. Varje sida du skannar placeras sist i dokumentet.</p></note>
+
+    <p>För att ändra kvaliteten på en skannad sida, läs <link xref="dpi"/>.</p>
+</page>

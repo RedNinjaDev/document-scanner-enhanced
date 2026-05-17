@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="uk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрій Чорноіван</mal:name>
+      <mal:email>yurchor@ukr.net</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Обрізання</title>
+
+    <p>За допомогою можливості обрізання ви можете отримувати лише частину зображення. Ви можете увімкнути обрізання до або після сканування сторінки і ви завжди можете змінити розміри обрізаного кадру. Якщо увімкнено обрізання, програма покаже маску на поточній сторінці. Невикористані частини зображення буде показано сірим кольором. Ви можете увімкнути обрізання і вибрати бажані розміри у один із таких методів:</p>
+    
+    <steps>
+      <title>За допомогою клацання правою кнопкою миші</title>
+      <item><p>Клацніть правою кнопкою миші будь-де на сторінці.</p></item>
+      <item><p>Виберіть <gui style="menuitem">Обрізати</gui>.</p></item>
+      <item><p>Виберіть один із фіксованих кадрів обрізання або пункт «Нетипові» для вибору розмірів кадру обрізання вручу, перетягуванням його країв.</p></item>
+      <item><p>Натисніть і перетягніть кадр, щоб пересунути його у бажану позицію.</p></item>
+      <item><p>Перетягніть межі кадру, щоб встановити бажані розмірності.</p></item>
+    </steps>
+
+    <steps>
+      <title>За допомогою панелі інструментів</title>
+      <item><p>Натисніть кнопку <gui style="button">Обрізати позначену сторінку</gui> на панелі інструментів.</p>
+	    <note style="tip"><p>Це те саме, що і вибрати варіант «Нетипові» на кроці 2 у раніше описаних способах.</p></note></item>      
+      <item><p>Натисніть і перетягніть кадр, щоб пересунути його у бажану позицію.</p></item>
+      <item><p>Перетягніть межі кадру, щоб встановити бажані розмірності.</p></item>
+    </steps>
+    
+    <note><p>Для нових сканованих сторінок буде використано попередню рамку обрізання.</p></note>
+</page>

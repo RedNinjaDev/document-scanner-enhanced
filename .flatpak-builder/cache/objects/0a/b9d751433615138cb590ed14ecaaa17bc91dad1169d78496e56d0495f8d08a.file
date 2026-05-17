@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanning" xml:lang="ro">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <title type="sort">0</title>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <title type="sort" its:translate="no">0</title>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Scanarea unei pagini</title>
+
+    <p>Pentru a scana un document din scanerul dumneavoastră:</p>
+    <steps>
+      <item><p>Conectați scanerul la calculator și porinți-l.</p></item>
+      <item><p>Deschide <app>Scanare simplă</app>.</p></item>
+      <item><p>Click the cog to the right of the <gui style="button">Scan</gui> button.</p></item>
+      <item><p>Selectați tipul de document pe care îl scanați: <gui style="button">Text</gui> sau <gui style="button">Imagine</gui>.</p>
+	     <media type="image" src="figures/scan_toolbar.png"/></item>
+      <item><p>Clic pe butonul „Scanează” din bara de unelte (sau apăsați <keyseq><key>Ctrl</key><key>1</key></keyseq>).</p></item>
+    </steps>
+
+    <note><p>Pagina va apărea în timp ce este scanată. Pentru a opri scanarea puteți apăsa oricând tasta <key>Esc</key>. Fiecare pagină pe care o scanați este plasată la sfârșitul documentului.</p></note>
+
+    <p>Pentru a modifica calitatea unei pagini scanate, consultați <link xref="dpi"/>.</p>
+</page>

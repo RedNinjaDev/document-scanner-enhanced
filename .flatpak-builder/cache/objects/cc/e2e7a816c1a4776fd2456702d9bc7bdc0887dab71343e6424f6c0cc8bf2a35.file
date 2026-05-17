@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="hu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at ubuntu dot com</mal:email>
+      <mal:years>2014, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Meskó Balázs</mal:name>
+      <mal:email>mesko dot balazs at fsf dot hu</mal:email>
+      <mal:years>2021.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Mentés fájlba</title>
+
+    <steps>
+      <item>
+	<p>Nyomja meg az ablak felső sávjában lévő <gui style="button">Dokumentum fájlba mentése</gui> gombot (vagy nyomja meg a <keyseq><key>Ctrl</key><key>S</key></keyseq> billentyűkombinációt).</p>
+      </item>
+      <item>
+	<p>Válassza ki a támogatott fájltípusok egyikét, vagy változtassa meg a fájl kiterjesztését a <gui>Név</gui> mezőben.</p>
+      </item>
+      <item>
+	<p>Nyomja meg a <gui style="button">Mentés</gui> gombot.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>A támogatott fájltípusok</title>
+	<tr>
+		<td><p><em>Típus</em></p></td>
+		<td><p><em>Rövid leírás</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>Egy PDF a könyvekhez hasonlóan több oldalt is tartalmazhat, és egyszerűen terjeszthető. Csak kevés linuxos program képes a PDF dokumentumok módosítására, így ez a formátum elsődlegesen archiválásra javasolt. A PDF dokumentum méretét a <link xref="quality">képminőség</link> befolyásolja. További információkért nézze meg a <link href="https://hu.wikipedia.org/wiki/Portable_Document_Format">PDF Wikipédia-szócikket</link>.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>A JPEG fájlformátumot a digitális fényképezőgépek használják képek mentésére. A JPEG fájlok viszonylag kicsik, egyszerűen terjeszthetők és alkalmasak a közösségi média oldalakra feltöltésre. A legtöbb operációs rendszer alapesetben tartalmaz JPEG szerkesztőt. Ha több oldalt is beolvasott, akkor minden egyes oldalhoz létrejön egy JPEG fájl. Ezt a fájltípust akkor használja, ha szeretné módosítani vagy feltölteni a beolvasott képeket. A JPEG fájlok méretét a <link xref="quality">képminőség</link> befolyásolja. További információkért nézze meg a <link href="https://hu.wikipedia.org/wiki/JPEG">JPEG Wikipédia-szócikket</link>.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>A PNG fájlok támogatják a veszteségmentes tömörítést. Ez nagyon naggyá teheti a fájlokat, így terjesztéshez lehet, hogy nem megfelelők. Ha több oldalt olvasott be, akkor minden oldalhoz egy külön PNG fájl készül. További információkért nézze meg a <link href="https://hu.wikipedia.org/wiki/PNG">PNG Wikipédia-szócikket</link>.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

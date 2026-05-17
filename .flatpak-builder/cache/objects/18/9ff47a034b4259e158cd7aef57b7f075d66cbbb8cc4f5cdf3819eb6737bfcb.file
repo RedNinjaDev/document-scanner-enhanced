@@ -1,0 +1,27 @@
+[Application]
+name=org.gnome.SimpleScan
+runtime=org.gnome.Platform/x86_64/49
+sdk=org.gnome.Sdk/x86_64/49
+tags=devel;
+command=simple-scan
+
+[Context]
+shared=network;
+sockets=x11;wayland;fallback-x11;
+devices=dri;all;
+
+[Session Bus Policy]
+org.freedesktop.ColorManager=talk
+
+[Extension org.gnome.SimpleScan.Locale]
+directory=share/runtime/locale
+autodelete=true
+locale-subset=true
+
+[Extension org.gnome.SimpleScan.Debug]
+directory=lib/debug
+autodelete=true
+no-autodownload=true
+
+[Build]
+built-extensions=org.gnome.SimpleScan.Locale;org.gnome.SimpleScan.Debug;

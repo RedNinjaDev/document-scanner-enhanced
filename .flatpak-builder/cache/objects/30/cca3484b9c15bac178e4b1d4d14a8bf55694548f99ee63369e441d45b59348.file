@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="it">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Ritagliare</title>
+
+    <p>La funzione ritaglio consente di utilizzare solo una parte dell'immagine acquisita. Si può abilitare il ritaglio prima o dopo l'acquisizione di una pagina ed è sempre possibile modificare le dimensioni della cornice di ritaglio. Quando il ritaglio è abilitato, verrà visualizzata una maschera sulla pagina corrente con l'area non utilizzata mostrata in grigio. È possibile abilitare il ritaglio e scegliere le dimensioni desiderate tramite uno dei seguenti metodi:</p>
+    
+    <steps>
+      <title>Usare il clic destro</title>
+      <item><p>Fare clic con il tasto destro del mouse ovunque sulla pagina.</p></item>
+      <item><p>Selezionare <gui style="menuitem">Ritaglia</gui>.</p></item>
+      <item><p>Scegliere uno dei riquadri di ritaglio fissi o selezionare "Personalizzato" per impostare manualmente le dimensioni del riquadro di ritaglio trascinandone i bordi.</p></item>
+      <item><p>Fare clic e trascinare il riquadro per spostarlo nella posizione desiderata.</p></item>
+      <item><p>Trascinare i bordi del riquadro per impostare le dimensioni desiderate.</p></item>
+    </steps>
+
+    <steps>
+      <title>Usando la barra degli strumenti</title>
+      <item><p>Premere il pulsante <gui style="button">Ritaglia la pagina selezionata</gui> nella barra degli strumenti.</p>
+	    <note style="tip"><p>Equivale a scegliere "Personalizzato" nel passaggio 2 dei metodi sopra menzionati.</p></note></item>      
+      <item><p>Fare clic e trascinare il riquadro per spostarlo nella posizione desiderata.</p></item>
+      <item><p>Trascinare i bordi del riquadro per impostare le dimensioni desiderate.</p></item>
+    </steps>
+    
+    <note><p>Ogni nuova pagina acquisita utilizzerà il ritaglio precedente.</p></note>
+</page>

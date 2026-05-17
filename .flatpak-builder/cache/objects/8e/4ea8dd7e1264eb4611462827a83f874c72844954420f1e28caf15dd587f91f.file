@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="gl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marcos Lans</mal:name>
+      <mal:email>marcoslansgarza@gmail.com</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Estabelecendo a resolución do escáner</title>
+
+    <p>A resolución predeterminada para os documentos de tipo <gui><em>Texto</em></gui> son 150 ppp (puntos por polgada) e para os documentos de tipo <gui><em>Imaxe</em></gui> de 300 ppp. Para cambiar estes axustes:</p>
+
+    <steps>
+      <item>
+        <p>Prema o botón de menú na esquina superior dereita da xanela e seleccione <gui style="menuitem">Preferencias</gui>.</p>
+      </item>
+      <item>
+        <p>Na sección <gui style="group">Calidade</gui> cambie o valor da <gui>Resolución do texto</gui> ou <gui>Resolución da imaxe</gui>.</p>
+      </item>
+      <item>
+        <p>Peche o diálogo.</p>
+      </item>
+    </steps>
+    
+    <p>As resolucións de dixitalización dispoñíbeis para os dous tipos de documento (texto e foto) son as mesmas e lístanse na seguinte táboa:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Resolución do texto</em></p></td>
+		<td><p><em>Resolución da imaxe</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 ppp (borrador)</p></td>
+		<td><p>75 ppp (borrador)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 ppp (predeterminaa)</p></td>
+		<td><p>150 ppp</p></td>
+	</tr>
+	<tr>
+		<td><p>200 ppp</p></td>
+		<td><p>200 ppp</p></td>
+	</tr>
+	<tr>
+		<td><p>300 ppp</p></td>
+		<td><p>300 ppp (predeterminada)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 ppp</p></td>
+		<td><p>600 ppp</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 ppp (alta resolución)</p></td>
+		<td><p>1200 ppp (alta resolución)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 ppp</p></td>
+		<td><p>2400 ppp</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Os documentos de <gui><em>texto</em></gui> escanéanse sempre en branco e negro mentres que os documentos de <gui><em>Fotografía</em></gui> son escaneados sempre a cor en todas as resolucións!</p>
+    </note>
+
+</page>

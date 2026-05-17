@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="brightness-contrast" xml:lang="es">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2017 - 2021</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Establecer el brillo y el contraste</title>
+
+    <p>Algunos escáneres permiten al usuario ajustar el brillo y el contraste al escanear. Si sus escaneos resultan demasiado oscuros o demasiado claros puede ajustar estos parámetros:</p>
+
+  <steps>
+    <item>
+      <p>Pulse el botón de menú en la esquina superior derecha de la ventana y elija <gui style="menuitem">Preferencias</gui>.</p>
+    </item>
+    <item>
+      <p>In <gui style="group">Quality</gui> section drag the <gui>Brightness</gui> and/or <gui>Contrast</gui> sliders.</p>
+    </item>
+    <item>
+      <p>Cierre el diálogo.</p>
+      <media type="image" src="figures/preferences.png"/>
+    </item>
+  </steps>
+    
+</page>

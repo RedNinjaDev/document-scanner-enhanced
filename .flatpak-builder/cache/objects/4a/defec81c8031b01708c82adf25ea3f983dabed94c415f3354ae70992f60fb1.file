@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="brightness-contrast" xml:lang="bg">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Задаване на яркост и контраст</title>
+
+    <p>Някои скенери позволяват на потребителя да наглася яркостта и контраста при сканиране. Ако сканирането ви излиза твърде тъмно или твърде светло, може да нагласите тези настройки:</p>
+
+  <steps>
+    <item>
+      <p>Натиснете бутона за меню в горния десен ъгъл на прозореца и изберете <gui style="menuitem">Настройки</gui>.</p>
+    </item>
+    <item>
+      <p>В раздела <gui style="group">Качество</gui> влачете плъзгачите <gui>Яркост</gui> и/или <gui>Контраст</gui>.</p>
+    </item>
+    <item>
+      <p>Затворете диалоговия прозорец.</p>
+      <media type="image" src="figures/preferences.png"/>
+    </item>
+  </steps>
+    
+</page>

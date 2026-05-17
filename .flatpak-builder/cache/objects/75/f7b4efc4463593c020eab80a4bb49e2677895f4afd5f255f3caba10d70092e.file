@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="bg">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Завъртане на страница</title>
+
+    <p>Може да промените завъртането на една страница преди или след сканирането ѝ. В момента има четири начина за завъртане на страница:</p>
+    
+    <steps>
+      <title>Използване на лентата с инструменти</title>
+      <item><p>Изберете страницата, която искате да завъртите, като натиснете веднъж върху нея.</p></item>
+      <item><p>Натиснете една от стрелките в лентата с инструменти, за да завъртите страницата в желаната посока.</p></item>
+    </steps>
+    <steps>
+      <title>Използване на десния бутон на мишката</title>
+      <item><p>Натиснете с десния бутон на мишката върху страницата, която искате да завъртите.</p></item>
+      <item><p>Изберете <gui style="menuitem">Завъртане наляво</gui> или <gui style="menuitem">Завъртане надясно</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Използване на клавишни комбинации</title>
+      <item><p>Изберете страницата, която искате да завъртите, като натиснете веднъж върху нея.</p></item>
+      <item><p>Натиснете един от следните клавишни комбинации:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Команда</em></p></td>
+		<td><p><em>Клавишна комбинация</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Завъртане наляво</p></td>
+		<td><p><key>[</key> (лява квадратна скоба)</p></td>
+	</tr>
+	<tr>
+		<td><p>Завъртане надясно</p></td>
+		<td><p><key>[</key> (дясна квадратна скоба)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Всяка нова сканирана страница ще използва предишното завъртане.</p></note>
+</page>

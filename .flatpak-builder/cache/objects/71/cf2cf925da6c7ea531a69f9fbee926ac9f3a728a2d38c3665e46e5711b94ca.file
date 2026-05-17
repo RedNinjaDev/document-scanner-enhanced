@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="es">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2017 - 2021</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Imprimir</title>
+
+    <p>Puede imprimir un documento escaneado directamente desde su interfaz, sin tener que guardar primero el documento. Esto es muy útil para hacer copias de documentos o fotos.</p>
+    <steps>
+      <title>Para imprimir un documento</title>
+      <item>
+	<p>Pulse el botón de menú en la esquina superior derecha de la ventana y elija <gui style="menuitem">Imprimir</gui>. También puede pulsar <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Seleccione la configuración de impresión que quiera y/o la vista previa de impresión del documento y pulse el botón <gui style="button">Imprimir</gui>.</p>
+        <note><p>Consulte <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">la ayuda del escritorio</link> para ver información general sobre cómo imprimir.</p></note>
+      </item>
+     </steps>
+</page>

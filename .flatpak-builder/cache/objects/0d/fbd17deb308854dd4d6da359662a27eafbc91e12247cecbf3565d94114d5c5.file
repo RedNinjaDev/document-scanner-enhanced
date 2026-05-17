@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="ca">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Jorba</mal:name>
+      <mal:email>jaume.jorba@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Miquel-Àngel Burgos i Fradeja</mal:name>
+      <mal:email>miquel.angel.burgos@gmail.com</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Victor Dargallo</mal:name>
+      <mal:email>victordargallo@disroot.org</mal:email>
+      <mal:years>2025</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Enviar per correu electrònic</title>
+
+    <p>Per a enviar per correu electrònic el document actual, premeu el botó de menú de la cantonada superior dreta de la finestra i seleccioneu <gui style="menuitem">Correu electrònic</gui> o premeu <keyseq><key>Ctrl</key><key>E</key></keyseq>. El vostre programa de correu electrònic s'obrirà amb un missatge nou que contindrà el document escanejat com a fitxer adjunt.</p>
+    <p>Si el tipus de document s'ha definit com a «Text», el correu electrònic tindrà un fitxer PDF adjunt per cada pàgina. Contràriament, si el tipus de document s'ha definit com a «Imatge», el correu electrònic tindrà un fitxer JPEG adjunt per cada pàgina.</p>
+    <p>Per a més informació <link xref="save"/> sobre els formats de fitxer.</p>
+</page>

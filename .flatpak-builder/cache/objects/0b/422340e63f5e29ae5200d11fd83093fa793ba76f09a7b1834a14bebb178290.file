@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="brightness-contrast" xml:lang="uk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрій Чорноіван</mal:name>
+      <mal:email>yurchor@ukr.net</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Встановлення яскравості і контрастності</title>
+
+    <p>У деяких сканерах передбачено можливість для користувача змінити яскравість і контрастність при скануванні. Якщо ваші заскановані зображення є надто темними або надто світлими, скоригуйте ці параметри:</p>
+
+  <steps>
+    <item>
+      <p>Натисніть кнопку меню у верхньому правому куті вікна і виберіть <gui style="menuitem">Налаштування</gui>.</p>
+    </item>
+    <item>
+      <p>У розділі <gui style="group">Якість</gui> перетягніть повзунки <gui>Яскравість</gui> і/або <gui>Контрастність</gui>.</p>
+    </item>
+    <item>
+      <p>Закрийте вікно.</p>
+      <media type="image" src="figures/preferences.png"/>
+    </item>
+  </steps>
+    
+</page>

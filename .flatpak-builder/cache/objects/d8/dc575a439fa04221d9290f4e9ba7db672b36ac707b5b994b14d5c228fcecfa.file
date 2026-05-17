@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="bg">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Отпечатване</title>
+
+    <p>Може да печатате сканиран документ директно, без да е необходимо първо да го запазвате. Това е удобно за създаване на копия на документи или снимки.</p>
+    <steps>
+      <title>За отпечатване на документ</title>
+      <item>
+	<p>Натиснете бутона за меню в горния десен ъгъл на прозореца и изберете <gui style="menuitem">Печат</gui>. Също така може да натиснете <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Изберете желаните настройки за печат и/или прегледайте документа, след което натиснете <gui style="button">Печат</gui>.</p>
+        <note><p>За обща информация относно отпечатване вижте <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">помощта за работната среда</link>.</p></note>
+      </item>
+     </steps>
+</page>

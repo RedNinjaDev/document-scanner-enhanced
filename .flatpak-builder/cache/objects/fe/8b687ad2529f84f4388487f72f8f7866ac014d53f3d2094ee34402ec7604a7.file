@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="eu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Postaz bidaltzea</title>
+
+    <p>Uneko dokumentua postaz bidaltzeko, erabili <gui style="menuitem">Posta</gui>. Bestela, sakatu <keyseq><key>Ctrl</key><key>E</key></keyseq>. Posta elektronikoko zure programa irekiko da, eskaneatutako dokumentua erantsita duen mezu berri bat erakutsiz.</p>
+    <p>Dokumentu mota "Testua" bada, posta-mezuak PDF eranskin bat izango du orrialde bakoitzeko. Era berean, dokumentu mota "Irudia" bada, posta-mezuak JPEG eranskin bat izango du orrialdeko.</p>
+    <p>Ikus <link xref="save"/> fitxategi-formatuei buruzko informazio gehiagorako.</p>
+</page>

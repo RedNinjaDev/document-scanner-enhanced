@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanning" xml:lang="pt_BR">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <title type="sort">0</title>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <title type="sort" its:translate="no">0</title>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Fábio Nogueira</mal:name>
+      <mal:email>fnogueira@gnome.org</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Leônidas Araújo</mal:name>
+      <mal:email>leorusvellt@hotmail.com</mal:email>
+      <mal:years>2022-2024</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Digitalizando uma página</title>
+
+    <p>Para digitalizar um documento no seu scanner:</p>
+    <steps>
+      <item><p>Conecte o scanner a seu computador e ligue-o.</p></item>
+      <item><p>Abra o <app>Digitalizador de documento</app>.</p></item>
+      <item><p>Clique na engrenagem à direita do botão <gui style="button">Digitalizar</gui>.</p></item>
+      <item><p>Selecione o tipo de documento que você está digitalizando: <gui style="button">Texto</gui> ou <gui style="button">Imagem</gui>.</p>
+	     <media type="image" src="figures/scan_toolbar.png"/></item>
+      <item><p>Clique no botão “Digitalizar” na barra de ferramentas ( ou pressione <keyseq><key>Ctrl</key><key>1</key></keyseq>).</p></item>
+    </steps>
+
+    <note><p>A página será mostrada na medida em que é digitalizada. Para parar a digitalização a qualquer momento, pressione a tecla <key>Esc</key> no teclado. Cada página que você digitaliza é colocada no final do documento.</p></note>
+
+    <p>Para alterar a qualidade de uma página digitalizada, veja <link xref="dpi"/>.</p>
+</page>

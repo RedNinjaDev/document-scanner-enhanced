@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="reorder" xml:lang="tr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sabri Ünal</mal:name>
+      <mal:email>libreajans@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Sayfaları Yeniden Sıralamak</title>
+
+    <p>Bir sayfayı taşımak için, üstünde sağ tıklayıp <gui style="menuitem">Sola Taşı</gui> ya da <gui style="menuitem">Sağa Taşı</gui> seçeneğini seçin.</p> 
+    
+    <p>Alternatif olarak, pencerenin sağ üst köşesindeki menü düğmesine tıklayın ve <gui style="menuitem">Sayfaları Yeniden Sırala</gui>'yı seçin.</p> 
+
+</page>

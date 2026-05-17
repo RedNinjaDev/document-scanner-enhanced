@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="sr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Бирање скенера</title>
+
+    <p>Ако имате више уређаја за скенирање, можете променити уређај на главној страници.</p>
+
+    <p>Локални скенери се аутоматски откривају сваки пут када се покрене <app>Скенер докумената</app> и сваки пут када прикључите USB скенер. Ако повежете мрежни скенер, мораћете поново да покренете <app>Скенер докумената</app> како би скенер био откривен.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

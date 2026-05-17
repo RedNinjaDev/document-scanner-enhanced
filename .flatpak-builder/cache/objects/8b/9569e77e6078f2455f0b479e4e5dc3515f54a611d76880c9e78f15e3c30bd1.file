@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="sr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Подешавање резолуције скенирања</title>
+
+    <p>Подразумевана резолуција за врсту документа <gui><em>Текст</em></gui> је 150 тпи (тачака по инчу), а за врсту документа <gui><em>Слика</em></gui> је 300 тпи. Да промените ова подешавања:</p>
+
+    <steps>
+      <item>
+        <p>Притисните дугме менија у горњем десном углу прозора и изаберите <gui style="menuitem">Поставки</gui>.</p>
+      </item>
+      <item>
+        <p>У одељку <gui style="group">Квалитет</gui> промените вредност за <gui>Резолуција текста</gui> или <gui>Резолуција слике</gui>.</p>
+      </item>
+      <item>
+        <p>Затворите прозорче.</p>
+      </item>
+    </steps>
+    
+    <p>Доступне резолуције скенирања за обе врсте докумената (текст и слика) су исте и наведене су у следећој табели:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Резолуција текста</em></p></td>
+		<td><p><em>Резолуција слике</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 тпи (нацрт)</p></td>
+		<td><p>75 тпи (нацрт)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 тпи (подразумевано)</p></td>
+		<td><p>150 тпи</p></td>
+	</tr>
+	<tr>
+		<td><p>200 тпи</p></td>
+		<td><p>200 тпи</p></td>
+	</tr>
+	<tr>
+		<td><p>300 тпи</p></td>
+		<td><p>300 тпи (подразумевано)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 тпи</p></td>
+		<td><p>600 тпи</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 тпи (висока резолуција)</p></td>
+		<td><p>1200 тпи (висока резолуција)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 тпи</p></td>
+		<td><p>2400 тпи</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p><gui><em>Текст</em></gui> документа се увек скенирају црно-бело, док се <gui><em>Слика</em></gui> документа увек скенирају у боји, при било којој резолуцији!</p>
+    </note>
+
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="ro">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Selectarea unui scaner</title>
+
+    <p>Dacă aveți mai multe dispozitive de scanare puteți schimba dispozitivul pe pagina principală.</p>
+
+    <p>Scanerele dumneavoastră locale sunt detectate automat de fiecare dată când porniți <app>Scanare simplă</app> și de fiecare dată după ce conectați un scaner USB. Dacă conectați un scaner conectat la rețea în timp ce <app>Scanare simplă</app> rulează, va trebui să reporniți <app>Scanare simplă</app> pentru ca scanerul să fie detectat.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

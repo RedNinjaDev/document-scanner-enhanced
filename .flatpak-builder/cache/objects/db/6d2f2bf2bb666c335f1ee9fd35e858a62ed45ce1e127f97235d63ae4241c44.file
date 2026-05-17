@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="gl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marcos Lans</mal:name>
+      <mal:email>marcoslansgarza@gmail.com</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Recortar</title>
+
+    <p>A característica de recortado permítelle usar só unha parte da imaxe escaneada. Pode activar o recortado antes ou despois de escanear unha páxina e sempre pode cambiar as dimensións do marco de recorte. Cando o recortado está activado, unha aparecerá unha máscara sobre a páxina actual co área non usada en cor gris. Pode activar o recortado e seleccionar as dimensións desexadas por un dos métodos seguintes:</p>
+    
+    <steps>
+      <title>Usar clic dereito</title>
+      <item><p>Faga clic dereito en calquera sitio da páxina.</p></item>
+      <item><p>Seleccione <gui style="menuitem">Recortar</gui>.</p></item>
+      <item><p>Seleccione un dos marcos de recorte fixo ou seleccione «Personalizar» para estabelecer manualmente as dimensións do marco de recorte arrastrando os seus bordos.</p></item>
+      <item><p>Prema e manteña o marco e móvao á posición desexada.</p></item>
+      <item><p>Arrastre os bordos do marco para estabelecer as dimensións desexadas.</p></item>
+    </steps>
+
+    <steps>
+      <title>Usar a barra de ferramentas</title>
+      <item><p>Prema no botón <gui style="button">Recortar a páxina seleccionada</gui> na barra de ferramentas.</p>
+	    <note style="tip"><p>Isto é igual a seleccionar «Personalizar» no 2º paso dos métodos mencionados.</p></note></item>      
+      <item><p>Prema e manteña o marco e móvao á posición desexada.</p></item>
+      <item><p>Arrastre os bordos do marco para estabelecer as dimensións desexadas.</p></item>
+    </steps>
+    
+    <note><p>Cada nova páxina escaneada usará o recortado anterior.</p></note>
+</page>

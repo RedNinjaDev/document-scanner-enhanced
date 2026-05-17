@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="ro">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Rotirea unei pagini</title>
+
+    <p>Puteți schimba rotația unei pagini fie înainte sau după scanarea paginii. În prezent există patru moduri de a roti o pagină:</p>
+    
+    <steps>
+      <title>Utilizând bara de unelte</title>
+      <item><p>Selectând pagina pe care doriți să o rotiți apăsând pe ea o dată.</p></item>
+      <item><p>Apăsând una dintre săgețile din bara de unelte pentru a roti pagina în direcția dorită.</p></item>
+    </steps>
+    <steps>
+      <title>Utilizând clic dreapta</title>
+      <item><p>Clic dreapta pe pagina pe care doriți să o rotiți.</p></item>
+      <item><p>Selectați <gui style="menuitem">Rotește la stânga</gui> or <gui style="menuitem">Rotește la dreapta</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Utilizând scurtături de tastatură</title>
+      <item><p>Selectând pagina pe care doriți să o rotiți apăsând pe ea o dată.</p></item>
+      <item><p>Apăsați una dintre următoarele taste de scurtătură:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Comandă</em></p></td>
+		<td><p><em>Tastă de scurtătură</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Rotește la stânga</p></td>
+		<td><p><key>[</key> (paranteză dreaptă deschisă)</p></td>
+	</tr>
+	<tr>
+		<td><p>Rotește la dreapta</p></td>
+		<td><p><key>]</key> (paranteză dreaptă închisă)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Fiecare pagină scanată va folosi rotația precedentă.</p></note>
+</page>

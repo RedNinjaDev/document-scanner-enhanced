@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="de">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2021, 2024</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jürgen Benvenuti</mal:name>
+      <mal:email>gastornis@posteo.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Drucken</title>
+
+    <p>Sie können ein eingescanntes Dokument direkt ausdrucken, ohne es vorher speichern zu müssen. Das ist bequemen zum Kopieren von Dokumenten oder Bildern.</p>
+    <steps>
+      <title>Ein Dokument drucken</title>
+      <item>
+	<p>Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und wählen Sie <gui style="menuitem">Drucken</gui>. Alternativ drücken Sie <keyseq><key>Strg</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Wählen Sie Ihre gewünschten Druckeinstellungen und/oder Vorschaueinstellungen und klicken anschließend auf den Knopf <gui style="button">Drucken</gui>.</p>
+        <note><p>Siehe <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">die GNOME-Hilfe</link> für allgemeine Informationen zum Drucken.</p></note>
+      </item>
+     </steps>
+</page>

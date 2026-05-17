@@ -1,0 +1,72 @@
+{
+  "id" : "org.gnome.SimpleScan",
+  "runtime" : "org.gnome.Platform",
+  "runtime-version" : "49",
+  "runtime-commit" : "dc8c3250f24b63006dbc482cc518264c6e7a676444efcca7e370560b268b9edb",
+  "sdk" : "org.gnome.Sdk",
+  "sdk-commit" : "60f050f6bcc07f3da1be4754be70d613e677e2c7c707b52922374973714239b6",
+  "command" : "simple-scan",
+  "modules" : [
+    {
+      "name" : "gusb",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Ddocs=false",
+        "-Dtests=false",
+        "-Dlibdir=lib"
+      ],
+      "sources" : [
+        {
+          "url" : "https://github.com/hughsie/libgusb.git",
+          "commit" : "c4c1b259070290e63b3629e9396832c6a4a94084",
+          "type" : "git"
+        }
+      ]
+    },
+    {
+      "name" : "sane-backends",
+      "buildsystem" : "autotools",
+      "sources" : [
+        {
+          "url" : "https://gitlab.com/sane-project/backends.git",
+          "commit" : "f4a00049e70c55fa39346a3b604829b03a6901bd",
+          "type" : "git"
+        }
+      ]
+    },
+    {
+      "name" : "document-scanner-enhanced",
+      "buildsystem" : "meson",
+      "builddir" : true,
+      "sources" : [
+        {
+          "path" : "../..",
+          "type" : "dir"
+        }
+      ]
+    }
+  ],
+  "cleanup" : [
+    "/include",
+    "/share/aclocal",
+    "/man",
+    "/share/man",
+    "/share/gtk-doc",
+    "/share/vala",
+    "*.la",
+    "*.a"
+  ],
+  "finish-args" : [
+    "--device=dri",
+    "--device=all",
+    "--share=network",
+    "--socket=fallback-x11",
+    "--socket=wayland",
+    "--talk-name=org.freedesktop.ColorManager"
+  ],
+  "tags" : [
+    "devel"
+  ],
+  "desktop-file-name-prefix" : "(Enhanced) ",
+  "source-date-epoch" : 1779038146
+}

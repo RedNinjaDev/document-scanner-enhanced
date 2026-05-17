@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="sv">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Isak Östlund</mal:name>
+      <mal:email>translate@catnip.nu</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Använda en automatisk dokumentmatare</title>
+
+    <p>Ifall din bildläsare har en automatisk dokumentmatare (ADF) kan du skanna alla sidor från mataren med en av följande metoder:</p>
+      <steps>
+	<title>Använd en tangentbordsgenväg</title>
+	<item>
+	  <p>Tryck <keyseq><key>Ctrl</key><key>F</key></keyseq></p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Använd verktygsfältet</title>
+	<item>
+          <p>Klicka på kugghjulet till höger om knappen <gui style="button">Skanna</gui>.</p>
+	</item>
+	<item>
+	  <p>Välj <gui style="button">Alla sidor från matare</gui>.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Som standard kommer båda sidor av ett papper att skannas ifall din bildläsare har sådan funktionalitet. För att endast läsa in en sida:</p>
+    <steps>
+      <item>
+        <p>Tryck på menyknappen i fönstrets övre högra hörn och välj <gui style="menuitem">Inställningar</gui>.</p>
+      </item>
+      <item>
+        <p>Ändra i avsnittet <gui style="group">Skanning</gui> värdet på <gui>Inläsningssida</gui>.</p>
+      </item>
+      <item>
+        <p>Stäng dialogrutan.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

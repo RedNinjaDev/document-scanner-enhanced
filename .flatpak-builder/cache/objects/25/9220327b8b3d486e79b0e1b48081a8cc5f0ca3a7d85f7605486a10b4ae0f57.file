@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="sv">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Isak Östlund</mal:name>
+      <mal:email>translate@catnip.nu</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Skriva ut</title>
+
+    <p>Du kan skriva ut ett skannat dokument direkt, utan att först behöva spara dokumentet. Detta är bekvämt för att göra kopior av dokument och fotografier.</p>
+    <steps>
+      <title>Att skriva ut ett dokument</title>
+      <item>
+	<p>Klicka på menyknappen i fönstrets övre högra hörn och välj <gui style="menuitem">Skriv ut</gui>. Eller, tryck <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Välj önskade inställningar för utskriften och/eller förhandsgranska utskriften, tryck sedan på knappen <gui style="button">Skriv ut</gui>.</p>
+        <note><p>Läs <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing.html.sv">hjälpen för GNOME-skrivbordet</link> för allmän information om utskrifter.</p></note>
+      </item>
+     </steps>
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="es">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2017 - 2021</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Rotar una página</title>
+
+    <p>Puede cambiar la rotación de una página ya sea antes o después escanear la página. Actualmente, hay cuatro maneras de rotar la página:</p>
+    
+    <steps>
+      <title>Usar la barra de botones</title>
+      <item><p>Seleccione la página que quiere rotar haciendo clic sobre ella una vez.</p></item>
+      <item><p>Pulse una de las flechas de la barra de herramientas para rotar la página en la dirección que quiera.</p></item>
+    </steps>
+    <steps>
+      <title>Usar clic derecho</title>
+      <item><p>Pulse con el botón derecho en la página que quiere rotar.</p></item>
+      <item><p>Seleccione <gui style="menuitem">Rotar a la izquierda</gui> o <gui style="menuitem">Rotar a la derecha</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Usar atajos</title>
+      <item><p>Seleccione la página que quiere rotar haciendo clic sobre ella una vez.</p></item>
+      <item><p>Pulsar uno de los siguientes aceleradores de teclado:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Comando</em></p></td>
+		<td><p><em>Atajo</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Rotar a la Izquierda</p></td>
+		<td><p><key>[</key> (corchete izquierdo)</p></td>
+	</tr>
+	<tr>
+		<td><p>Rotar a la Derecha</p></td>
+		<td><p><key>]</key> (corchete derecho)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Cada página escaneada nueva usará la rotación anterior.</p></note>
+</page>

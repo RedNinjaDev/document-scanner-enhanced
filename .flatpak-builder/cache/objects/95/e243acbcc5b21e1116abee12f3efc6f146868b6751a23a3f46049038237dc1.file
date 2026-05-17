@@ -1,0 +1,10 @@
+prefix=/app
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: gusb
+Description: GUsb is a GLib binding for libusb1
+Version: 0.4.9
+Requires: gio-2.0 >=  2.44.0, gobject-2.0, libusb-1.0 >=  1.0.9, json-glib-1.0 >=  1.1.1
+Libs: -L${libdir} -lgusb
+Cflags: -I${includedir}/gusb-1

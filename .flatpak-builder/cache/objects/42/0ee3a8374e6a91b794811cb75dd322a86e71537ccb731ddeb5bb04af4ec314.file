@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="sk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Orezávanie</title>
+
+    <p>Funkcia orezávania vám umožňuje použiť len časť naskenovaného obrázka. Orezávanie môžete povoliť pred alebo po naskenovaní strany a vždy môžete zmeniť rozmery rámu pre orezanie. Keď je orezávanie povolené, nad aktuálnou stranou sa zobrazí maska a oblasť, ktorá sa nepoužíva, bude zobrazená v šedej farbe. Orezávanie môžete povoliť a vybrať požadované rozmery pomocou jednej z nasledujúcich metód:</p>
+    
+    <steps>
+      <title>Použitie pravého tlačidla myši</title>
+      <item><p>Kliknite pravým tlačidlom myši kdekoľvek na strane.</p></item>
+      <item><p>Vyberte <gui style="menuitem">Orezať</gui>.</p></item>
+      <item><p>Vyberte jeden z pevných rámov na orezanie alebo vyberte možnosť „Vlastné“ a manuálne nastavte rozmery rámu pre orezanie ťahaním jeho okrajov.</p></item>
+      <item><p>Kliknite na rám a podržte ho, aby ste ho presunuli do požadovanej polohy.</p></item>
+      <item><p>Potiahnite okraje rámu pre nastavenie požadovaných rozmerov.</p></item>
+    </steps>
+
+    <steps>
+      <title>Použitie panela nástrojov</title>
+      <item><p>Stlačte tlačidlo <gui style="button">Orezať vybranú stranu</gui> v paneli nástrojov.</p>
+	    <note style="tip"><p>Toto je rovnaké ako výber možnosti „Vlastné“ v kroku 2 vyššie uvedených metód.</p></note></item>      
+      <item><p>Kliknite na rám a podržte ho, aby ste ho presunuli do požadovanej polohy.</p></item>
+      <item><p>Potiahnite okraje rámu pre nastavenie požadovaných rozmerov.</p></item>
+    </steps>
+    
+    <note><p>Každá nová naskenovaná strana použije predchádzajúce orezanie.</p></note>
+</page>

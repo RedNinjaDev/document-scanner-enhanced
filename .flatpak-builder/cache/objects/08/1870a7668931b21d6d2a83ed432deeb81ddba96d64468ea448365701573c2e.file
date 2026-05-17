@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.gnome.SimpleScan</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Document Scanner</name>
+  <name xml:lang="zh-Hant-TW">文件掃描</name>
+  <name xml:lang="zh-Hant-HK">文件掃描器</name>
+  <name xml:lang="zh-Hans-CN">文档扫描仪</name>
+  <name xml:lang="uz-Latn">Hujjat skaneri</name>
+  <name xml:lang="uk">Засіб для сканування документів</name>
+  <name xml:lang="ug">پۈتۈك تارىغۇچ</name>
+  <name xml:lang="tr">Belge Tarayıcı</name>
+  <name xml:lang="th">เครื่องสแกนเอกสาร</name>
+  <name xml:lang="sv">Dokumentbildläsare</name>
+  <name xml:lang="sr-Latn">Skener za dokumente</name>
+  <name xml:lang="sr-Cyrl">Скенер докумената</name>
+  <name xml:lang="sl">Optični bralnik dokumentov</name>
+  <name xml:lang="sk">Skener dokumentov</name>
+  <name xml:lang="ru">Сканер документов</name>
+  <name xml:lang="ro">Scaner de documente</name>
+  <name xml:lang="pt">Digitalizador de documentos</name>
+  <name xml:lang="pt-BR">Digitalizador de documentos</name>
+  <name xml:lang="pl">Skaner dokumentów</name>
+  <name xml:lang="pa">ਦਸਤਾਵੇਜ਼ ਸਕੈਨਰ</name>
+  <name xml:lang="oc">Numerizador de documents</name>
+  <name xml:lang="nl">Documentenscanner</name>
+  <name xml:lang="ne">कागजात स्क्यानर</name>
+  <name xml:lang="nb">Skanning</name>
+  <name xml:lang="ms">Pengimbas dokumen</name>
+  <name xml:lang="ml">ഡോക്യുമെന്റ്‌ സ്കാനർ</name>
+  <name xml:lang="mjw">Document Scanner</name>
+  <name xml:lang="lv">Dokumentu skenētājs</name>
+  <name xml:lang="lt">Dokumentų skeneris</name>
+  <name xml:lang="lo">ເຄື່ອງສະແກນເອກະສານ</name>
+  <name xml:lang="ko">문서 스캐너</name>
+  <name xml:lang="km">ម៉ាស៊ីនស្កេនឯកសារ</name>
+  <name xml:lang="kk-Cyrl">Құжат сканері</name>
+  <name xml:lang="kab">Anafraḍ n yisemli</name>
+  <name xml:lang="ka">დოკუმენტების სკანერი</name>
+  <name xml:lang="ja">ドキュメントスキャナー</name>
+  <name xml:lang="it">Acquisizione documenti</name>
+  <name xml:lang="is">Skjalaskanni</name>
+  <name xml:lang="ie">Scannator de documentes</name>
+  <name xml:lang="id">Pemindai Dokumen</name>
+  <name xml:lang="hy">Փաստաթղթի սկան</name>
+  <name xml:lang="hu">Szkenner</name>
+  <name xml:lang="hr">Skener dokumenta</name>
+  <name xml:lang="hi">Document Scanner</name>
+  <name xml:lang="he">סורק מסמכים</name>
+  <name xml:lang="gl">Escáner de documentos</name>
+  <name xml:lang="gd">Sganair sgrìobhainnean</name>
+  <name xml:lang="fur">Scansionadôr di document</name>
+  <name xml:lang="fr">Numériseur de documents</name>
+  <name xml:lang="fi">Asiakirjaskanneri</name>
+  <name xml:lang="fa">پویشگر پرونده</name>
+  <name xml:lang="eu">Dokumentuen eskanerra</name>
+  <name xml:lang="es">Escáner de documentos</name>
+  <name xml:lang="eo">Dokumentoskanilo</name>
+  <name xml:lang="en-GB">Document Scanner</name>
+  <name xml:lang="el">Σαρωτής εγγράφων</name>
+  <name xml:lang="de">Dokument-Scanner</name>
+  <name xml:lang="da">Dokumentskanner</name>
+  <name xml:lang="cs">Skenování dokumentů</name>
+  <name xml:lang="ca-valencia">Escàner de documents</name>
+  <name xml:lang="ca">Escàner de documents</name>
+  <name xml:lang="bn">ডকুমেন্ট স্ক্যানার</name>
+  <name xml:lang="bg">Сканиране на документи</name>
+  <name xml:lang="be-Cyrl">Сканер дакументаў</name>
+  <name xml:lang="ast">Escáner de documentos</name>
+  <name xml:lang="ar">ماسح المستندات</name>
+  <name xml:lang="am">ሰነድ ማሰሻ</name>
+  <name xml:lang="af">Dokument Skandeerder</name>
+  <summary>Make a digital copy of your photos and documents</summary>
+  <summary xml:lang="zh-Hant-TW">為您的照片或文件建立數位複本</summary>
+  <summary xml:lang="zh-Hans-CN">将您的照片与文档数字化后保存在计算机里</summary>
+  <summary xml:lang="uz-Latn">Rasmlaringiz va hujjatlaringizning raqamli nusxasini yarating</summary>
+  <summary xml:lang="uk">Створення цифрових копій ваших фотографій та документів</summary>
+  <summary xml:lang="ug">سۈرەت ۋە پۈتۈكنى رەقەملەشتۈرۈپ كومپيۇتېردا ساقلايدۇ</summary>
+  <summary xml:lang="tr">Resim ve belgelerinizin sayısal kopyasını oluşturun</summary>
+  <summary xml:lang="th">ทำสำเนาดิจิทัลของภาพถ่ายและเอกสารของคุณ</summary>
+  <summary xml:lang="sv">Gör en digital kopia av dina foton och dokument</summary>
+  <summary xml:lang="sr-Latn">Napravite digitalne kopije vaših fotografija i dokumenata</summary>
+  <summary xml:lang="sr-Cyrl">Направите дигитални примерак ваших фотографија и докумената</summary>
+  <summary xml:lang="sl">Priprava digitalnih kopij fotografij in dokumentov.</summary>
+  <summary xml:lang="sk">Vytvára digitálne kópie vašich fotografií a dokumentov</summary>
+  <summary xml:lang="ru">Делайте цифровые копии своих фотографий и документов</summary>
+  <summary xml:lang="ro">Face o copie digitală a fotografiilor și documentelor</summary>
+  <summary xml:lang="pt">Faz uma digitalização de tuas fotos e documentos</summary>
+  <summary xml:lang="pt-BR">Faça uma cópia digital de suas fotos e documentos</summary>
+  <summary xml:lang="pl">Tworzenie cyfrowej kopii zdjęć i dokumentów</summary>
+  <summary xml:lang="pa">ਆਪਣੀਆਂ ਫ਼ੋਟੋ ਅਤੇ ਦਸਤਾਵੇਜ਼ਾਂ ਦੀ ਡਿਜ਼ੀਟਲ ਕਾਪੀ ਬਣਾਓ</summary>
+  <summary xml:lang="oc">Realizatz una còpia numerica de vòstras fòtos e documents</summary>
+  <summary xml:lang="nl">Maak een digitale kopie van uw foto’s en documenten</summary>
+  <summary xml:lang="ne">तपाईँको फोटो र कागजातको डिजिटल प्रतिलिपि बनाउनुहोस्</summary>
+  <summary xml:lang="nb">Ta digitale kopier av bilder og dokumenter</summary>
+  <summary xml:lang="lv">Izveidojiet digitālas kopijas jūsu fotogrāfijām un dokumentiem</summary>
+  <summary xml:lang="lt">Sukurti jūsų nuotraukų bei dokumentų skaitmeninę kopiją</summary>
+  <summary xml:lang="lo">ສ້າງສຳເນົາດິຈິຕອນຂອງຮູບພາບ ແລະ ເອກະສານຂອງທ່ານ</summary>
+  <summary xml:lang="ko">사진과 문서의 디지털 복사본 만들기</summary>
+  <summary xml:lang="kk-Cyrl">Фотосуреттеріңіз бен құжаттарыңыздың цифрлық көшірмесін жасау</summary>
+  <summary xml:lang="kab">Eg anɣal umḍin n tewlafin-ik d yisemliyen</summary>
+  <summary xml:lang="ka">შექმენით თქვენი სურათებისა და დოკუმენტების ციფრული ასლები</summary>
+  <summary xml:lang="ja">写真と文書のデジタルコピーを作成します</summary>
+  <summary xml:lang="it">Creare una copia digitale delle proprie foto e documenti</summary>
+  <summary xml:lang="is">Gerðu stafræn afrit af skjölum og myndum</summary>
+  <summary xml:lang="ie">Crear un digital copie de vor fotos e documentes</summary>
+  <summary xml:lang="id">Buat salinan digital dari foto dan dokumen Anda</summary>
+  <summary xml:lang="hu">Készítsen digitális másolatot a fényképeiről és dokumentumairól</summary>
+  <summary xml:lang="hr">Napravite digitalnu kopiju svojih fotografija i dokumenata</summary>
+  <summary xml:lang="hi">अपने तस्वीरें और दस्तावेजों की एक डिजिटल प्रतिलिपि बनाएं</summary>
+  <summary xml:lang="he">יצירת עותק ממוחשב של התמונות והמסמכים שלך</summary>
+  <summary xml:lang="gl">Facer unha copia dixital das fotos e documentos</summary>
+  <summary xml:lang="fur">Fâs une copie digjitâl des tôs fotos e dai tiei documents</summary>
+  <summary xml:lang="fr">Faites une copie numérique de vos photos et documents</summary>
+  <summary xml:lang="fi">Tee digitaalinen kopio kuvista ja asiakirjoista</summary>
+  <summary xml:lang="fa">گرفتن یک رونوشت دیجیتالی از عکس‌ها و سندهایتان</summary>
+  <summary xml:lang="eu">Egin zure argazkien eta dokumentuen kopia digital bat</summary>
+  <summary xml:lang="es">Hacer una copia digital de sus fotos y documentos</summary>
+  <summary xml:lang="eo">Krei ciferecan kopion de viaj fotaĵoj kaj dokumentoj</summary>
+  <summary xml:lang="en-GB">Make a digital copy of your photos and documents</summary>
+  <summary xml:lang="el">Δημιουργήστε ένα ψηφιακό αντίγραφο των φωτογραφιών και των εγγράφων σας</summary>
+  <summary xml:lang="de">Eine digitale Kopie Ihrer Fotos und Dokumente erstellen</summary>
+  <summary xml:lang="da">Lav en digital kopi af dine fotografier og dokumenter</summary>
+  <summary xml:lang="cs">Udělejte si digitální kopie svých fotografií a dokumentů</summary>
+  <summary xml:lang="ca">Feu una còpia digital de les vostres fotografies i documents</summary>
+  <summary xml:lang="bn">আপনার ছবি এবং ডকুমেন্টের একটি ডিজিটাল কপি তৈরি করুন</summary>
+  <summary xml:lang="bg">Създаване на цифров дубликат на снимки и документи</summary>
+  <summary xml:lang="be-Cyrl">Зрабіце лічбавыя копіі сваіх фатаграфій і дакументаў</summary>
+  <description>
+    <p>
+      A really easy way to scan both text and images.
+      You can crop out the bad parts of an image and rotate it if it is the wrong way round.
+      You can print your scans, export them to pdf, or save them in a range of image formats.
+    </p>
+    <p xml:lang="zh-Hant-TW">您能輕鬆掃描文件和影像。您可以裁剪影像的不良部分，並將之旋轉至正確角度。您可以列印您的掃描檔，將掃描檔匯出為 pdf，或儲存為多種影像格式。</p>
+    <p xml:lang="zh-Hans-CN">简单的文档和照片扫描软件。如果图片显示有误，您可以根据需要通过裁剪、旋转等方式调整照片。您也可以打印扫描件、导出 PDF 格式、或者保存为图片。</p>
+    <p xml:lang="uz-Latn">Matn va tasvirlarni skanerlashning juda oson usuli. Tasvirning yomon qismlarini kesib tashlashingiz va agar u noto’g’ri bo’lsa, uni aylantirishingiz mumkin. Siz skanerlaringizni chop etishingiz, ularni pdf-ga eksport qilishingiz yoki turli xil tasvir formatlarida saqlashingiz mumkin.</p>
+    <p xml:lang="uk">Дуже простий спосіб сканування тексту і зображень. Ви можете відрізати непотрібні частини зображення і обертати його, якщо це потрібно. Ви можете надрукувати скановані зображення, експортувати їх до pdf або зберегти у одному із багатьох форматів зображень.</p>
+    <p xml:lang="ug">ئاددىي بولغان تېكىست ۋە سۈرەت تاراش يۇمشاق دېتالى. ئەگەر سۈرەت خاتا كۆرۈنسە، ئېھتىياجىڭىزغا ئاساسەن قايچىلاپ، چۆرگىلىتىش قاتارلىق ئۇسۇلدا سۈرەتنى تەڭشىيەلەيسىز. تارىغان نۇسخىنى پىرىنتېردا بېسىپ، pdf كە چىقىرىپ ياكى سۈرەت پىچىمىدا ساقلىيالايسىز.</p>
+    <p xml:lang="tr">Metin ve resim taramanın çok kolay yolu. Resmin kötü tarafını kırpabilir ve yanlış yöndeyse döndürebilirsiniz. Taramalarınızı yazdırabilir, pdf’ye aktarabilir veya resim biçimlerinde kaydedebilirsiniz.</p>
+    <p xml:lang="th">วิธีที่ง่ายดายในการสแกนทั้งข้อความและภาพ คุณสามารถตัดส่วนที่ไม่ดีออกจากภาพ รวมทั้งหมุนภาพหากภาพอยู่ในทิศทางที่ผิดได้ คุณยังสามารถพิมพ์งานสแกนของคุณ ส่งออกเป็นไฟล์รูปแบบ PDF หรือบันทึกเป็นไฟล์ภาพรูปแบบต่าง ๆ ก็ได้</p>
+    <p xml:lang="sv">Ett väldigt lätt sätt att skanna både text och bilder. Du kan beskära bort dåliga delar av en bild, och rotera den om den är felvänd. Du kan skriva ut det du skannat in, exportera till pdf, eller spara det i ett brett utbud av bildformat.</p>
+    <p xml:lang="sr-Latn">Veoma jednostavan način za skeniranje teksta i slika. Možete iseći loše delove slike i rotirati je ako je okrenuta na pogrešnu stranu. Možete štampati skenirane datoteke, sačuvati ih u formatu PDF ili u velikom izboru ostalih formata.</p>
+    <p xml:lang="sr-Cyrl">Веома једноставан начин за скенирање текста и слика. Можете исећи лоше делове слике и ротирати је ако је окренута на погрешну страну. Можете штампати скениране снимке, извести их у ПДФ или их сачувати у великом избору формата слика.</p>
+    <p xml:lang="sl">Zelo enostaven način za optično branje dokumentov in fotografij. Posamezne dele fotografije je mogoče obrezati in fotografijo zavrteti, če je napačno obrnjena. Prebrane dokumente je nato mogoče natisniti, izvoziti v datoteke PDF, ali shraniti v enega od podprtih zapisov.</p>
+    <p xml:lang="sk">Skutočne jednoduchý spôsob ako naskenovať dokumenty aj fotografie. Môžete orezať nevhodné časti fotografie a otočiť ich podľa potreby. Vaše oskenované dokumenty môžete vytlačiť, exportovať ich do pdf, alebo ich uložiť v rôznych formátoch obrázkov.</p>
+    <p xml:lang="ru">Очень простой способ сканирования текста и изображений. Вы можете обрезать неудачные части изображения и повернуть его, если оно расположено неправильно. Сканы можно распечатать, экспортировать в pdf или сохранить в различных форматах.</p>
+    <p xml:lang="ro">Un mod foarte ușor de a scana documente și fotografii. Puteți decupa părțile nedorite ale unei fotografii și să o rotiți dacă este greșit poziționată. Puteți tipări scanările, exporta în pdf, sau să le salvați într-o serie de formate de imagine.</p>
+    <p xml:lang="pt">Uma forma muito fácil para digitalizar textos e imagens. Pode cortar as partes ruins da imagem e rodá-la caso esteja de ponta-cabeça. Pode imprimir as digitalizações, exportá-las em PDF, ou gravá-las numa multitude de formatos de imagem.</p>
+    <p xml:lang="pt-BR">Uma forma realmente fácil de digitalizar tanto textos como imagens. Você pode recortar as partes ruins de uma imagem e fazer rotação dela, caso esteja do lado errado. Você pode imprimir as suas digitalizações, exportá-las em pdf ou salvá-las em uma variedade de formatos de imagem.</p>
+    <p xml:lang="pl">Bardzo prosty sposób na skanowanie tekstu i obrazów. Umożliwia kadrowanie i obracanie obrazów, drukowanie, eksportowanie do formatu PDF oraz zapisywanie w wielu formatach.</p>
+    <p xml:lang="pa">ਲਿਖਤ ਤੇ ਚਿੱਤਰ ਸਕੈਨ ਕਰਨ ਦਾ ਬਹੁਤ ਹੀ ਸੌਖਾ ਢੰਗ ਹੈ। ਤੁਸੀਂ ਚਿੱਤਰ ਦੇ ਬੁਰੇ ਹਿੱਸੇ ਨੂੰ ਛਾਂਗ ਸਕਦੇ ਹੋ ਤੇ ਜੇ ਇਹ ਦਾ ਟੇਢੀ ਵਿੰਗੀ ਹੋਵੇ ਤਾਂ ਘੁੰਮਾ ਵੀ ਸਕਦੇ ਹੋ। ਤੁਸੀਂ ਆਪਣੇ ਸਕੈਨ ਨੂੰ ਛਾਪ ਸਕਦੇ ਹੋ, PDF ਵਜੋਂ ਬਰਾਮਦ ਕਰ ਸਕਦੇ ਹੋ ਜਾਂ ਕਈ ਕਿਸਮ ਦੇ ਚਿੱਤਰ ਫਾਰਮੈਟ ਵਿੱਚ ਸੰਭਾਲ ਸਕਦੇ ਹੋ।</p>
+    <p xml:lang="oc">Un biais simplàs de numerizar a l'encòp documents e fòtos. Podètz requadrar una fòto e la far pivotar se es dins lo marrit sens. Podètz imprimir vòstras numerizacions, las exportar al format pdf o las enregistrar dins d’autres formats d’imatge.</p>
+    <p xml:lang="nl">Een heel makkelijke manier om zowel documenten als foto’s te scannen. U kunt de slechte delen van een foto wegsnijden en hem draaien als hij niet goed staat. U kunt uw scans afdrukken, exporteren naar pdf, of opslaan in een reeks afbeeldingsbestandsformaten.</p>
+    <p xml:lang="ne">पाठ र छवि दुबै स्क्यान गर्न एक साँच्चै सजिलो तरिका। यदि यो गलत तरिकाले घुमाइएको छ भने तपाईँले छविको खराब भाग काटछाँट गर्न र घुमाउन सक्नुहुन्छ । तपाईँले आफ्नो स्क्यान मुद्रण गर्न, तिनीहरूलाई pdf मा निर्यात गर्न, वा तिनीहरूलाई छवि ढाँचाको दायरामा बचत गर्न सक्नुहुन्छ ।.</p>
+    <p xml:lang="nb">Uansett om det er et gammelt fotografi fra loftet eller en viktig kontrakt, kan du gjøre det om til en fil på enheten din ved hjelp av dette verktøyet. Alt du trenger er en skanner, så ordnes resten for deg. Eksporter det du har skannet som et PDF-dokument, eller lagre det i et mangfold av forskjellige bildeformater.</p>
+    <p xml:lang="ms">Satu cara paling mudah mengimbas kedua-dua teks dan imej. Anda boleh mengerat bahagian imej tidak dikehendaki atau putar ia jika berada pada kedudukan yang salah. Anda boleh mencetak imbasan anda, eksport ia ke pdf, atau simpan ia dengan sejumlah besar format imej.</p>
+    <p xml:lang="lv">Ļoti vienkāršs veids, kā skenēt tekstu un attēlus. Jūs varat izgriezt ārā sliktās attēlu daļas un tās pagriezt, ja tās ir nepareizā virzienā. Varat izdrukāt ieskanētos dokumentus, eksportēt tos pdf formātā vai saglabāt tos dažādos attēlu formātos.</p>
+    <p xml:lang="lt">Tikrai labai lengvas būdas skenuoti tekstą ir paveikslėlius. Galite iškirpti blogas nuotraukos dalis ir ją pasukti, jei ji neteisingai atvaizduojama. Galite spausdinti savo skenavimus, eksportuoti juos į pdf, ar įrašyti juos daugeliu paveikslų formatų.</p>
+    <p xml:lang="lo">ວິທີທີ່ງ່າຍດາຍໃນການສະແກນທັງຂໍ້ຄວາມ ແລະ ຮູບພາບ. ທ່ານສາມາດຕັດສ່ວນທີ່ບໍ່ຕ້ອງການຂອງຮູບພາບອອກ ແລະ ໝູນມັນໄດ້ຖ້າຫາກມັນປີ້ນດ້ານ. ທ່ານສາມາດພິມສິ່ງທີ່ສະແກນ, ສົ່ງອອກເປັນ pdf, ຫຼື ບັນທຶກໃນຮູບແບບໄຟລ໌ຮູບພາບຕ່າງໆໄດ້.</p>
+    <p xml:lang="ko">문서와 사진을 모두 스캐닝할 수 있는 정말 쉬운 방법 입니다. 사진에서 쓰지 않는 부분을 잘라내거나 방향이 틀어지면 돌려서 바로잡을 수 있습니다. 스캔 한 것을 출력하거나, pdf 파일로 내보내거나, 여러 가지 이미지 형식으로 저장할 수 있습니다.</p>
+    <p xml:lang="kk-Cyrl">Мәтінді де, суреттерді де сканерлеудің шынымен де оңай жолы. Кескіннің жаман бөліктерін қиып алып, ал бағдары қате болса, оны айналдыруға болады. Сканерлеуді басып шығаруға, оларды pdf-ке экспорттауға немесе әр түрлі сурет пішімдеріне сақтауға болады.</p>
+    <p xml:lang="kab">Abrid fessusen i uḍummu n uḍris d tugniwin ɣef tikkelt. Tzemreḍ ad tgezmeḍ yir imuren n tugna, ad t-tsezziḍ ma yella ur d-yezzi ara akken iwata. Tzemreḍ ad tsiggzeḍ iḍummiyen-ik, ad ten-tsifḍeḍ ɣer PDF, neɣ ad ten-teskelseḍ deg tseddart n yimasalen n tugna.</p>
+    <p xml:lang="ka">ადვილი გზა ორივე, გამოსახულებებისა და ტექსტების სკანირებისთვის. შეგიძლიათ, გამოსახულებებს ცუდი ადგილები მოაჭრათ და შემოაბრუნოთ ისინი, თუ არასწორადაა დასმული. შეგიძლიათ, დასკანერებულია ელემენტები დაბეჭდოთ, PDF-ში გაიტანოთ ან მრავალი ფორმატის გამოსახულების სახით შეინახოთ.</p>
+    <p xml:lang="ja">文書や画像を本当に簡単な方法でスキャンします。画像の不要な部分を切り取ったり、間違った方向に向いている場合は回転できます。スキャンしたものを印刷、PDF へのエクスポート、多くの画像フォーマットに保存することができます。</p>
+    <p xml:lang="it">Un modo molto semplice per acquisire testi e foto. È possibile ritagliare le parti non necessarie di un'immagine e ruotarla se è nel verso sbagliato. È anche possibile stampare i file acquisiti, esportarli in formato PDF o salvarli in vari formati di immagine.</p>
+    <p xml:lang="is">Mjög einföld leið til að skanna bæði texta og myndir. Þú getur skorið af óþarfa hluta mynda og snúið þeim ef þörf er á. Þú getur prentað það sem þú skannar, flutt það út í PDF-skrár, eða vistað það sem ýmsar gerðir myndskráa.</p>
+    <p xml:lang="id">Cara mudah untuk memindai dokumen dan foto. Anda dapat membuang bagian yang jelek dari suatu foto dan memutarnya bila itu terbalik. Anda dapat mencetak pindaian Anda, mengekspor ke pdf, atau menyimpan ke sejumlah format gambar.</p>
+    <p xml:lang="hu">Igazán egyszerű megoldás szöveg és képek szkennelésére. Levághatja a képek fölösleges részeit, és elforgathatja azokat. Kinyomtathatja, PDF-be vagy számos képformátumba is exportálhatja a szkennelt dokumentumokat.</p>
+    <p xml:lang="hr">Istinski jednostavan način skeniranja dokumenata i slika. Možete izrezati loše dijelove slika i zakrenuti ih ako su pogrešno okrenute. Možete ispisati vaše skenirane dokumente ili slike, izvesti ih u pdf ili ih spremiti u različite slikovne formate.</p>
+    <p xml:lang="hi">पाठ और छवि दोनों को स्कैन करने का एक बहुत ही आसान तरीका। आप किसी छवि के खराब हिस्सों को काट सकते हैं और यदि वह गलत तरीके से है तो उसे घुमा सकते हैं। आप अपने स्कैन प्रिंट कर सकते हैं, उन्हें pdf में निर्यात कर सकते हैं, या उन्हें कई छवि प्रारूपों में सहेज सकते हैं।</p>
+    <p xml:lang="he">דרך פשוטה ביותר לסריקת מסמכים ותמונות. ניתן לגזור את החלקים שאינם נחוצים בתמונה ולהטות אם הם בכיוון הלא נכון. ניתן להדפיס את הסריקות שלך, לייצא אותן ל־PDF או לשמור אותן במגוון רחב של תסדירי תמונה.</p>
+    <p xml:lang="gl">Un xeito ben sinxelo de escanear documentos e imaxes. Pode recortar as partes malas dunha foto e rotala se está do revés. Pode imprimir os escaneos, exportalos a un PDF ou gardalos en varios formatos de imaxe.</p>
+    <p xml:lang="fur">Une maniere une vore facile par scansionâ tests e imagjins. Al è pussibil taiâ vie lis parts brutis di une imagjin e zirâle se e je voltade de bande sbaliade. Si pues stampâ lis scansions, espuartâlis su pdf o salvâlis intune schirie di formâts imagjin.</p>
+    <p xml:lang="fr">Une façon très simple de numériser à la fois textes et images. Vous pouvez recadrer une image et la faire pivoter si elle est dans le mauvais sens. Vous pouvez imprimer vos numérisations, les exporter au format pdf ou les enregistrer dans d’autres formats d’image.</p>
+    <p xml:lang="fi">Helppo tapa lukea (skannata) tekstiä ja kuvia. Voit rajata huonot osat kuvista pois tai kääntää niitä. Luettuja kuvia voidaan tulostaa, viedä PDF-muotoon tai tallentaa eri kuvamuodoissa.</p>
+    <p xml:lang="fa">راهی ساده برای پویش اسناد و تصاویر. می‌توانید قسمت‌های نامناسب عکس را بریده و در صورت اشتباه بودن جهت، آن را بچرخانید. می‌توانید پویش‌های خود را چاپ، به pdf برون‌ریزی یا در بازه‌ای در قالب‌های تصویری ذخیره کنید.</p>
+    <p xml:lang="eu">Testuak eta irudiak aldi berean eskaneatzeko modu erraza. Irudi baten zati okerrak ebaki ditzakezu eta irudia biratu, gaizki zuzenduta badago. Zure eskaneatzeak inprimatu ditzakezu, PDF formatura esportatu edo hainbat irudi-formatutan gorde.</p>
+    <p xml:lang="es">Escanee documentos y fotos con suma sencillez. Puede recortar las partes no deseadas de una foto y girarla si quedó al revés. Luego podrá imprimir las digitalizaciones, exportarlas a PDF o guardarlas en diversos formatos de imagen.</p>
+    <p xml:lang="eo">Facilega maniero skani kiel dokumentojn, tiel fotojn. Vi povas stuci la mabonajn partojn de la foto kaj ĝin turni se ĝi malorientas. Vi povas presi viajn skanojn, eklporti ilin al pdf, aŭ konservi ilin en sortimento da bildformato.</p>
+    <p xml:lang="en-GB">A really easy way to scan both text and images. You can crop out the bad parts of an image and rotate it if it is the wrong way round. You can print your scans, export them to PDF, or save them in a range of image formats.</p>
+    <p xml:lang="el">Ένας πραγματικά εύκολος τρόπος σάρωσης εγγράφων και εικόνων. Μπορείτε να κάνετε περικοπή των κακών κομματιών μιας φωτογραφίας και  να την περιστρέψετε εφόσον χρειάζεται. Μπορείτε να εκτυπώσετε τις σαρώσεις σας, να τις εξάγετε ως pdf, ή να τις αποθηκεύσετε σε μια ποικιλία μορφών εικόνας.</p>
+    <p xml:lang="de">Eine ganz einfache Methode, um sowohl Text als auch Bilder zu scannen. Unbrauchbare Teile eines Bildes können abgeschnitten werden, es kann gedreht werden, falls es verkehrt herum liegt. Die Scans können gedruckt, als PDF-Dokument exportiert oder in einer Anzahl verschiedener Bildformate gespeichert werden.</p>
+    <p xml:lang="da">En virkelig nem måde at skanne både dokumenter og billeder på. Du kan beskære de uønskede dele fra et billede og rotere det, hvis det vender forkert. Du kan udskrive dine skanninger, eksportere dem til pdf eller gemme dem i en række billedformater.</p>
+    <p xml:lang="cs">Skutečně snadné skenování textů a obrázků, které navíc nabízí šikovné možnosti úprav. Vystřihněte nechtěné části obrázku a očte jej, pokud je vzhůru nohama. Až budete hotovi, výsledek si vytiskněte, převeďte do PDF, nebo uložte v některém z rozmanité nabídky formátů.</p>
+    <p xml:lang="ca">Una manera realment senzilla d'escanejar tant documents com imatges. Podeu retallar les parts dolentes d'una foto o girar-la si està en la posició incorrecta.  Podeu imprimir els vostres escanejos, exportar-los a pdf, o desar-los en diversos formats d'imatge.</p>
+    <p xml:lang="bg">Много лесен способ за сканиране на текст и изображения. Може да изрязвате ненужното и да завъртате документите. Може да печататe, изнасяте към pdf или други формати за изображения.</p>
+    <p xml:lang="be-Cyrl">Сапраўды просты спосаб сканавання тэксту і відарысаў. Вы можаце абрэзаць сапсаваныя часткі відарыса і павярнуць яе, калі тая размешчана няправільна. Сканы можна надрукаваць, экспартаваць у PDF або захаваць у іншых фарматах.</p>
+    <p>
+      This app uses the SANE framework to support most existing scanners.
+    </p>
+    <p xml:lang="zh-Hant-TW">這個應用程式使用 SANE 框架以支援大部分現存掃描器。</p>
+    <p xml:lang="zh-Hans-CN">此应用使用 SANE 框架以支持大多数现有的扫描仪。</p>
+    <p xml:lang="uz-Latn">Ushbu ilova ko’pgina mavjud skanerlarni qo’llab-quvvatlash uchun SANE framework foydalanadi.</p>
+    <p xml:lang="uk">У цій програмі використано бібліотеки SANE для забезпечення підтримки більшості наявних сканерів.</p>
+    <p xml:lang="ug">بۇ ئەپ SANE قۇرۇلمىسىنى ئىشلىتىپ زور كۆپچىلىك تارىغۇچلارنى قوللايدۇ.</p>
+    <p xml:lang="tr">Bu uygulama var olan birçok tarayıcı desteği için SANE altyapısını kullanır.</p>
+    <p xml:lang="th">แอปนี้ใช้ขอบข่ายงาน SANE เพื่อรองรับเครื่องสแกนที่มีการใช้งานจริงซึ่งพบได้บ่อย</p>
+    <p xml:lang="sv">Detta program använder ramverket SANE för att hantera de flesta bildläsare som finns på marknaden.</p>
+    <p xml:lang="sr-Latn">Ovaj program koristi SANE radni okvir kao podršku za veliki broj skenera.</p>
+    <p xml:lang="sr-Cyrl">Овај програм користи САНЕ радни оквир као подршку за велики број скенера.</p>
+    <p xml:lang="sl">Enostavno optično branje zahteva ogrodje SANE, s katerim bo omogočena podpora večine optičnih bralnikov.</p>
+    <p xml:lang="sk">Táto aplikácia využíva rozhranie SANE na podporu väčšiny existujúcich skenerov.</p>
+    <p xml:lang="ru">Это приложение использует фреймворк SANE для поддержки большинства существующих сканеров.</p>
+    <p xml:lang="ro">Această aplicație folosește platforma SANE pentru compatibilitate cu majoritatea scanerelor existente.</p>
+    <p xml:lang="pt">Esta aplicação usa a estrutura SANE para suportar a maioria dos digitalizadores atuais.</p>
+    <p xml:lang="pt-BR">Esse aplicativo usa o framework SANE para prover suporte à maioria dos scanners existentes.</p>
+    <p xml:lang="pl">Ten program używa mechanizmu SANE do obsługi większości istniejących skanerów.</p>
+    <p xml:lang="pa">ਇਹ ਸਭ ਤੋਂ ਵੱਧ ਮੌਜੂਦ ਸਕੈਨਰਾਂ ਲਈ ਸਹਿਯੋਗ ਵਾਸਤੇ SANE ਫਰੇਮਵਰਕ ਵਰਤਦਾ ਹੈ।</p>
+    <p xml:lang="oc">Simple Scan utiliza l'estructura logiciala de SANE per prene en carga la màger part dels periferics de numerizacion existents.</p>
+    <p xml:lang="nl">Deze toepassing gebruikt het SANE-kader om de meeste scanners te kunnen gebruiken.</p>
+    <p xml:lang="ne">यो अनुप्रयोगले धेरै अवस्थित स्क्यानर समर्थन गर्न SANE फ्रेमवर्क प्रयोग गर्दछ ।.</p>
+    <p xml:lang="nb">Denne appen virker med de aller fleste skannere på markedet, takket være det robuste SANE-rammeverket.</p>
+    <p xml:lang="ms">Aplikasi ini memakai framework SANE untuk menyokong kebanyakan pengimbas sedia ada.</p>
+    <p xml:lang="lv">Šī lietotne izmanto SANE ietvaru, kas atbalsta vairumu esošo skeneru.</p>
+    <p xml:lang="lt">Ši programa naudoja SANE karkasą, kad palaikytų daugelį esamų skenerių.</p>
+    <p xml:lang="lo">ແອັບນີ້ໃຊ້ SANE framework ເພື່ອຮອງຮັບເຄື່ອງສະແກນສ່ວນໃຫຍ່ທີ່ມີຢູ່.</p>
+    <p xml:lang="ko">이 프로그램은 현존하는 거의 모든 스캐너를 지원하는 SANE 프레임워크를 사용합니다.</p>
+    <p xml:lang="kk-Cyrl">Бұл бағдарлама қолданыстағы сканерлердің көпшілігін қолдау үшін SANE пайдаланады.</p>
+    <p xml:lang="kab">Asnas-a yesseqdac framwork SANE i usefrek n tuget n yinafraḍen i yellan.</p>
+    <p xml:lang="ka">ეს აპი სკანერების უმრავლესობასთან სამუშაოდ SANE-ს იყენებს.</p>
+    <p xml:lang="ja">このアプリは多数の既存スキャナーをサポートするために SANE フレームワークを使用しています。</p>
+    <p xml:lang="it">Quest'applicazione usa il framework SANE per supportare il maggior numero di scanner esistenti.</p>
+    <p xml:lang="is">Þetta forrit notar SANE-kerfið til stuðnings flestum þeim skönnum sem eru í umferð.</p>
+    <p xml:lang="ie">Ti programma usa li infrastructura SANE por supportar li majorité de existent scannatores.</p>
+    <p xml:lang="id">Aplikasi ini memakai framework SANE untuk mendukung kebanyakan pemindai yang ada.</p>
+    <p xml:lang="hu">Ez az alkalmazás a SANE keretrendszert használja a legtöbb létező szkenner támogatása érdekében.</p>
+    <p xml:lang="hr">Ova aplikacija koristi SANE radni okvir za podršku većine postojećih skenera.</p>
+    <p xml:lang="hi">यह ऐप अधिकांश मौजूदा स्कैनर का समर्थन करने के लिए SANE फ्रेमवर्क का उपयोग करता है।</p>
+    <p xml:lang="he">יישום זה משתמש בסביבת העבודה SANE לטובת תמיכה ברוב הסורקים הזמינים.</p>
+    <p xml:lang="gl">Esta aplicación usa o marco de traballo de SANE para ser compatíbel coa maioría de escáneres existentes.</p>
+    <p xml:lang="fur">Cheste aplicazion e dopre la suaze di lavôr SANE par supuartâ la plui part dai scansionadôrs esistents.</p>
+    <p xml:lang="fr">Cette application utilise la structure logicielle de SANE pour prendre en charge la plupart des périphériques de numérisation existants.</p>
+    <p xml:lang="fi">Tämä sovellus käyttää SANE-kehystä tukeakseen useimpia olemassa olevia skannereita.</p>
+    <p xml:lang="fa">این کاره از چهارچوب SANE برای پشتیبانی از پویشگرهای موجود استفاده می‌کند.</p>
+    <p xml:lang="eu">Aplikazio honek SANE lan-markoa erabiltzen du dauden eskaner gehienei sostengua emateko.</p>
+    <p xml:lang="es">Esta aplicación usa el entorno de trabajo SANE para soportar la mayoría de los escáneres existentes.</p>
+    <p xml:lang="eo">Ĉi tiu aplikaĵo uzas la SANE-kadron por subteni la plej multajn ekzistantajn skanilojn.</p>
+    <p xml:lang="en-GB">Simple Scan uses the SANE framework which supports most existing scanners.</p>
+    <p xml:lang="el">Αυτή η εφαρμογή χρησιμοποιεί το πλαίσιο SANE ώστε να υποστηρίζει τους περισσότερους σαρωτές.</p>
+    <p xml:lang="de">Diese Anwendung verwendet das SANE-Framework für die Unterstützung der meisten verfügbaren Scanner.</p>
+    <p xml:lang="da">Dette program bruger SANE-rammeværket for at understøtte flest mulige skannere.</p>
+    <p xml:lang="cs">Tato aplikace používá jako základ rohraní SANE, aby pokryla co největší množství skenerů.</p>
+    <p xml:lang="ca">Aquesta aplicació utilitza el marc de treball SANE per a donar suport a la majoria dels escàners existents.</p>
+    <p xml:lang="bn">এই অ্যাপটি বেশিরভাগ বিদ্যমান স্ক্যানার সমর্থন করার জন্য SANE ফ্রেমওয়ার্ক ব্যবহার করে।</p>
+    <p xml:lang="bg">Тази програма ползва SANE за поддръжката на повечето скенери.</p>
+    <p xml:lang="be-Cyrl">Каб забяспечыць падтрымку большасці існых сканераў, гэта праграма выкарыстоўвае фрэймворк SANE.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://gitlab.gnome.org/GNOME/simple-scan/raw/HEAD/data/screenshots/simple-scan-1.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://gitlab.gnome.org/GNOME/simple-scan/raw/HEAD/data/screenshots/simple-scan-2.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://gitlab.gnome.org/GNOME/simple-scan/raw/HEAD/data/screenshots/simple-scan-3.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://gitlab.gnome.org/GNOME/simple-scan/raw/HEAD/data/screenshots/simple-scan-4.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://gitlab.gnome.org/GNOME/simple-scan/raw/HEAD/data/screenshots/simple-scan-5.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://gitlab.gnome.org/GNOME/simple-scan/raw/HEAD/data/screenshots/simple-scan-6.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://apps.gnome.org/SimpleScan/</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/simple-scan/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/simple-scan</url>
+  <url type="translate">https://l10n.gnome.org/module/simple-scan/</url>
+  <!-- developer_name tag deprecaIf multiple pages in book-view the horizontal scroll bar is not shown, except a resize event occurs.ted with Appstream 1.0 -->
+  <developer_name>The GNOME Project</developer_name>
+  <developer_name xml:lang="zh-Hant-TW">GNOME 專案</developer_name>
+  <developer_name xml:lang="zh-Hans-CN">GNOME 项目</developer_name>
+  <developer_name xml:lang="uz-Latn">GNOME loyihasi</developer_name>
+  <developer_name xml:lang="uk">Проєкт GNOME</developer_name>
+  <developer_name xml:lang="ug">GNOME قۇرۇلۇشى</developer_name>
+  <developer_name xml:lang="tr">GNOME Projesi</developer_name>
+  <developer_name xml:lang="th">โครงการ GNOME</developer_name>
+  <developer_name xml:lang="sv">GNOME-projektet</developer_name>
+  <developer_name xml:lang="sr-Latn">Gnomov projekat</developer_name>
+  <developer_name xml:lang="sr-Cyrl">Гномов пројекат</developer_name>
+  <developer_name xml:lang="sl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sk">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ru">Проект GNOME</developer_name>
+  <developer_name xml:lang="ro">Proiectul GNOME</developer_name>
+  <developer_name xml:lang="pt">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pt-BR">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="pa">ਗਨੋਮ ਪਰੋਜੈਕਟ</developer_name>
+  <developer_name xml:lang="oc">Lo projècte GNOME</developer_name>
+  <developer_name xml:lang="nl">Het GNOME-project</developer_name>
+  <developer_name xml:lang="ne">जिनोम परियोजना</developer_name>
+  <developer_name xml:lang="nb">GNOME</developer_name>
+  <developer_name xml:lang="ms">Projek GNOME</developer_name>
+  <developer_name xml:lang="mjw">GNOME Project</developer_name>
+  <developer_name xml:lang="lv">GNOME projekts</developer_name>
+  <developer_name xml:lang="lt">GNOME projektas</developer_name>
+  <developer_name xml:lang="lo">ໂຄງການ GNOME</developer_name>
+  <developer_name xml:lang="ko">그놈 프로젝트</developer_name>
+  <developer_name xml:lang="kk-Cyrl">GNOME жобасы</developer_name>
+  <developer_name xml:lang="kab">Asenfar n GNOME</developer_name>
+  <developer_name xml:lang="ka">პროექტი „GNOME“</developer_name>
+  <developer_name xml:lang="ja">The GNOME Project</developer_name>
+  <developer_name xml:lang="it">Il progetto GNOME</developer_name>
+  <developer_name xml:lang="is">GNOME verkefnið</developer_name>
+  <developer_name xml:lang="ie">Li projecte GNOME</developer_name>
+  <developer_name xml:lang="id">Proyek GNOME</developer_name>
+  <developer_name xml:lang="hu">A GNOME projekt</developer_name>
+  <developer_name xml:lang="hr">GNOME projekt</developer_name>
+  <developer_name xml:lang="hi">GNOME परियोजना</developer_name>
+  <developer_name xml:lang="he">מיזם GNOME</developer_name>
+  <developer_name xml:lang="gl">Proxecto GNOME</developer_name>
+  <developer_name xml:lang="fur">Il progjet GNOME</developer_name>
+  <developer_name xml:lang="fr">Le projet GNOME</developer_name>
+  <developer_name xml:lang="fi">Gnome-projekti</developer_name>
+  <developer_name xml:lang="fa">پروژهٔ گنوم</developer_name>
+  <developer_name xml:lang="eu">GNOME proiektua</developer_name>
+  <developer_name xml:lang="es">El Proyecto GNOME</developer_name>
+  <developer_name xml:lang="eo">La projekto GNOME</developer_name>
+  <developer_name xml:lang="en-GB">The GNOME Project</developer_name>
+  <developer_name xml:lang="el">Το έργο GNOME</developer_name>
+  <developer_name xml:lang="de">Das GNOME-Projekt</developer_name>
+  <developer_name xml:lang="da">GNOME-projektet</developer_name>
+  <developer_name xml:lang="cs">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ca">El projecte GNOME</developer_name>
+  <developer_name xml:lang="bn">জিনোম প্রজেক্ট</developer_name>
+  <developer_name xml:lang="bg">Проектът GNOME</developer_name>
+  <developer_name xml:lang="be-Cyrl">Праект GNOME</developer_name>
+  <developer_name xml:lang="ab">The GNOME Project</developer_name>
+  <developer id="org.gnome">
+    <name>The GNOME Project</name>
+    <name xml:lang="zh-Hant-TW">GNOME 專案</name>
+    <name xml:lang="zh-Hans-CN">GNOME 项目</name>
+    <name xml:lang="uz-Latn">GNOME loyihasi</name>
+    <name xml:lang="uk">Проєкт GNOME</name>
+    <name xml:lang="ug">GNOME قۇرۇلۇشى</name>
+    <name xml:lang="tr">GNOME Projesi</name>
+    <name xml:lang="th">โครงการ GNOME</name>
+    <name xml:lang="sv">GNOME-projektet</name>
+    <name xml:lang="sr-Latn">Gnomov projekat</name>
+    <name xml:lang="sr-Cyrl">Гномов пројекат</name>
+    <name xml:lang="sl">Projekt GNOME</name>
+    <name xml:lang="sk">Projekt GNOME</name>
+    <name xml:lang="ru">Проект GNOME</name>
+    <name xml:lang="ro">Proiectul GNOME</name>
+    <name xml:lang="pt">O Projeto GNOME</name>
+    <name xml:lang="pt-BR">O Projeto GNOME</name>
+    <name xml:lang="pl">Projekt GNOME</name>
+    <name xml:lang="pa">ਗਨੋਮ ਪਰੋਜੈਕਟ</name>
+    <name xml:lang="oc">Lo projècte GNOME</name>
+    <name xml:lang="nl">Het GNOME-project</name>
+    <name xml:lang="ne">जिनोम परियोजना</name>
+    <name xml:lang="nb">GNOME</name>
+    <name xml:lang="ms">Projek GNOME</name>
+    <name xml:lang="mjw">GNOME Project</name>
+    <name xml:lang="lv">GNOME projekts</name>
+    <name xml:lang="lt">GNOME projektas</name>
+    <name xml:lang="lo">ໂຄງການ GNOME</name>
+    <name xml:lang="ko">그놈 프로젝트</name>
+    <name xml:lang="kk-Cyrl">GNOME жобасы</name>
+    <name xml:lang="kab">Asenfar n GNOME</name>
+    <name xml:lang="ka">პროექტი „GNOME“</name>
+    <name xml:lang="ja">The GNOME Project</name>
+    <name xml:lang="it">Il progetto GNOME</name>
+    <name xml:lang="is">GNOME verkefnið</name>
+    <name xml:lang="ie">Li projecte GNOME</name>
+    <name xml:lang="id">Proyek GNOME</name>
+    <name xml:lang="hu">A GNOME projekt</name>
+    <name xml:lang="hr">GNOME projekt</name>
+    <name xml:lang="hi">GNOME परियोजना</name>
+    <name xml:lang="he">מיזם GNOME</name>
+    <name xml:lang="gl">Proxecto GNOME</name>
+    <name xml:lang="fur">Il progjet GNOME</name>
+    <name xml:lang="fr">Le projet GNOME</name>
+    <name xml:lang="fi">Gnome-projekti</name>
+    <name xml:lang="fa">پروژهٔ گنوم</name>
+    <name xml:lang="eu">GNOME proiektua</name>
+    <name xml:lang="es">El Proyecto GNOME</name>
+    <name xml:lang="eo">La projekto GNOME</name>
+    <name xml:lang="en-GB">The GNOME Project</name>
+    <name xml:lang="el">Το έργο GNOME</name>
+    <name xml:lang="de">Das GNOME-Projekt</name>
+    <name xml:lang="da">GNOME-projektet</name>
+    <name xml:lang="cs">Projekt GNOME</name>
+    <name xml:lang="ca">El projecte GNOME</name>
+    <name xml:lang="bn">জিনোম প্রজেক্ট</name>
+    <name xml:lang="bg">Проектът GNOME</name>
+    <name xml:lang="be-Cyrl">Праект GNOME</name>
+    <name xml:lang="ab">The GNOME Project</name>
+  </developer>
+  <releases>
+    <release date="2026-04-02" version="50.0">
+      <description>
+        <ul>
+          <li>Update cursor names to be correctly displayed on Wayland.</li>
+          <li>Fix scanner selection disappearing after failed scan.</li>
+          <li>Use AdwToggleGroup in preferences dialog.</li>
+          <li>Bump minimum libadwaita version.</li>
+          <li>Show in-app notification after export with open folder action.</li>
+          <li>Fix if multiple pages in book-view the horizontal scroll bar is not shown, except a resize event occurs.</li>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2025-09-04" version="49.0">
+      <description>
+        <ul>
+          <li>Fix horizontal scrollbar.</li>
+          <li>Continue batch flatbed scans when SANE returns NO_DOCS after first page.</li>
+          <li>Change component type to "desktop-application".</li>
+          <li>Rename appdata to metainfo.</li>
+          <li>Run postprocessing after save and display errors separately.</li>
+          <li>Move postprocessing to its own function.</li>
+          <li>Fixed matching saved scanner after finishing scanners discovery.</li>
+          <li>Add numerical measure for brightness and contrast.</li>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2025-04-05" version="48.1">
+      <description>
+        <ul>
+          <li>Always tag JPEG-compressed PDF output as 8-bit RGB.</li>
+          <li>Use "view-more-symbolic" for the "Scan Options" button icon.</li>
+          <li>Add a test if the post-processing script path is empty.</li>
+          <li>Fix the docker image name of the Arch Linux Distribution.</li>
+          <li>Update Ubuntu documentation.</li>
+          <li>metainfo: Fix wrong developer id.</li>
+          <li>Correct issue tracker URL.</li>
+          <li>Update minimum Meson version to 0.46.</li>
+          <li>Use RDNN app ID.</li>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2024-03-18" version="46.0">
+      <description>
+        <ul>
+          <li>Switch to GTK4 and libadwaita</li>
+          <li>Implement redesign</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2023-03-19" version="44.0">
+      <description>
+        <ul>
+          <li>Add shortcut for Preferences (Ctrl+comma: Opens the preferences window).</li>
+          <li>Add buttons to change orientation of even/odd pages - usecase for Reversing Automatic Document Feeder (RADF) scanners.</li>
+          <li>Fix image size after cropping.</li>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-09-19" version="42.5">
+      <description>
+        <ul>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-04-19" version="42.1">
+      <description>
+        <ul>
+          <li>Clarify project license.</li>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-03-18" version="42.0">
+      <description>
+        <ul>
+          <li>Skip virtual devices when detecting scanners.</li>
+          <li>Add support for postprocessing scripts.</li>
+          <li>Save Window state to user's .config folder instead of user's .cache folder.</li>
+          <li>Updates 'About' dialog to match with other GNOME apps.</li>
+          <li>Delete autosave records after creating new document [#278].</li>
+          <li>Fix replacing underscore with space.</li>
+          <li>Fix autosave of Page Side property [#273]</li>
+          <li>Add the device name to the label if there are several identical models.</li>
+          <li>Fix incorrect scan button tooltips.</li>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2021-10-27" version="40.6">
+      <description>
+        <ul>
+          <li>Add duplex scanning support for Canon DR-C240.</li>
+          <li>Add missing centered ADF source option from Brother driver.</li>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2021-09-22" version="40.5">
+      <description>
+        <ul>
+          <li>Fix automatic size detection on Brother scanners.</li>
+          <li>Updated translations.</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2021-05-25" version="40.1">
+      <description>
+        <p>
+          Updated translations.
+        </p>
+      </description>
+    </release>
+    <release date="2021-03-23" version="40.0">
+      <description>
+        <p>
+          Updated translations.
+        </p>
+      </description>
+    </release>
+    <release date="2021-02-25" version="40~beta" type="development">
+      <description>
+        <p>
+          This is an unstable release in the 40 development series,
+          with the following changes:
+        </p>
+        <ul>
+          <li>Don't repeat vendor name in the device name</li>
+          <li>GNOME 40 consistency updates</li>
+          <li>Fix crop size after decreasing page size</li>
+          <li>UI fixes: change crop icon, improve layout of buttons</li>
+          <li>Add redetect button to device list</li>
+          <li>Add new resolution 200 DPI</li>
+          <li>Add zero second delay for Multiple Pages from FlatBed</li>
+          <li>Display an error, when no documents found in the feeder</li>
+          <li>Rename 'Start again' button to 'New document'</li>
+          <li>Fix crash on lexmark backend</li>
+        </ul>
+        <p>This release also updates translations.</p>
+      </description>
+    </release>
+    <release date="2020-10-02" version="3.38.1">
+      <description>
+        <p>
+          Updated translations.
+        </p>
+      </description>
+    </release>
+    <release date="2020-09-11" version="3.38.0">
+      <description>
+        <p>
+          First stable release for GNOME 3.38, with the updated translations.
+        </p>
+      </description>
+    </release>
+    <release date="2020-09-04" version="3.37.92" type="development">
+      <description>
+        <p>
+          This is an unstable release in the 3.37 development series,
+          with the following improvements:
+        </p>
+        <ul>
+          <li>Display error message if simple-scan is unable to open simple-scan.log</li>
+          <li>Fix scanning on Epson devices, when Automatic Page Size is enabled</li>
+        </ul>
+        <p>This release also updates translations.</p>
+      </description>
+    </release>
+    <release date="2019-09-08" version="3.34.0"/>
+    <release date="2019-05-05" version="3.32.2.1"/>
+    <release date="2019-04-09" version="3.32.2"/>
+  </releases>
+  <content_rating type="oars-1.1"/>
+  <update_contact>robert.ancell_AT_canonical.com</update_contact>
+  <translation type="gettext">simple-scan</translation>
+  <launchable type="desktop-id">org.gnome.SimpleScan.desktop</launchable>
+</component>

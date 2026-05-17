@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="it">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Salvare su un file</title>
+
+    <steps>
+      <item>
+	<p>Premere il pulsante <gui style="button">Salva il documento su un file</gui> nella barra superiore della finestra (o premere <keyseq><key>Ctrl</key><key>S</key></keyseq>).</p>
+      </item>
+      <item>
+	<p>Scegliere uno dei tipi di file supportati o modificare l'estensione del file nel campo <gui>Nome</gui>.</p>
+      </item>
+      <item>
+	<p>Premere il pulsante <gui style="button">Salva</gui>.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Tipi di file supportati</title>
+	<tr>
+		<td><p><em>Tipo</em></p></td>
+		<td><p><em>Breve descrizione</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>Un PDF può contenere più pagine, come un libro, ed è facile da distribuire. Solo un numero limitato di programmi Linux può modificare i documenti PDF, quindi questo formato è consigliato principalmente per l'archiviazione. La dimensione del documento PDF è influenzata dalla <link xref="quality">qualità dell'immagine</link>. Per ulteriori informazioni, consulta la <link href="https://it.wikipedia.org/wiki/Portable_Document_Format">pagina Wikipedia sul formato PDF</link>.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>JPEG è il formato di file utilizzato dalle fotocamere digitali per salvare le immagini. Un file JPEG è relativamente piccolo, molto facile da distribuire e adatto ad essere caricato sui siti social. La maggior parte dei sistemi operativi è dotata di un editor JPEG per impostazione predefinita. Se si ha acquisito più pagine, verrà creato un file JPEG per ciascuna pagina. Usare questo tipo di file se si vuole modificare o caricare le immagini acquisite. La dimensione del file JPEG è influenzata dalla <link xref="quality">qualità dell'immagine</link>. Per ulteriori informazioni, consultare la <link href="https://it.wikipedia.org/wiki/JPEG">pagina Wikipedia su formato JPEG</link>.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>I file PNG supportano la compressione dati senza perdita. Ciò può rendere i file molto grandi e non adatti alla distribuzione. Se si ha acquisito più pagine, verrà creato un file PNG per ciascuna pagina. Per ulteriori informazioni, consultare la <link href="https://it.wikipedia.org/wiki/Portable_Network_Graphics">pagina Wikipedia sul formato PNG</link>.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="brightness-contrast" xml:lang="hu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at ubuntu dot com</mal:email>
+      <mal:years>2014, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Meskó Balázs</mal:name>
+      <mal:email>mesko dot balazs at fsf dot hu</mal:email>
+      <mal:years>2021.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Fényerő és kontraszt beállítása</title>
+
+    <p>Egyes szkennerek lehetővé teszik a fényerő és kontraszt állítását szkenneléskor. Ha a beolvasott képek túl sötétek vagy világosak, akkor megpróbálhatja módosítani ezeket a beállításokat:</p>
+
+  <steps>
+    <item>
+      <p>Nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <gui style="menuitem">Beállítások</gui> menüpontot.</p>
+    </item>
+    <item>
+      <p>A <gui style="group">Minőség</gui> szakaszban húzza a <gui>Fényesség</gui> és <gui>Kontraszt</gui> csúszkákat.</p>
+    </item>
+    <item>
+      <p>Zárja be a párbeszédablakot.</p>
+      <media type="image" src="figures/preferences.png"/>
+    </item>
+  </steps>
+    
+</page>

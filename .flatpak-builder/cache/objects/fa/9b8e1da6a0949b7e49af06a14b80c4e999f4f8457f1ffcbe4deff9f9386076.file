@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="it">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Impostare la risoluzione dello scanner</title>
+
+    <p>La risoluzione predefinita per il tipo di documento <gui><em>Testo</em></gui> è 150 dpi (punti per pollice) e per il tipo di documento <gui><em>Immagine</em></gui> è 300 dpi. Per modificare queste impostazioni:</p>
+
+    <steps>
+      <item>
+        <p>Premere il pulsante del menu nell'angolo in alto a destra della finestra e selezionare <gui style="menuitem">Preferenze</gui>.</p>
+      </item>
+      <item>
+        <p>Nella sezione <gui style="group">Qualità</gui> modificare il valore <gui>Risoluzione testo</gui> o <gui>Risoluzione immagine</gui>.</p>
+      </item>
+      <item>
+        <p>Chiudere la finestra.</p>
+      </item>
+    </steps>
+    
+    <p>Le risoluzioni di acquisizione disponibili per entrambi i tipi di documento (Testo e Immagine) sono le stesse e sono elencate nella tabella seguente:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Risoluzione testo</em></p></td>
+		<td><p><em>Risoluzione immagine</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (bozza)</p></td>
+		<td><p>75 dpi (bozza)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (predefinita)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (predefinita)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (alta risoluzione)</p></td>
+		<td><p>1200 dpi (alta risoluzione)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>I documenti <gui><em>Testo</em></gui> vengono sempre acquisiti in bianco e nero, mentre i documenti <gui><em>Immagine</em></gui> vengono sempre acquisiti a colori, a qualsiasi risoluzione!</p>
+    </note>
+
+</page>

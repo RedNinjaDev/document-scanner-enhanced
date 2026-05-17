@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="da">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Rotere en side</title>
+
+    <p>Du kan ændre retningen på en side enten før eller efter siden er skannet. Der er i øjeblikket fire måder at rotere en side:</p>
+    
+    <steps>
+      <title>Brug værktøjslinjen</title>
+      <item><p>Vælg siden du ønsker at rotehttps://en.wikipedia.org/wiki/Lossy_compressionre ved at klikke på den en gang.</p></item>
+      <item><p>Tryk på en af pilene på værktøjslinjen for at rotere siden i den ønskede retning.</p></item>
+    </steps>
+    <steps>
+      <title>Brug højreklik</title>
+      <item><p>Højreklik på siden du ønsker at rotere.</p></item>
+      <item><p>Vælg <gui style="menuitem">Rotér mod venstre</gui> eller <gui style="menuitem">Rotér mod højre</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Brug genveje</title>
+      <item><p>Vælg siden du ønsker at rotehttps://en.wikipedia.org/wiki/Lossy_compressionre ved at klikke på den en gang.</p></item>
+      <item><p>Tryk på en af de følgende genveje:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Kommando</em></p></td>
+		<td><p><em>Genvejstast</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Rotér mod venstre</p></td>
+		<td><p><key>[</key> (venstre kantet parentes)</p></td>
+	</tr>
+	<tr>
+		<td><p>Rotér mod højre</p></td>
+		<td><p><key>]</key> (højre kantet parentes)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Hver ny skannet side vil bruge den forrige rotation.</p></note>
+</page>

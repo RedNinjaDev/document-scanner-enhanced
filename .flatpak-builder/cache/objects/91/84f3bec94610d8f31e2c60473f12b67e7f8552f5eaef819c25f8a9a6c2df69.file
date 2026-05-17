@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="pt_BR">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Fábio Nogueira</mal:name>
+      <mal:email>fnogueira@gnome.org</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Leônidas Araújo</mal:name>
+      <mal:email>leorusvellt@hotmail.com</mal:email>
+      <mal:years>2022-2024</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Salvando em um arquivo</title>
+
+    <steps>
+      <item>
+	<p>Pressione o botão <gui style="button">Salva o documento em um arquivo</gui> na barra superior da janela (ou pressione <keyseq><key>Ctrl</key><key>S</key></keyseq>).</p>
+      </item>
+      <item>
+	<p>Escolha um dos tipos de arquivos suportados, ou altere a extensão do arquivo no campo <gui>Nome</gui>.</p>
+      </item>
+      <item>
+	<p>Pressione o botão <gui style="button">Salvar</gui>.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Tipos de arquivos aceitos</title>
+	<tr>
+		<td><p><em>Tipo</em></p></td>
+		<td><p><em>Descrição breve</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>Um PDF pode conter múltiplas páginas, como um livro, e é fácil de distribuir. Apenas um número pequeno de programas do Linux pode modificar documentos PDF, de forma que esse formato é recomendado principalmente para arquivamento. O tamanho do documento PDF é afetado pela <link xref="quality">qualidade da imagem</link>. Veja a <link href="http://en.wikipedia.org/wiki/pdf">página do Wikipédia sobre PDF</link> para mais informações.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>JPEG é o formato de arquivo usado por câmeras digitais para salvar imagens. Um arquivo JPEG é relativamente pequeno, muito fácil de distribuir e adequado para envio em sites de redes sociais. A maioria dos sistemas operacionais vem com um editor JPEG por padrão. Se você digitalizou múltiplas páginas, um arquivo JPEG será criado para cada página. Use esse tipo de arquivo se você deseja modificar ou enviar as imagens digitalizadas. O tamanho do arquivo JPEG é afetado pela <link xref="quality">qualidade da imagem</link>. Veja a <link href="http://en.wikipedia.org/wiki/jpeg">página do Wikipédia sobre JPEG</link> para mais informações.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>Arquivos PNG suportam compactação de dados sem perdas. Isso pode torná-los muito grandes e não adequados para distribuição. Se você digitalizou múltiplas páginas, um arquivo PNG será criado para cada página. Veja a <link href="http://en.wikipedia.org/wiki/Portable_Network_Graphics">página do Wikipédia sobre PNG</link> para mais informações.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

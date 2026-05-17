@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="ca">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Jorba</mal:name>
+      <mal:email>jaume.jorba@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Miquel-Àngel Burgos i Fradeja</mal:name>
+      <mal:email>miquel.angel.burgos@gmail.com</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Victor Dargallo</mal:name>
+      <mal:email>victordargallo@disroot.org</mal:email>
+      <mal:years>2025</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Girar una pàgina</title>
+
+    <p>Podeu canviar la rotació d'una pàgina abans o després d'escanejar-la. Actualment, hi ha quatre maneres de rotar una pàgina:</p>
+    
+    <steps>
+      <title>Utilitzant la barra d'eines</title>
+      <item><p>Seleccionant la pàgina que es vol girar fent clic una vegada.</p></item>
+      <item><p>Prement una de les fletxes de la barra d'eines per a girar la pàgina en la direcció desitjada.</p></item>
+    </steps>
+    <steps>
+      <title>Utilitzant el botó de la dreta</title>
+      <item><p>Feu clic amb el botó dret a la pàgina que es vol girar.</p></item>
+      <item><p>Seleccioneu <gui style="menuitem">Gira a l'esquerra</gui> o <gui style="menuitem">Gira a la dreta</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Utilitzar dreceres</title>
+      <item><p>Seleccionant la pàgina que es vol girar fent clic una vegada.</p></item>
+      <item><p>Premeu una de les següents tecles de drecera:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Ordre</em></p></td>
+		<td><p><em>Tecla de drecera</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Gira a l'esquerra</p></td>
+		<td><p><key>[</key> (claudàtor esquerre)</p></td>
+	</tr>
+	<tr>
+		<td><p>Gira a la dreta</p></td>
+		<td><p><key>]</key> (claudàtor dret)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Cada nova pàgina escanejada utilitzarà la rotació anterior.</p></note>
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="brightness-contrast" xml:lang="da">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Indstilling af lysstyrke og kontrast</title>
+
+    <p>Nogle skannere gør det muligt at justere lysstyrken og kontrasten under skanning. Hvis dine skanninger bliver for mørke eller for lyse, så kan du justere disse indstillinger:</p>
+
+  <steps>
+    <item>
+      <p>Tryk på menuknappen i øverste højre hjørne af vinduet og vælg <gui style="menuitem">Indstillinger</gui>.</p>
+    </item>
+    <item>
+      <p>Under afsnittet <gui style="group">Kvalitet</gui> trækkes i skyderne <gui>Lysstyrke</gui> og/eller <gui>Kontrast</gui>.</p>
+    </item>
+    <item>
+      <p>Luk dialogen.</p>
+      <media type="image" src="figures/preferences.png"/>
+    </item>
+  </steps>
+    
+</page>

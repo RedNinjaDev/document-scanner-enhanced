@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="brightness-contrast" xml:lang="it">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Impostazioni luminosità e contrasto</title>
+
+    <p>Alcuni scanner consentono all'utente di regolare la luminosità e il contrasto durante l'acquisizione. Se i risultati sono troppo scuri o troppo chiari si possono regolare queste impostazioni:</p>
+
+  <steps>
+    <item>
+      <p>Premere il pulsante del menu nell'angolo in alto a destra della finestra e selezionare <gui style="menuitem">Preferenze</gui>.</p>
+    </item>
+    <item>
+      <p>Nella sezione <gui style="group">Qualità</gui> trascinare i cursori <gui>Luminosità</gui> e/o <gui>Contrasto</gui>.</p>
+    </item>
+    <item>
+      <p>Chiudere la finestra.</p>
+      <media type="image" src="figures/preferences.png"/>
+    </item>
+  </steps>
+    
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="id">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2020, 2021, 2023.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Mencetak</title>
+
+    <p>Anda dapat mencetak dokumen yang dipindai secara langsung tanpa harus menyimpan dokumen terlebih dahulu. Ini mudah untuk membuat salinan dokumen atau foto.</p>
+    <steps>
+      <title>Untuk Mencetak Dokumen</title>
+      <item>
+	<p>Tekan tombol menu di pojok kanan atas jendela dan pilih <gui style="menuitem">Cetak</gui>. Atau, tekan <keyseq> <key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Pilih pengaturan pencetakan yang Anda inginkan dan/atau pratinjau dokumen, lalu tekan <gui style="button">Cetak</gui>.</p>
+        <note><p>Lihat <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">bantuan desktop</link> untuk informasi umum tentang pencetakan.</p></note>
+      </item>
+     </steps>
+</page>

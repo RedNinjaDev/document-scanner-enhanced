@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="nl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Bijsnijden</title>
+
+    <p>Dankzij de functie ‘Bijsnijden’ kunt u ook een deel van een ingescande afbeelding gebruiken. U kunt het bijsnijden inschakelen voor- of nadat u een pagina ingescand hebt, en u kunt de afmetingen van het kader voor bijsnijden altijd aanpassen. Wanneer bijsnijden ingeschakeld is, zal er een filter over de huidige pagina verschijnen, waarbij het ongebruikte gebied in het grijs weergegeven wordt. U kunt bijsnijden inschakelen en de gewenste afmetingen instellen op een van de volgende manieren:</p>
+    
+    <steps>
+      <title>Rechterklik gebruiken</title>
+      <item><p>Rechterklik ergens op de pagina.</p></item>
+      <item><p>Selecteer <gui style="menuitem">Bijsnijden</gui>.</p></item>
+      <item><p>Kies een van de vaste kaders voor bijsnijden, of selecteer ‘Aangepast’ om de afmetingen van het kader handmatig in te stellen door de randen ervan te verslepen.</p></item>
+      <item><p>Klik en versleep het kader om het naar de gewenste positie te verplaatsen.</p></item>
+      <item><p>Versleep de randen van het kader om de gewenste afmetingen in te stellen.</p></item>
+    </steps>
+
+    <steps>
+      <title>De werkbalk gebruiken</title>
+      <item><p>Druk op <gui style="button">De geselecteerde pagina bijsnijden</gui> in de werkbalk.</p>
+	    <note style="tip"><p>Dit doet hetzelfde als ‘Aangepast’ kiezen bij stap 2 van de voornoemde manieren.</p></note></item>      
+      <item><p>Klik en versleep het kader om het naar de gewenste positie te verplaatsen.</p></item>
+      <item><p>Versleep de randen van het kader om de gewenste afmetingen in te stellen.</p></item>
+    </steps>
+    
+    <note><p>Elke nieuw ingescande pagina zal de voorgaande instelling voor bijsnijden gebruiken.</p></note>
+</page>

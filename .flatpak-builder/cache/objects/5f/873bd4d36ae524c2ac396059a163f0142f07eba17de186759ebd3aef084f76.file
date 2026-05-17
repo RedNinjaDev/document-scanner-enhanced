@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="uk">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрій Чорноіван</mal:name>
+      <mal:email>yurchor@ukr.net</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Встановлення якості зображення</title>
+
+    <p>Ви можете скоригувати якість зображення, яку буде використано під час перетворення скану на файл, змінивши значення цього параметра у діалоговому вікні налаштувань. Використання низької якості призведе до зменшення розміру файла, але створить на зображенні розмитість і блоки. Висока якість надасть змогу зберегти усі заскановані дані, але збільшить розмір файла. Щоб дізнатися про це більше, ознайомтеся зі статтею щодо <link href="https://uk.wikipedia.org/wiki/Стиснення_з_втратами">стискання з втратами у Вікіпедії</link>.</p>    
+
+    <steps>
+        <item>
+          <p>Натисніть кнопку меню у верхньому правому куті вікна і виберіть <gui style="menuitem">Налаштування</gui>.</p>
+        </item>
+        <item>
+          <p>У розділі <gui style="group">Якість</gui> перетягніть повзунок <gui>Стискання</gui>.</p>
+        </item>
+        <item>
+          <p>Закрийте вікно.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

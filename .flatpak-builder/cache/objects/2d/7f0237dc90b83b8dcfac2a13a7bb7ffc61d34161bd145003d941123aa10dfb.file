@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="hu">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at ubuntu dot com</mal:email>
+      <mal:years>2014, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Meskó Balázs</mal:name>
+      <mal:email>mesko dot balazs at fsf dot hu</mal:email>
+      <mal:years>2021.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>A képminőség beállítása</title>
+
+    <p>A beállítások ablakban ezzel a beállítással módosíthatja a beolvasott kép fájlba mentésekor használandó képminőséget. Alacsonyabb minőség kisebb fájlméretet eredményez, de elmosódottságot vagy kockásodást okozhat a képen. A jobb minőség minden beolvasott információt megőriz, de nagyobb fájlméretet igényel. További információkért nézze meg a <link href="https://hu.wikipedia.org/wiki/Vesztes%C3%A9ges_t%C3%B6m%C3%B6r%C3%ADt%C3%A9s">Veszteséges tömörítés Wikipédia-szócikket</link>.</p>    
+
+    <steps>
+        <item>
+          <p>Nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <gui style="menuitem">Beállítások</gui> menüpontot.</p>
+        </item>
+        <item>
+          <p>A <gui style="group">Minőség</gui> szakaszban húzza a <gui>Tömörítés</gui> csúszkát.</p>
+        </item>
+        <item>
+          <p>Zárja be a párbeszédablakot.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

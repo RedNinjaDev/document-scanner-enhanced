@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="pl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Wysyłanie pocztą</title>
+
+    <p>Aby wysłać bieżący dokument pocztą, kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">E-mail</gui>. Można także nacisnąć klawisze <keyseq><key>Ctrl</key><key>E</key></keyseq>. Zostanie otwarty klient poczty z nową wiadomością zawierającą zeskanowany dokument jako załącznik.</p>
+    <p>Jeśli typ dokumentu jest ustawiony na „tekst”, to wiadomość będzie miała załącznik PDF dla każdej strony. Jeśli ustawiono „obraz”, to wiadomość będzie miała załącznik JPEG dla każdej strony.</p>
+    <p><link xref="save"/> zawiera więcej informacji o formatach plików.</p>
+</page>

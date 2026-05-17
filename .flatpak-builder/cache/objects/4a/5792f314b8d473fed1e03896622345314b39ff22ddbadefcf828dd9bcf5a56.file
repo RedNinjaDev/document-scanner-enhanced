@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index" xml:lang="gl">
+
+    <info>
+        <title type="link" role="trail">Manual do Escáner de documentos</title>
+        <title type="text">Manual do Escáner de documentos</title>
+        <title type="link">Manual do Escáner de documentos</title>
+
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marcos Lans</mal:name>
+      <mal:email>marcoslansgarza@gmail.com</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+
+    <title><media type="image" its:translate="no" width="48px" height="48px" src="figures/icon.svg"/>Manual do Escáner de documentos</title>
+
+    <section id="acquire" style="2column">
+        <title>Escaneamento de páxinas</title>
+    </section>
+
+    <section id="modify" style="2column">
+        <title>Modificación do documento</title>
+    </section>
+
+    <section id="use" style="2column">
+        <title>Uso do documento</title>
+    </section>
+</page>

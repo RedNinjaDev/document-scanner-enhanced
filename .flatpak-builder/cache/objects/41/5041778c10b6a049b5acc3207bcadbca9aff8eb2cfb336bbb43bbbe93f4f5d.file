@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="brightness-contrast" xml:lang="ro">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Ajustarea luminozității și a contrastului</title>
+
+    <p>Unele scanere permit utilizatorului să ajusteze luminozitatea și contrastul la scanare. Dacă scanările dumneavoastră ies prea întunecate sau prea luminate puteți ajusta aceste configurări:</p>
+
+  <steps>
+    <item>
+      <p>Apăsați butonul meniu din colțul dreapta sus al ferestrei și selectați <gui style="menuitem">Preferințe</gui>.</p>
+    </item>
+    <item>
+      <p>In <gui style="group">Quality</gui> section drag the <gui>Brightness</gui> and/or <gui>Contrast</gui> sliders.</p>
+    </item>
+    <item>
+      <p>Închide dialogul.</p>
+      <media type="image" src="figures/preferences.png"/>
+    </item>
+  </steps>
+    
+</page>

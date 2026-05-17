@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="id">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2020, 2021, 2023.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Memangkas</title>
+
+    <p>Fitur pangkas memungkinkan Anda untuk menggunakan hanya sebagian dari gambar yang dipindai. Anda dapat mengaktifkan pemangkasan sebelum atau setelah memindai halaman, dan Anda selalu dapat mengubah dimensi bingkai pemangkasan. Ketika pemangkasan diaktifkan, masker akan muncul di atas halaman saat ini dengan area yang tidak digunakan ditampilkan dalam warna kelabu. Anda dapat mengaktifkan pemangkasan dan memilih dimensi yang diinginkan melalui salah satu metode berikut:</p>
+    
+    <steps>
+      <title>Gunakan Klik Kanan</title>
+      <item><p>Klik kanan di manapun pada halaman.</p></item>
+      <item><p>Pilih <gui style="menuitem">Pangkas</gui>.</p></item>
+      <item><p>Pilih salah satu bingkai pemangkasan tetap, atau pilih "Ubahan" untuk secara manual mengatur dimensi bingkai pemangkasan dengan menyeret batasnya.</p></item>
+      <item><p>Klik dan tahan bingkai untuk memindahkan ke posisi yang diinginkan.</p></item>
+      <item><p>Seret batas bingkai untuk menetapkan dimensi yang diinginkan.</p></item>
+    </steps>
+
+    <steps>
+      <title>Menggunakan Bilah Alat</title>
+      <item><p>Klik tombol <gui style="button">Pangkas halaman yang dipilih</gui> pada bilah alat.</p>
+	    <note style="tip"><p>Ini adalah sama dengan memilih "Ubahan" di langkah 2 dari metode tersebut.</p></note></item>      
+      <item><p>Klik dan tahan bingkai untuk memindahkan ke posisi yang diinginkan.</p></item>
+      <item><p>Seret batas bingkai untuk menetapkan dimensi yang diinginkan.</p></item>
+    </steps>
+    
+    <note><p>Setiap halaman pemindaian baru akan menggunakan batas pangkas sebelumnya.</p></note>
+</page>

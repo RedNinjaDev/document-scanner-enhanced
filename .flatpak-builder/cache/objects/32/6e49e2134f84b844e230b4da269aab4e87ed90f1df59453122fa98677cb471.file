@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="da">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Brug en automatisk dokumentarkføder</title>
+
+    <p>Hvis din skanner har en automatisk dokumentarkføder (ADF), så kan du skanne alle siderne fra arkføderen via en af de følgende metoder:</p>
+      <steps>
+	<title>Brug en genvej</title>
+	<item>
+	  <p>Tryk <keyseq><key>Ctrl</key><key>F</key></keyseq></p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Brug værktøjslinjen</title>
+	<item>
+          <p>Klik på tandhjulet til højre for knappen <gui style="button">Skan</gui>.</p>
+	</item>
+	<item>
+	  <p>Vælg <gui style="button">Alle sider fra arkføderen</gui>.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Som standard vil begge sider af en side blive skannet, hvis din skanner har denne funktion. For kun at skanne en side:</p>
+    <steps>
+      <item>
+        <p>Tryk på menuknappen i øverste højre hjørne af vinduet og vælg <gui style="menuitem">Indstillinger</gui>.</p>
+      </item>
+      <item>
+        <p>Under afsnittet <gui style="group">Skanning</gui> ændres værdien for <gui>Skan sider</gui>.</p>
+      </item>
+      <item>
+        <p>Luk dialogen.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

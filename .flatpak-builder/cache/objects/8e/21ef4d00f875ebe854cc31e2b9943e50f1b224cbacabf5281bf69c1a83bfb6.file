@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="pl">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Ustawianie jakości obrazu</title>
+
+    <p>Można dostosować jakość obrazu używaną podczas konwertowania wyniku skanowania do pliku zmieniając to ustawienie w oknie preferencji. Użycie niskiej jakości spowoduje mniejszy rozmiar pliku, ale obraz może być rozmyty. Wysoka jakość zachowa wszystkie zeskanowane informacje, ale wymaga większego rozmiaru pliku. <link href="https://pl.wikipedia.org/wiki/Kompresja_stratna">Wikipedia</link> zawiera więcej informacji.</p>    
+
+    <steps>
+        <item>
+          <p>Kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">Preferencje</gui>.</p>
+        </item>
+        <item>
+          <p>W sekcji <gui style="group">Jakość</gui> przeciągnij suwak <gui>Kompresja</gui>.</p>
+        </item>
+        <item>
+          <p>Zamknij okno.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

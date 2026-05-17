@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="uk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрій Чорноіван</mal:name>
+      <mal:email>yurchor@ukr.net</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Встановлення роздільної здатності сканування</title>
+
+    <p>Типовою роздільністю для документів типу <gui><em>Текст</em></gui> є 150 т/д (точок на дюйм), а для документів типу <gui><em>Зображення</em></gui> — 300 т/д. Щоб змінити значення роздільності, виконайте такі дії:</p>
+
+    <steps>
+      <item>
+        <p>Натисніть кнопку меню у верхньому правому куті вікна і виберіть <gui style="menuitem">Налаштування</gui>.</p>
+      </item>
+      <item>
+        <p>У розділі <gui style="group">Якість</gui> змініть значення <gui>Роздільність тексту</gui> або <gui>Роздільність зображення</gui>.</p>
+      </item>
+      <item>
+        <p>Закрийте вікно.</p>
+      </item>
+    </steps>
+    
+    <p>Доступні роздільні здатності сканування для документів обох типів (текст і зображення) є однаковими. Їх представлено у наведеній нижче таблиці:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Роздільна здатність тексту</em></p></td>
+		<td><p><em>Роздільна здатність зображення</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 т/д (чернетка)</p></td>
+		<td><p>75 т/д (чернетка)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 т/д (типове значення)</p></td>
+		<td><p>150 т/д</p></td>
+	</tr>
+	<tr>
+		<td><p>200 т/д</p></td>
+		<td><p>200 т/д</p></td>
+	</tr>
+	<tr>
+		<td><p>300 т/д</p></td>
+		<td><p>300 т/д (типове значення)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 т/д</p></td>
+		<td><p>600 т/д</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 т/д (висока роздільність)</p></td>
+		<td><p>1200 т/д (висока роздільність)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 т/д</p></td>
+		<td><p>2400 т/д</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Документи типу <gui><em>Текст</em></gui> завжди скануються у чорно-білому режимі, а документи типу <gui><em>Зображення</em></gui> — завжди у кольорах, незалежно від роздільної здатності!</p>
+    </note>
+
+</page>

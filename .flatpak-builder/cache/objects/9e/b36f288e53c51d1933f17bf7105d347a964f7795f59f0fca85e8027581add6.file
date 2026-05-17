@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="kk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Сканерлеу ажыратылымдығын баптау</title>
+
+    <p><gui><em>Мәтін</em></gui> құжат түрі үшін әдепкі ажыратылым — 150 dpi (дюймдегі нүктелер саны), ал <gui><em>Сурет</em></gui> құжат түрі үшін — 300 dpi. Бұл баптауларды өзгерту үшін:</p>
+
+    <steps>
+      <item>
+        <p>Терезенің жоғарғы оң жақ бұрышындағы мәзір батырмасын басып, <gui style="menuitem">Баптаулар</gui> таңдаңыз.</p>
+      </item>
+      <item>
+        <p><gui style="group">Сапа</gui> бөлімінде <gui>Мәтін ажыратылымдығы</gui> немесе <gui>Сурет ажыратылымдығы</gui> мәнін өзгертіңіз.</p>
+      </item>
+      <item>
+        <p>Сұхбат терезесін жабыңыз.</p>
+      </item>
+    </steps>
+    
+    <p>Құжаттың екі түрі (Мәтін және Сурет) үшін де қолжетімді сканерлеу ажыратылымдықтары бірдей және келесі кестеде келтірілген:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Мәтін ажыратылымдығы</em></p></td>
+		<td><p><em>Сурет ажыратылымдығы</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (нобай)</p></td>
+		<td><p>75 dpi (нобай)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (әдепкі)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (әдепкі)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (жоғары ажыратылымдық)</p></td>
+		<td><p>1200 dpi (жоғары ажыратылымдық)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Кез келген ажыратылымдықта <gui><em>Мәтін</em></gui> құжаттары әрқашан ақ-қара түсте, ал <gui><em>Сурет</em></gui> құжаттары әрқашан түрлі-түсті болып сканерленеді!</p>
+    </note>
+
+</page>

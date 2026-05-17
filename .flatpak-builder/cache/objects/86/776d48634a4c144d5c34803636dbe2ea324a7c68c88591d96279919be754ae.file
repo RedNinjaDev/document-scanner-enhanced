@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="ro">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Tipărirea</title>
+
+    <p>Puteți să tipăriți un document scanat fără să trebuiască să salvați documentul mai întâi. Aceasta este convenient pentru copierea de documente sau fotografii.</p>
+    <steps>
+      <title>Pentru a tipări un document</title>
+      <item>
+	<p>Apăsați butonul meniu colțul dreapta sus al ferestrei și selectați <gui style="menuitem">Tipărește</gui>. Ca o altă variantă, apăsați <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Alegeți configurările de tipărire dorite și/sau previzualizați documentul de tipărit, apoi apăsați butonul <gui style="button">Tipărește</gui>.</p>
+        <note><p>Consultați<link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">ajutorul mediului desktop</link> pentru informații generale despre tipărire.</p></note>
+      </item>
+     </steps>
+</page>

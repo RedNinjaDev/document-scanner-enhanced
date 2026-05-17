@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="gl">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marcos Lans</mal:name>
+      <mal:email>marcoslansgarza@gmail.com</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Estabelecer a calidade da imaxe</title>
+
+    <p>Pode axustar a calidade da imaxe que usa cando converte o escáner a un ficheiro modificando este axuste no diálogo de preferencias. Usando unha calidade baixa terá un tamaño de ficheiro pequeno pero pode mostrarse desenfocado ou con parches. Unha calidade alta manterá a información escaneada pero precisa un tamaño de ficheiro máis grande. Vexa a <link href="https://gl.wikipedia.org/wiki/Algoritmo_de_compresi%C3%B3n_con_perda">Algoritmo de compresión con perda</link> para obter máis información.</p>    
+
+    <steps>
+        <item>
+          <p>Prema o botón de menú na esquina superior dereita da xanela e seleccione <gui style="menuitem">Preferencias</gui>.</p>
+        </item>
+        <item>
+          <p>Na sección <gui style="group">Calidade</gui> arrastre o deslizador <gui>Compresión</gui>.</p>
+        </item>
+        <item>
+          <p>Peche o diálogo.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="tr">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sabri Ünal</mal:name>
+      <mal:email>libreajans@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2023</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Görüntü Niteliğini Ayarlamak</title>
+
+    <p>Tercihler iletişim kutusundaki bu ayarı değiştirerek, tarama bir dosyaya dönüştürülürken kullanılan görüntü niteliğini ayarlayabilirsiniz. Düşük nitelik kullanımı dosya boyutunun küçük olmasına neden olur, ancak görüntüde bir miktar bulanıklık veya karelenme oluşabilir. Yüksek nitelik kullanımı, taranan tüm bilgileri saklar ancak dosya boyutunun büyük olmasına neden olur. Daha çok bilgi için <link href="https://en.wikipedia.org/wiki/Lossy_compression">Lossy compression</link> Wikipedia sayfasına bakabilirsiniz.</p>    
+
+    <steps>
+        <item>
+          <p>Pencerenin sağ üst köşesindeki menü düğmesine tıklayın ve <gui style="menuitem">Tercihler</gui>'i seçin.</p>
+        </item>
+        <item>
+          <p><gui style="group">Nitelik</gui> bölümünde <gui>Sıkıştırma</gui> sürgüsünü sürükleyin.</p>
+        </item>
+        <item>
+          <p>İletişim penceresini kapatın.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="de">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2021, 2024</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jürgen Benvenuti</mal:name>
+      <mal:email>gastornis@posteo.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Zuschneiden</title>
+
+    <p>Die Zuschneidefunktion ermöglicht es Ihnen, nur einen Teil des eingescannten Bildes zu verwenden. Sie können das Zuschneiden entweder vor oder nach dem Scannen einer Seite aktivieren und die Abmessung des Zuschnittrahmens jederzeit ändern. Wenn Zuschneiden aktiviert ist, wird eine Maske über die aktuelle Seite gelegt, welche den nicht zu verwendenden Bereich grau darstellt. Sie können das Zuschneiden und die Auswahl des gewünschten Bereichs auf folgende Arten aktivieren:</p>
+    
+    <steps>
+      <title>Mit einem Rechtsklick</title>
+      <item><p>Klicken Sie auf eine beliebige Stelle im Bildbereich.</p></item>
+      <item><p>Wählen Sie <gui style="menuitem">Zuschneiden</gui>.</p></item>
+      <item><p>Wählen Sie entweder einen der festen Zuschneiderahmen aus oder wählen Sie <gui>Benutzerdefiniert</gui>, um die Abmessungen des Zuschneiderahmens durch Ziehen der Ränder anzupassen.</p></item>
+      <item><p>Klicken Sie den Rahmen an und halten Sie die Maustaste gedrückt, dann ziehen Sie ihn an die gewünschte Position.</p></item>
+      <item><p>Ziehen Sie die Ränder des Rahmens auf die gewünschte Größe.</p></item>
+    </steps>
+
+    <steps>
+      <title>Aus der Werkzeugleiste</title>
+      <item><p>Klicken Sie auf den Knopf <gui>Die gewählte Seite zurechtschneiden</gui> in der Werkzeugleiste.</p>
+	    <note style="tip"><p>Dies ist gleichbedeutend mit <gui>Benutzerdefiniert</gui> in Schritt 2 der bereits genannten Methoden.</p></note></item>      
+      <item><p>Klicken Sie den Rahmen an und halten Sie die Maustaste gedrückt, dann ziehen Sie ihn an die gewünschte Position.</p></item>
+      <item><p>Ziehen Sie die Ränder des Rahmens auf die gewünschte Größe.</p></item>
+    </steps>
+    
+    <note><p>Für jede neue Seite wird der vorherige Zuschneiderahmen verwendet.</p></note>
+</page>

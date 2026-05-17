@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="ru">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Печать</title>
+
+    <p>Вы можете распечатать отсканированный документ напрямую, не сохраняя его сначала. Это удобно для создания копий документов или фотографий.</p>
+    <steps>
+      <title>Печать документа</title>
+      <item>
+	<p>Нажмите кнопку меню в правом верхнем углу окна и выберите <gui style="menuitem">Печать</gui>. В качестве альтернативы нажмите <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Выберите нужные параметры печати и/или просмотрите документ, затем нажмите <gui style="button">Печать</gui>.</p>
+        <note><p>Общую информацию о печати см. в <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">справке рабочего стола</link>.</p></note>
+      </item>
+     </steps>
+</page>

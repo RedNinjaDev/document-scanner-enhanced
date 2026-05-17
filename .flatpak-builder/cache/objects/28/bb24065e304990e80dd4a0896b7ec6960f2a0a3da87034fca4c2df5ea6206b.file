@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="bg">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Определяне на резолюцията за сканиране</title>
+
+    <p>Стандартната разделителната способност за документ тип <gui><em>текст</em></gui> е 150 dpi, а за документ тип <gui><em>изображение</em></gui> е 300 dpi. За да промените тези настройки:</p>
+
+    <steps>
+      <item>
+        <p>Натиснете бутона за меню в горния десен ъгъл на прозореца и изберете <gui style="menuitem">Настройки</gui>.</p>
+      </item>
+      <item>
+        <p>В раздела <gui style="group">Качество</gui> променете стойността на <gui>Разделителна способност за текст</gui> или <gui>Разделителна способност за изображения</gui>.</p>
+      </item>
+      <item>
+        <p>Затворете диалоговия прозорец.</p>
+      </item>
+    </steps>
+    
+    <p>Наличните разделителни способности на сканиране за двата типа документи (текст и изображение) са едни и същи и са изброени в следната таблица:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Разделителна способност за текст</em></p></td>
+		<td><p><em>Разделителна способност за изображения</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (чернова)</p></td>
+		<td><p>75 dpi (чернова)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (стандартно)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (стандартно)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (висока разделителна способност)</p></td>
+		<td><p>1200 dpi (висока разделителна способност)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p><gui><em>Текстовите</em></gui> документи се сканират винаги черно-бяло, а документите с <gui><em>изображения</em></gui> се сканират винаги с цвят, при всякаква разделителна способност!</p>
+    </note>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="da">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Beskæring</title>
+
+    <p>Beskæringsfunktionen gør, at du kan nøjes med kun at bruge en del af et skannet billede. Du kan aktivere beskæring enten før eller efter skanning af en side, og du kan altid ændre dimensionerne for beskæringsrammen. Når beskæring er aktiveret, så vil en grå overdækning blive lagt over området som ikke anvendes. Du kan aktivere beskæring og vælge de ønskede dimensioner via en af de følgende metoder:</p>
+    
+    <steps>
+      <title>Brug højreklik</title>
+      <item><p>Højreklik et sted på siden.</p></item>
+      <item><p>Vælg <gui style="menuitem">Beskær</gui>.</p></item>
+      <item><p>Vælg en af de faste beskæringsrammer, eller vælg “Brugertilpasset” for manuelt at indstille dimensionerne for beskæringsrammen ved at trække i kanterne.</p></item>
+      <item><p>Klik på og hold rammen for at flytte den til den ønskede position.</p></item>
+      <item><p>Træk i rammens kanter for at indstille de ønskede dimensioner.</p></item>
+    </steps>
+
+    <steps>
+      <title>Brug værktøjslinjen</title>
+      <item><p>Tryk på knappen <gui style="button">Beskær den markerede side</gui> i værktøjslinjen.</p>
+	    <note style="tip"><p>Svarer til at vælge “Brugertilpasset” i trin 2 i den tidligere nævnte metode.</p></note></item>      
+      <item><p>Klik på og hold rammen for at flytte den til den ønskede position.</p></item>
+      <item><p>Træk i rammens kanter for at indstille de ønskede dimensioner.</p></item>
+    </steps>
+    
+    <note><p>Hver ny skannet side vil bruge den tidligere beskæring.</p></note>
+</page>

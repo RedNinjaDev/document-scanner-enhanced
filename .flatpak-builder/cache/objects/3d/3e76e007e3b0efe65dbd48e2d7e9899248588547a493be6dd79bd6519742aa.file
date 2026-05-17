@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="hu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at ubuntu dot com</mal:email>
+      <mal:years>2014, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Meskó Balázs</mal:name>
+      <mal:email>mesko dot balazs at fsf dot hu</mal:email>
+      <mal:years>2021.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Vágás</title>
+
+    <p>A vágás funkció lehetővé teszi a beolvasott kép csak egy részének használatát. A vágást bekapcsolhatja a beolvasás előtt vagy után is, és bármikor megváltoztathatja a vágási keret méretét. Ha a vágás engedélyezett, akkor egy maszk jelenik meg az aktuális oldal fölött, a használaton kívüli területet szürkén jelenítve meg. A következő módokon engedélyezheti a vágást és választhatja ki a kívánt méretet:</p>
+    
+    <steps>
+      <title>Helyi menü használatával</title>
+      <item><p>Kattintson a jobb egérgombbal bárhová az oldalon.</p></item>
+      <item><p>Válassza a <gui style="menuitem">Vágás</gui> menüpontot.</p></item>
+      <item><p>Válassza a rögzített vágási keretek egyikét, vagy az Egyéni lehetőséget a vágási keret méretének megadásához a szegélyei húzásával.</p></item>
+      <item><p>Kattintson és tartsa a keretet, hogy a kívánt pozícióba húzza.</p></item>
+      <item><p>Húzza a keret szegélyeit a kívánt méret beállításához.</p></item>
+    </steps>
+
+    <steps>
+      <title>Eszköztár</title>
+      <item><p>Nyomja meg a <gui style="button">Kiválasztott oldal vágása</gui> gombot az eszköztáron.</p>
+	    <note style="tip"><p>Ez megegyezik a korábbi módszerek 2. lépésében az Egyéni lehetőség választásával.</p></note></item>      
+      <item><p>Kattintson és tartsa a keretet, hogy a kívánt pozícióba húzza.</p></item>
+      <item><p>Húzza a keret szegélyeit a kívánt méret beállításához.</p></item>
+    </steps>
+    
+    <note><p>Minden újonnan beolvasott oldal az előző vágási beállításokat fogja használni.</p></note>
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="de">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2021, 2024</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jürgen Benvenuti</mal:name>
+      <mal:email>gastornis@posteo.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Per E-Mail versenden</title>
+
+    <p>Um das Dokument per E-Mail zu versenden, klicken Sie auf den Menüknopf in der rechten oberen Ecke des Fensters und wählen Sie <gui style="menuitem">E-Mail</gui>. Alternativ drücken Sie <keyseq><key>Strg</key><key>E</key></keyseq>. Dadurch wird Ihr E-Mail-Programm mit einer neuen Nachricht geöffnet, die das eingelesene Dokument als Anhang enthält.</p>
+    <p>Wenn der Dokumenttyp auf <gui>Text</gui> gesetzt war, erhält die E-Mail einen PDF-Anhang für jede Seite. War der Dokumenttyp auf <gui>Bild</gui> gesetzt, erhält die E-Mail einen JPEG-Anhang für jede Seite.</p>
+    <p>In <link xref="save"/> finden Sie weitere Informationen zu Dateiformaten.</p>
+</page>

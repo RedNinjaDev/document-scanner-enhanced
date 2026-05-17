@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanning" xml:lang="da">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <title type="sort">0</title>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <title type="sort" its:translate="no">0</title>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Skanning af en side</title>
+
+    <p>For at skanne et dokument fra din skanner:</p>
+    <steps>
+      <item><p>Forbind skanneren med din computer og tænd den.</p></item>
+      <item><p>Åbn <app>Dokumentskanner</app>.</p></item>
+      <item><p>Klik på tandhjulet til højre for knappen <gui style="button">Skan</gui>.</p></item>
+      <item><p>Vælg den type dokument du skanner: <gui style="button">Tekst</gui> eller <gui style="button">Billede</gui>.</p>
+	     <media type="image" src="figures/scan_toolbar.png"/></item>
+      <item><p>Klik på knappen “Skan” på værktøjslinjen (eller tryk på <keyseq><key>Ctrl</key><key>1</key></keyseq>).</p></item>
+    </steps>
+
+    <note><p>Siden vil blive vist mens den skannes. For at stoppe skanningen trykkes på tasten <key>Esc</key> på tastaturet. Hver ny side, du skanner, placeres sidst i dokumentet.</p></note>
+
+    <p>Se <link xref="dpi"/> for at ændre kvaliteten på en skannet side.</p>
+</page>

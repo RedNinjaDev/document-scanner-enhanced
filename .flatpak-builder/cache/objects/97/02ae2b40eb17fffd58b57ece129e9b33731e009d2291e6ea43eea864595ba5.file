@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="nl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Een pagina draaien</title>
+
+    <p>U kunt een pagina draaien voor- of nadat u ze inscant. Momenteel zijn er vier manieren waarop u dit kunt doen:</p>
+    
+    <steps>
+      <title>De werkbalk gebruiken</title>
+      <item><p>Selecteer de pagina die u wilt draaien door erop te klikken.</p></item>
+      <item><p>Druk op een van de pijlen in de werkbalk om de pagina in de gewenste richting te draaien.</p></item>
+    </steps>
+    <steps>
+      <title>Rechterklik gebruiken</title>
+      <item><p>Rechterklik op de pagina die u wilt draaien.</p></item>
+      <item><p>Selecteer <gui style="menuitem">Linksom draaien</gui> of <gui style="menuitem">Rechtsom draaien</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Sneltoetsen gebruiken</title>
+      <item><p>Selecteer de pagina die u wilt draaien door erop te klikken.</p></item>
+      <item><p>Druk op een van de volgende sneltoetsen:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Opdracht</em></p></td>
+		<td><p><em>Sneltoets</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Linksom draaien</p></td>
+		<td><p><key>[</key> (vierkant haakje openen)</p></td>
+	</tr>
+	<tr>
+		<td><p>Rechtsom draaien</p></td>
+		<td><p><key>]</key> (vierkant haakje sluiten)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Elke nieuw ingescande pagina zal de voorgaande draaiing gebruiken.</p></note>
+</page>

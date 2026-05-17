@@ -22,7 +22,26 @@
       "Bash(command -v meson)",
       "Bash(command -v valac)",
       "Bash(command -v ninja)",
-      "Bash(git -c commit.gpgsign=false commit -q -m 'Slim rebrand back to MR-friendly minimum *)"
+      "Bash(git -c commit.gpgsign=false commit -q -m 'Slim rebrand back to MR-friendly minimum *)",
+      "WebSearch",
+      "Bash(command -v flatpak)",
+      "Bash(command -v flatpak-builder)",
+      "Bash(flatpak --version)",
+      "Bash(flatpak remotes *)",
+      "Bash(flatpak list *)",
+      "Bash(flatpak --user remote-info flathub org.gnome.Sdk//49)",
+      "Bash(flatpak remote-add *)",
+      "Bash(flatpak install *)",
+      "Bash(flatpak-builder --version)",
+      "Bash(flatpak --user list --runtime)",
+      "Bash(flatpak-builder --user --install --force-clean _flatpak-build build-aux/flatpak/local-build.json)",
+      "Bash(tee /tmp/flatpak-build.log)",
+      "Read(//tmp/**)",
+      "Bash(flatpak --user list --app)",
+      "Bash(flatpak run *)",
+      "WebFetch(domain:github.com)",
+      "Bash(git ls-remote *)",
+      "Bash(git -c commit.gpgsign=false commit -q -m 'Add local Flatpak build manifest + fix Vala '\\\\''var'\\\\'' collision *)"
     ]
   }
 }

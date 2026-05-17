@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanning" xml:lang="kk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <title type="sort">0</title>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <title type="sort" its:translate="no">0</title>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Бетті сканерлеу</title>
+
+    <p>Сканерден құжатты сканерлеу үшін:</p>
+    <steps>
+      <item><p>Сканерді компьютерге қосып, оны іске қосыңыз.</p></item>
+      <item><p><app>Құжаттар сканері</app> бағдарламасын ашыңыз.</p></item>
+      <item><p><gui style="button">Сканерлеу</gui> батырмасының оң жағындағы тісті дөңгелекті шертіңіз.</p></item>
+      <item><p>Сканерлеп жатқан құжат түрін таңдаңыз: <gui style="button">Мәтін</gui> немесе <gui style="button">Сурет</gui>.</p>
+	     <media type="image" src="figures/scan_toolbar.png"/></item>
+      <item><p>Сайман панеліндегі "Сканерлеу" батырмасын шертіңіз (немесе <keyseq><key>Ctrl</key><key>1</key></keyseq> басыңыз).</p></item>
+    </steps>
+
+    <note><p>Бет сканерлену барысында көрсетіледі. Сканерлеуді кез келген уақытта тоқтату үшін пернетақтадағы <key>Esc</key> пернесін басыңыз. Сіз сканерлеген әрбір бет құжаттың соңына орналастырылады.</p></note>
+
+    <p>Сканерленген беттің сапасын өзгерту үшін <link xref="dpi"/> бөлімін қараңыз.</p>
+</page>

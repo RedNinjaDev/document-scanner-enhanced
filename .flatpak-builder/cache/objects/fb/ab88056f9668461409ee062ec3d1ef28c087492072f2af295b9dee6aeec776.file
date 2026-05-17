@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="sv">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Isak Östlund</mal:name>
+      <mal:email>translate@catnip.nu</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Rotera en sida</title>
+
+    <p>Du kan ändra rotationen för en sida antingen före eller efter att sidan har skannats. Det finns för tillfället fyra sätt att rotera en sida på:</p>
+    
+    <steps>
+      <title>Använd verktygsfältet</title>
+      <item><p>Välj sidan du vill rotera genom att klicka på den.</p></item>
+      <item><p>Tryck på en av pilarna i verktygsfältet för att rotera sidan i önskad riktning.</p></item>
+    </steps>
+    <steps>
+      <title>Högerklicka</title>
+      <item><p>Högerklicka på den sida du vill rotera.</p></item>
+      <item><p>Välj <gui style="menuitem">Rotera åt vänster</gui> eller <gui style="menuitem">Rotera åt höger</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Använd genvägar</title>
+      <item><p>Välj sidan du vill rotera genom att klicka på den.</p></item>
+      <item><p>Tryck på en av följande snabbtangenter:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Kommando</em></p></td>
+		<td><p><em>Snabbtangent</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Rotera åt vänster</p></td>
+		<td><p><key>[</key> (vänster hakparentes)</p></td>
+	</tr>
+	<tr>
+		<td><p>Rotera åt höger</p></td>
+		<td><p><key>]</key> (höger hakparentes)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Nya skannade sidor kommer använda föregående rotering.</p></note>
+</page>

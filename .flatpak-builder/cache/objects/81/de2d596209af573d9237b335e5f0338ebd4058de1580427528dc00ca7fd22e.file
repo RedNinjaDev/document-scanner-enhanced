@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="tr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sabri Ünal</mal:name>
+      <mal:email>libreajans@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Kırpma</title>
+
+    <p>Kırpma özelliği, taranan resmin yalnızca bir bölümünü kullanmanıza olanak tanır. Kırpmayı, bir sayfayı taramadan önce veya sonra etkinleştirebilir ve kırpma çerçevesinin boyutlarını her zaman değiştirebilirsiniz. Kırpma etkinleştirildiğinde, geçerli sayfanın üzerinde kullanılmayan alanı gri gösteren maske çıkacaktır. Aşağıdaki yöntemlerden birini kullanarak kırpmayı etkinleştirebilir ve istediğiniz boyutları seçebilirsiniz:</p>
+    
+    <steps>
+      <title>Sağ Tıklamayı Kullanarak</title>
+      <item><p>Sayfanın herhangi bir yerine sağ tıklayın.</p></item>
+      <item><p><gui style="menuitem">Kırp</gui>'ı seçin.</p></item>
+      <item><p>Sabit kırpma çerçevelerinden birini seçin veya kırpma çerçevesinin boyutlarını, kenarlıklarını sürükleyerek el ile ayarlamak için "Özel" seçeneğini seçin.</p></item>
+      <item><p>İstediğiniz konuma taşımak için çerçeveye tıklayıp basılı tutun.</p></item>
+      <item><p>İstenen boyutları ayarlamak için çerçevenin kenarlıklarını sürükleyin.</p></item>
+    </steps>
+
+    <steps>
+      <title>Araç Çubuğunu Kullanarak</title>
+      <item><p>Araç çubuğundaki <gui style="button">Seçili sayfayı kırp</gui> düğmesine tıklayın.</p>
+	    <note style="tip"><p>Bu, yukarıda söz edilen yöntemlerin 2. adımındaki "Özel" seçimiyle aynıdır.</p></note></item>      
+      <item><p>İstediğiniz konuma taşımak için çerçeveye tıklayıp basılı tutun.</p></item>
+      <item><p>İstenen boyutları ayarlamak için çerçevenin kenarlıklarını sürükleyin.</p></item>
+    </steps>
+    
+    <note><p>Taranan her yeni sayfa önceki kırpmayı kullanır.</p></note>
+</page>

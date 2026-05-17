@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="hu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at ubuntu dot com</mal:email>
+      <mal:years>2014, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Meskó Balázs</mal:name>
+      <mal:email>mesko dot balazs at fsf dot hu</mal:email>
+      <mal:years>2021.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Oldal forgatása</title>
+
+    <p>Módosíthatja az oldal forgatását a szkennelés előtt vagy után is. Jelenleg négyféleképpen forgathat el egy oldalt:</p>
+    
+    <steps>
+      <title>Eszköztár</title>
+      <item><p>Válassza ki a forgatni kívánt oldalt egy kattintással.</p></item>
+      <item><p>Nyomja meg az eszköztár nyilainak egyikét az oldal kívánt irányba forgatásához.</p></item>
+    </steps>
+    <steps>
+      <title>Helyi menü használatával</title>
+      <item><p>Kattintson a jobb egérgombbal a forgatni kívánt oldalra.</p></item>
+      <item><p>Válassza a <gui style="menuitem">Forgatás balra</gui> vagy <gui style="menuitem">Forgatás jobbra</gui> menüpontot.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Gyorsbillentyűkkel</title>
+      <item><p>Válassza ki a forgatni kívánt oldalt egy kattintással.</p></item>
+      <item><p>Nyomja meg a következő gyorsbillentyűk egyikét:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Parancs</em></p></td>
+		<td><p><em>Gyorsbillentyű</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Forgatás balra</p></td>
+		<td><p><key>[</key> (nyitó szögletes zárójel)</p></td>
+	</tr>
+	<tr>
+		<td><p>Forgatás jobbra</p></td>
+		<td><p><key>]</key> (záró szögletes zárójel)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Minden újonnan beolvasott oldal a korábbi forgatást használja.</p></note>
+</page>

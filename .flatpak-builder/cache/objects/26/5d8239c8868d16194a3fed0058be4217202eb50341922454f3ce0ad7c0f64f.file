@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="eu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Moztea</title>
+
+    <p>Mozteko eginbideari esker, eskaneatutako irudi baten zati bakar bat erabiltzeko aukera duzu. Moztea orrialdea eskaneatu aurretik zein ondoren gaitu daiteke, eta beti mozte-markoaren dimentsioak aldatu ahal dira. Moztea gaituta badago, maskara bat agertuko da uneko orrialdearen gainean, erabiliko ez den area grisez markatuta ageri dela. Moztea gaitzeko eta nahi dituzun dimentsioak aukeratzeko, erabili honako metodoetako bat:</p>
+    
+    <steps>
+      <title>Erabili eskuineko klika</title>
+      <item><p>Egin eskuineko klik orriko edozein tokitan.</p></item>
+      <item><p>Hautatu <gui style="menuitem">Moztu</gui>.</p></item>
+      <item><p>Aukeratu mozte-marko finkoetako bat edo hautatu "Pertsonalizatua" mozte-markoaren dimentsioak eskuz ezartzeko, bere ertzak arrastatuta.</p></item>
+      <item><p>Egin klik eta eutsi markoan, hura nahi duzun tokira eramateko.</p></item>
+      <item><p>Arrastatu markoaren ertzak nahi dituzun dimentsioak ezartzeko.</p></item>
+    </steps>
+
+    <steps>
+      <title>Erabili tresna-barra</title>
+      <item><p>Sakatu tresna-barrako <gui style="button">Moztu hautatutako orrialdea</gui> botoia.</p>
+	    <note style="tip"><p>Goiko metodoetako bigarrenean aipatu den bigarren urratsean "Pertsonalizatua" aukeratzearen parekoa da hori.</p></note></item>      
+      <item><p>Egin klik eta eutsi markoan, hura nahi duzun tokira eramateko.</p></item>
+      <item><p>Arrastatu markoaren ertzak nahi dituzun dimentsioak ezartzeko.</p></item>
+    </steps>
+    
+    <note><p>Eskaneatutako orrialde bakoitzak aurreko moztea erabiliko du.</p></note>
+</page>

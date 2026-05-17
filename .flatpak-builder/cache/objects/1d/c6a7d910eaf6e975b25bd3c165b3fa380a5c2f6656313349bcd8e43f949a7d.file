@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="kk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Басып шығару</title>
+
+    <p>Сканерленген құжатты алдын ала сақтамай-ақ тікелей басып шығаруға болады. Бұл құжаттардың немесе фотосуреттердің көшірмелерін жасау үшін ыңғайлы.</p>
+    <steps>
+      <title>Құжатты басып шығару үшін</title>
+      <item>
+	<p>Терезенің жоғарғы оң жақ бұрышындағы мәзір батырмасын басып, <gui style="menuitem">Басып шығару</gui> таңдаңыз. Сонымен қатар, <keyseq><key>Ctrl</key><key>P</key></keyseq> басуға болады.</p>
+      </item>
+      <item>
+	<p>Қажетті басып шығару баптауларын таңдаңыз және/немесе құжатты алдын ала қараңыз, содан кейін <gui style="button">Басып шығару</gui> батырмасын басыңыз.</p>
+        <note><p>Басып шығару туралы жалпы ақпаратты <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">жұмыс үстелінің көмегінен</link> қараңыз.</p></note>
+      </item>
+     </steps>
+</page>

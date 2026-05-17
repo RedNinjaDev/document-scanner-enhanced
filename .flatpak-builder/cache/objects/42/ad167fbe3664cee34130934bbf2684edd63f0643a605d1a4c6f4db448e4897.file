@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="cs">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Výběr skeneru</title>
+
+    <p>V případě, že máte více skenovacích zařízení, můžete zařízení změnit na hlavní stránce.</p>
+
+    <p>Místní skenery se vyhledají automaticky při každém spuštění aplikace <app>Skenování dokumentů</app> a skenery USB při každém jejich připojení. Pokud ale nově připojíte síťový skener, musíte aplikaci <app>Skenování dokumentů</app> restartovat, aby skener objevila.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

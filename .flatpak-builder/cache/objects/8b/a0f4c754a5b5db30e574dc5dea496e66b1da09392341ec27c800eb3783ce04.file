@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="pt_BR">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Fábio Nogueira</mal:name>
+      <mal:email>fnogueira@gnome.org</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Leônidas Araújo</mal:name>
+      <mal:email>leorusvellt@hotmail.com</mal:email>
+      <mal:years>2022-2024</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Girando uma página</title>
+
+    <p>Você pode alterar a rotação de uma página antes ou depois de digitalizar a página. Atualmente, há quatro formas de girar uma página:</p>
+    
+    <steps>
+      <title>Usando a barra de ferramentas</title>
+      <item><p>Selecione a página que você deseja girar clicando nela uma vez.</p></item>
+      <item><p>Pressione uma das setas na barra de ferramentas para girar a página na direção desejada.</p></item>
+    </steps>
+    <steps>
+      <title>Usando o clique do botão direito</title>
+      <item><p>Clique com o botão direito da página que você deseja girar.</p></item>
+      <item><p>Selecione <gui style="menuitem">Girar à esquerda</gui> ou <gui style="menuitem">Girar à direita</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Usando atalhos</title>
+      <item><p>Selecione a página que você deseja girar clicando nela uma vez.</p></item>
+      <item><p>Pressione uma das seguintes teclas de atalho:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Comando</em></p></td>
+		<td><p><em>Tecla de atalho</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Girar à esquerda</p></td>
+		<td><p><key>[</key> (colchete esquerdo)</p></td>
+	</tr>
+	<tr>
+		<td><p>Girar à direita</p></td>
+		<td><p><key>]</key> (colchete direito)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Cada nova página digitalizada usará o rotação anterior.</p></note>
+</page>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="nl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>De scanresolutie instellen</title>
+
+    <p>De standaardresolutie voor documenttype <gui><em>Tekst</em></gui> is 150 dpi (dots per inch), en voor documenttype <gui><em>Afbeelding</em></gui> is 300 dpi de standaard. Om deze instellingen te wijzigen:</p>
+
+    <steps>
+      <item>
+        <p>Druk op de menuknop in de rechterbovenhoek van het venster en selecteer <gui style="menuitem">Voorkeuren</gui>.</p>
+      </item>
+      <item>
+        <p>Wijzig de waarde voor <gui>Tekstresolutie</gui> of <gui>Afbeeldingsresolutie</gui> in het gedeelte <gui style="group">Kwaliteit</gui>.</p>
+      </item>
+      <item>
+        <p>Sluit het dialoogvenster.</p>
+      </item>
+    </steps>
+    
+    <p>De beschikbare scanresoluties voor beide documenttypes (Tekst en Afbeelding) zijn gelijk en worden in de onderstaande tabel opgelijst:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Tekstresolutie</em></p></td>
+		<td><p><em>Afbeeldingsresolutie</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (klad)</p></td>
+		<td><p>75 dpi (klad)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (standaard)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (standaard)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (hoge resolutie)</p></td>
+		<td><p>1200 dpi (hoge resolutie)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p><gui><em>Tekst</em></gui>documenten worden altijd in zwart-wit ingescand, terwijl <gui><em>Afbeelding</em></gui>sdocumenten altijd in kleur ingescand worden, onafhankelijk van de resolutie!</p>
+    </note>
+
+</page>

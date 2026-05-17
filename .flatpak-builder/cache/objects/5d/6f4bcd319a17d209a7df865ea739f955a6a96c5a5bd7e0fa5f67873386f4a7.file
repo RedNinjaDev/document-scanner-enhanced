@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="ca">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Jorba</mal:name>
+      <mal:email>jaume.jorba@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Miquel-Àngel Burgos i Fradeja</mal:name>
+      <mal:email>miquel.angel.burgos@gmail.com</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Victor Dargallo</mal:name>
+      <mal:email>victordargallo@disroot.org</mal:email>
+      <mal:years>2025</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Seleccionar un escàner</title>
+
+    <p>Si teniu diversos dispositius d'escaneig, podeu canviar de dispositiu a la pàgina principal.</p>
+
+    <p>Els escàners locals es detecten automàticament cada vegada que s'inicia l'<app>Escàner de documents</app> i cada vegada que endolleu un escàner USB. Si connecteu un escàner en xarxa, haureu de reiniciar l'<app>Escàner de documents</app> perquè el detecti.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

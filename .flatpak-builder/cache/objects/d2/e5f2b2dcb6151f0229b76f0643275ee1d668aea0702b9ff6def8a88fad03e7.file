@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index" xml:lang="ja">
+
+    <info>
+        <title type="link" role="trail">Document Scanner Manual</title>
+        <title type="text">Document Scanner Manual</title>
+        <title type="link">Document Scanner Manual</title>
+
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    </info>
+
+    <title>
+        <media type="image" its:translate="no" width="48px" height="48px" src="figures/icon.svg"/>Document Scanner Manual
+    </title>
+
+    <section id="acquire" style="2column">
+        <title>ページのスキャン</title>
+    </section>
+
+    <section id="modify" style="2column">
+        <title>ドキュメントの修正</title>
+    </section>
+
+    <section id="use" style="2column">
+        <title>ドキュメントの使用</title>
+    </section>
+</page>

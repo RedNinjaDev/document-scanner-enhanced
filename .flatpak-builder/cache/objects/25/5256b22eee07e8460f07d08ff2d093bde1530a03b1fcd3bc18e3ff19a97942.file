@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="da">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Indstilling af billedkvaliteten</title>
+
+    <p>Du kan justere billedkvaliteten, som bruges, når skanningen konverteres til en fil, ved at ændre denne indstilling i dialogen indstillinger. Brug af en lav kvalitet vil medføre en lille filstørrelse, men kan medføre et sløret billede eller blokdannelse i billedet. En høj kvalitet vil bevare hele den skannede information, men medfører en større fil. Se <link href="https://en.wikipedia.org/wiki/Lossy_compression">Wikipediasiden for komprimering med kvalitetstab</link> for yderligere information.</p>    
+
+    <steps>
+        <item>
+          <p>Tryk på menuknappen i øverste højre hjørne af vinduet og vælg <gui style="menuitem">Indstillinger</gui>.</p>
+        </item>
+        <item>
+          <p>Under sektionen <gui style="group">Kvalitet</gui> trækkes i skyderen for <gui>Komprimering</gui>.</p>
+        </item>
+        <item>
+          <p>Luk dialogen.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

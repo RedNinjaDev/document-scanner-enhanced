@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="nl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Automatische documentinvoer gebruiken</title>
+
+    <p>Als uw scanner over automatische documentinvoer (ADF) beschikt kunt u alle pagina’s van de invoer scannen op een van de volgende manieren:</p>
+      <steps>
+	<title>Een sneltoets gebruiken</title>
+	<item>
+	  <p>Druk op <keyseq><key>Ctrl</key><key>F</key></keyseq></p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>De werkbalk gebruiken</title>
+	<item>
+          <p>Klik op het radertje rechts van de knop <gui style="button">Scannen</gui>.</p>
+	</item>
+	<item>
+	  <p>Selecteer <gui style="button">Alle pagina’s van invoer</gui>.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Standaard worden beide zijden van een pagina ingescand indien uw scanner deze mogelijkheid biedt. Om slechts één zijde in te scannen:</p>
+    <steps>
+      <item>
+        <p>Druk op de menuknop in de rechterbovenhoek van het venster en selecteer <gui style="menuitem">Voorkeuren</gui>.</p>
+      </item>
+      <item>
+        <p>Wijzig de waarde <gui>Zijden scannen</gui> in het gedeelte <gui style="group">Scannen</gui>.</p>
+      </item>
+      <item>
+        <p>Sluit het dialoogvenster.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="ro">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Salvarea în fișier</title>
+
+    <steps>
+      <item>
+	<p>Clic pe butonul <gui style="button">Salvează documentul într-un fișier</gui> din bara de unelte a ferestrei (sau apăsați <keyseq><key>Ctrl</key><key>S</key></keyseq>).</p>
+      </item>
+      <item>
+	<p>Alegeți una dintre tipurile de fișier suportate, sau schimbați extensia din câmpul <gui>Nume</gui>.</p>
+      </item>
+      <item>
+	<p>Apăsați butonul <gui style="button">Salvează</gui>.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Tipuri de fișiere suportate</title>
+	<tr>
+		<td><p><em>Tip</em></p></td>
+		<td><p><em>Descriere sumară</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>Un PDF poate conține mai multe pagini, ca și o carte, și este ușor de distribuit. Doar un număr mic de programe GNU/Linux pot modifica documente PDF, așa că acest format este recomandat în principal pentru arhivare. Dimensiunea documentului PDF este afectată de <link xref="quality">calitatea imaginii</link>. Consultați <link href="https://ro.wikipedia.org/wiki/Portable_Document_Format">pagina Wikipedia pentru PDF</link> pentru mai multe informații.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>JPEG este formatul de fișiere utilizat de camere digitale pentru a salva imagini. Un fișier JPEG este relativ mic, foarte ușor de distribuit, și preferabil pentru încărcarea pe situri de socializare. Majoritatea sistemelor de operare vin preinstalate cu un editor JPEG. Dacă ați scanat mai multe pagini, un fișier JPEG va fi creeat pentru fiecare pagină. Utilizați acest tip de fișier dacă doriți să modificați sau să încărcați fișiere scanate. Dimensiunea fișierului JPEG este afectată de <link xref="quality">calitatea imaginii</link>. Consultați <link href="https://ro.wikipedia.org/wiki/JPEG">pagina Wikipedia pentru JPEG</link> pentru mai multe informații.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>Fișierele PNG suportă compresie a datelor fără pierderi. Faptul acesta le face foarte mari și inadecvate pentru distribuire. Dacă ați scanat mai multe pagini, un fișier PNG va fi creeat pentru fiecare pagină. Consultați <link href="https://ro.wikipedia.org/wiki/Portable_Network_Graphics">pagina Wikipedia pentru PNG</link> pentru mai multe informații.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

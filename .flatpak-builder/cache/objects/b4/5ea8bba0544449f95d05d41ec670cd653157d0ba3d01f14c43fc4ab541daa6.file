@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="kk">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Сурет сапасын баптау</title>
+
+    <p>Баптаулар сұхбат терезесінде осы параметрді өзгерту арқылы сканерленген бейне файлға айналдырылған кезде пайдаланылатын сурет сапасын реттеуге болады. Төмен сапаны пайдалану файл өлшемінің кіші болуына әкеледі, бірақ суретте біркелкі емес немесе бұлыңғыр жерлер пайда болуы мүмкін. Жоғары сапа сканерленген барлық ақпаратты сақтайды, бірақ үлкенірек файл өлшемін қажет етеді. Қосымша ақпарат алу үшін <link href="https://en.wikipedia.org/wiki/Lossy_compression">Lossy compression Wikipedia бетін</link> қараңыз.</p>    
+
+    <steps>
+        <item>
+          <p>Терезенің жоғарғы оң жақ бұрышындағы мәзір батырмасын басып, <gui style="menuitem">Баптаулар</gui> таңдаңыз.</p>
+        </item>
+        <item>
+          <p><gui style="group">Сапа</gui> бөлімінде <gui>Сығу</gui> жүгірткісін сүйреңіз.</p>
+        </item>
+        <item>
+          <p>Сұхбат терезесін жабыңыз.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

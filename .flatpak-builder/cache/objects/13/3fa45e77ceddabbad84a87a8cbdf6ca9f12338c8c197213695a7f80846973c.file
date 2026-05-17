@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="pl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Zapisywanie do pliku</title>
+
+    <steps>
+      <item>
+	<p>Kliknij przycisk <gui style="button">Zapisz dokument do pliku</gui> na górnym pasku okna (lub naciśnij klawisze <keyseq><key>Ctrl</key><key>S</key></keyseq>).</p>
+      </item>
+      <item>
+	<p>Wybierz jeden z obsługiwanych typów pliku lub zmień rozszerzenie w polu <gui>Nazwa</gui>.</p>
+      </item>
+      <item>
+	<p>Kliknij przycisk <gui style="button">Zapisz</gui>.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Obsługiwane typy plików</title>
+	<tr>
+		<td><p><em>Typ</em></p></td>
+		<td><p><em>Krótki opis</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>Plik PDF może zawierać wiele stron, jak książka, i jest łatwy w rozpowszechnianiu. Tylko mała liczba programów systemu Linux może modyfikować dokumenty PDF, więc ten format jest zalecany głównie do archiwizowania. Rozmiar dokumentu PDF zależy od <link xref="quality">jakości obrazu</link>. <link href="https://pl.wikipedia.org/wiki/Portable_Document_Format">Wikipedia</link> zawiera więcej informacji.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>JPEG to format plików używany przez aparaty cyfrowane do zapisywania zdjęć. Plik JPEG jest względnie mały, bardzo łatwy w rozpowszechnianiu i odpowiedni do wysyłania na strony społecznościowe. Większość systemów operacyjnych domyślnie zawiera edytor plików JPEG. Jeśli zeskanowano wiele stron, to zostanie utworzony oddzielny plik JPEG dla każdej strony. Użyj tego typu pliku, jeśli zeskanowane obrazy mają być modyfikowane lub wysyłane. Rozmiar pliku JPEG zależy od <link xref="quality">jakości obrazu</link>. <link href="https://pl.wikipedia.org/wiki/JPEG">Wikipedia</link> zawiera więcej informacji.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>Pliki PNG obsługują bezstratną kompresję danych. Może to powodować ich bardzo duży rozmiar i trudność w rozpowszechnianiu. Jeśli zeskanowano wiele stron, to zostanie utworzony oddzielny plik PNG dla każdej strony. <link href="https://pl.wikipedia.org/wiki/Portable_Network_Graphics">Wikipedia</link> zawiera więcej informacji.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

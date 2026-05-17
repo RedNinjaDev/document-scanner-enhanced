@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="ca">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Jorba</mal:name>
+      <mal:email>jaume.jorba@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Miquel-Àngel Burgos i Fradeja</mal:name>
+      <mal:email>miquel.angel.burgos@gmail.com</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Victor Dargallo</mal:name>
+      <mal:email>victordargallo@disroot.org</mal:email>
+      <mal:years>2025</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Configuració de la qualitat d'imatge</title>
+
+    <p>Podeu ajustar la qualitat de la imatge que s'utilitza quan l'escaneig es converteix en un fitxer, modificant aquesta configuració al diàleg de preferències. L'ús d'una qualitat baixa donarà lloc a un fitxer de mida petita, però pot mostrar una mica de desdibuixament o pixelat a la imatge. Una alta qualitat mantindrà tota la informació escanejada però requereix un fitxer de mida més gran. Consulteu la pàgina de la Viquipèdia <link href="https://ca.wikipedia.org/wiki/Algorisme_de_compressi%C3%B3_amb_p%C3%A8rdua">Compressió amb pèrdua</link> per a més informació.</p>    
+
+    <steps>
+        <item>
+          <p>Premeu el botó de menú de la cantonada superior dreta de la finestra i seleccioneu <gui style="menuitem">Preferències</gui>.</p>
+        </item>
+        <item>
+          <p>A la secció <gui style="group">Qualitat</gui>, arrossegueu el control lliscant <gui>Compressió</gui>.</p>
+        </item>
+        <item>
+          <p>Tanqueu el diàleg.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="it">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Usare un caricatore automatico di documenti</title>
+
+    <p>Se lo scanner è dotato di un alimentatore automatico di documenti (ADF), è possibile digitalizzare tutte le pagine dall'alimentatore tramite uno dei seguenti metodi:</p>
+      <steps>
+	<title>Usando una scorciatoia da tastiera</title>
+	<item>
+	  <p>Premendo <keyseq><key>Ctrl</key><key>F</key></keyseq></p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Usando la barra degli strumenti</title>
+	<item>
+          <p>Fare clic sull'ingranaggio a destra del pulsante <gui style="button">Acquisisci</gui>.</p>
+	</item>
+	<item>
+	  <p>Selezionare <gui style="button">Tutte le pagine dall'alimentatore documenti</gui>.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Per impostazione predefinita, verranno acquisiti entrambi i lati di una pagina se lo scanner dispone di questa funzionalità. Per eseguire l'acquisizione di un solo lato:</p>
+    <steps>
+      <item>
+        <p>Premere il pulsante del menu nell'angolo in alto a destra della finestra e selezionare <gui style="menuitem">Preferenze</gui>.</p>
+      </item>
+      <item>
+        <p>Nella sezione <gui style="group">Acquisizione</gui> modificare il valore <gui>Acquisizione lati</gui>.</p>
+      </item>
+      <item>
+        <p>Chiudere la finestra.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

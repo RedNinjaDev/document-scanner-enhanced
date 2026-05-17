@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="pt_BR">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Fábio Nogueira</mal:name>
+      <mal:email>fnogueira@gnome.org</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Leônidas Araújo</mal:name>
+      <mal:email>leorusvellt@hotmail.com</mal:email>
+      <mal:years>2022-2024</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Configurando a resolução de digitalização</title>
+
+    <p>A resolução padrão para documento de tipo <gui><em>Texto</em></gui> é 150 dpi (pontos por polegadas) e para documentos de tipo <gui><em>Imagem</em></gui> é 300 dpi. Para alterar essas configurações:</p>
+
+    <steps>
+      <item>
+        <p>Pressione o botão de menu no canto superior direita da janela e selecione <gui style="menuitem">Preferências</gui>.</p>
+      </item>
+      <item>
+        <p>Na seção <gui style="group">Qualidade</gui> altere o valor de <gui>Resolução do texto</gui> ou <gui>Resolução da imagem</gui>.</p>
+      </item>
+      <item>
+        <p>Feche o diálogo.</p>
+      </item>
+    </steps>
+    
+    <p>As resoluções de digitalização disponíveis para ambos tipos de documento (Texto e Imagem) são as mesmas e são listadas na tabela a seguir:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Resolução do texto</em></p></td>
+		<td><p><em>Resolução da imagem</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (rascunho)</p></td>
+		<td><p>75 dpi (rascunho)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (padrão)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (padrão)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (alta resolução)</p></td>
+		<td><p>1200 dpi (alta resolução)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Documentos <gui><em>Texto</em></gui> são sempre digitalizados em preto em branco, enquanto documentos <gui><em>Imagem</em></gui> são sempre digitalizados em cores, em qualquer resolução!</p>
+    </note>
+
+</page>

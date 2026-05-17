@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="sk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Otočenie strany</title>
+
+    <p>Môžete zmeniť otočenie strany pred alebo po naskenovaní strany. V súčasnosti existujú štyri spôsoby, ako otočiť stranu:</p>
+    
+    <steps>
+      <title>Použitie panela nástrojov</title>
+      <item><p>Vyberte stranu, ktorú chcete otočiť, jedným kliknutím na ňu.</p></item>
+      <item><p>Stlačte jednu zo šípok v paneli nástrojov, aby ste otočili stranu v požadovanom smere.</p></item>
+    </steps>
+    <steps>
+      <title>Použitie pravého tlačidla myši</title>
+      <item><p>Kliknite pravým tlačidlom myši na stranu, ktorú chcete otočiť.</p></item>
+      <item><p>Vyberte <gui style="menuitem">Otočiť doľava</gui> alebo <gui style="menuitem">Otočiť doprava</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Použitie klávesových skratiek</title>
+      <item><p>Vyberte stranu, ktorú chcete otočiť, jedným kliknutím na ňu.</p></item>
+      <item><p>Stlačte jednu z nasledujúcich klávesových skratiek:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Príkaz</em></p></td>
+		<td><p><em>Klávesová skratka</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Otočiť doľava</p></td>
+		<td><p><key>[</key> (ľavá hranatá zátvorka)</p></td>
+	</tr>
+	<tr>
+		<td><p>Otočiť doprava</p></td>
+		<td><p><key>]</key> (pravá hranatá zátvorka)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Každá nová naskenovaná strana použije predchádzajúce otočenie.</p></note>
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="it">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Stampare</title>
+
+    <p>È possibile stampare direttamente un documento acquisito senza dover prima salvare il documento. Utile per fare copie di documenti o foto.</p>
+    <steps>
+      <title>Per stampare un documento</title>
+      <item>
+	<p>Premere il pulsante del menu nell'angolo in alto a destra della finestra e selezionare <gui style="menuitem">Stampa</gui>. Oppure, premere <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Scegliere le impostazioni di stampa desiderate o visualizzare l'anteprima del documento e poi premere <gui style="button">Stampa</gui>.</p>
+        <note><p>Vedere <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">la guida del desktop</link> per informazioni generali sulla stampa.</p></note>
+      </item>
+     </steps>
+</page>

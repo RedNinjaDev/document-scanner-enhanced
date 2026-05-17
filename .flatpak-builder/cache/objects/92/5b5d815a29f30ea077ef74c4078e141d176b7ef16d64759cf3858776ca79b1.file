@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="es">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2017 - 2021</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Usar un alimentador automático de documentos</title>
+
+    <p>Si su escáner dispone de un alimentador automático de hojas (AAH) puede escanear todas las páginas del alimentador mediante alguno de los siguientes métodos:</p>
+      <steps>
+	<title>Usar un atajo de teclado</title>
+	<item>
+	  <p>Pulsar <keyseq><key>Ctrl</key><key>F</key></keyseq></p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Usar la barra de botones</title>
+	<item>
+          <p>Click the cog to the right of the <gui style="button">Scan</gui> button.</p>
+	</item>
+	<item>
+	  <p>Seleccione <gui style="button">Todas las páginas del alimentador</gui>.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>De manera predeterminada, se escanearán las dos caras de las hojas si el escáner tiene esta funcionalidad. Para escanear una sola cara:</p>
+    <steps>
+      <item>
+        <p>Pulse el botón de menú en la esquina superior derecha de la ventana y elija <gui style="menuitem">Preferencias</gui>.</p>
+      </item>
+      <item>
+        <p>In <gui style="group">Scanning</gui> section change the <gui>Scan Sides</gui> value.</p>
+      </item>
+      <item>
+        <p>Cierre el diálogo.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

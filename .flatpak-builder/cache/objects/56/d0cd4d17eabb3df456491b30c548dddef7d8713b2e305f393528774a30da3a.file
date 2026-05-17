@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="eu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Eskaneatzearen bereizmena ezartzea</title>
+
+    <p><gui><em>Testua</em></gui> motako dokumentuen bereizmen lehenetsia 150 dpi-koa (puntuak hazbeteko) da eta <gui><em>Irudia</em></gui> motako dokumentuena 300 dpi-koa da. Ezarpen horiek aldatzeko:</p>
+
+    <steps>
+      <item>
+        <p>Sakatu goiko eskuineko izkinan dagoen menu-botoia eta hautatu <gui style="menuitem">Hobespenak</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="group">Kalitatea</gui> atalean, aldatu <gui>Testu-bereizmena</gui> edo <gui>Irudi-bereizmena</gui> balioa.</p>
+      </item>
+      <item>
+        <p>Itxi elkarrizketa-koadroa</p>
+      </item>
+    </steps>
+    
+    <p>Bi dokumentu motetarako (testuetarako eta irudietarako) erabilgarri dauden eskaneatze-bereizemenak berdinak dira eta hurrengo taulan zerrendatu dira:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Testu-bereizmena</em></p></td>
+		<td><p><em>Irudi-bereizmena</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (zirriborroa)</p></td>
+		<td><p>75 dpi (zirriborroa)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (lehenetsia)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (lehenetsia)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (bereizmen altua)</p></td>
+		<td><p>1200 dpi (bereizmen altua)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p><gui><em>Testua</em></gui> motako dokumentuak zuri-beltzean eskanetazen dira beti, eta <gui><em>Irudia</em></gui> motakoak kolorean beti, edozein bereizmenetan.</p>
+    </note>
+
+</page>

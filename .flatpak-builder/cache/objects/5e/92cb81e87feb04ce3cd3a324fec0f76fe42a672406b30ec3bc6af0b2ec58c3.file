@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="kk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Сканерді таңдау</title>
+
+    <p>Бірнеше сканерлеу құрылғысы болса, құрылғыны негізгі бетте өзгерте аласыз.</p>
+
+    <p>Жергілікті сканерлер <app>Құжаттар сканері</app> іске қосылған сайын және USB сканерін қосқан сайын автоматты түрде анықталады. Егер сіз желілік сканерді қоссаңыз, сканердің анықталуы үшін <app>Құжаттар сканері</app> бағдарламасын қайта іске қосу керек.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

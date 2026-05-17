@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="pt_BR">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Fábio Nogueira</mal:name>
+      <mal:email>fnogueira@gnome.org</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Leônidas Araújo</mal:name>
+      <mal:email>leorusvellt@hotmail.com</mal:email>
+      <mal:years>2022-2024</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Impressão</title>
+
+    <p>Você pode imprimir um documento digitalizado diretamente sem precisar salvá-lo primeiro. Isso é conveniente para fazer cópias de documentos ou fotos.</p>
+    <steps>
+      <title>Para imprimir um documento</title>
+      <item>
+	<p>Pressione o botão de menu no canto superior direita da janela e selecione <gui style="menuitem">Imprimir</gui>. Como alternativa, pressione <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Escolha suas configurações de impressão desejadas e/ou pré-visualize o documento, então pressione <gui style="button">Imprimir</gui>.</p>
+        <note><p>Veja a <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">ajuda do ambiente</link> para obter informações gerais sobre impressão.</p></note>
+      </item>
+     </steps>
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="fr">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Réglage de la qualité de l’image</title>
+
+    <p>Vous pouvez ajuster la qualité d’image utilisée, lorsque la numérisation est convertie en fichier, en changeant ce paramètre dans la fenêtre des préférences. L’utilisation d’une qualité faible se traduit par une petite taille de fichier, mais peut présenter un certain flou ou une pixellisation de l’image. Une qualité élevée permet de conserver toutes les informations numérisées, mais nécessite une taille de fichier plus importante. Consultez la <link href="https://fr.wikipedia.org/wiki/Compression_de_donn%C3%A9es#Compression_avec_pertes">page Wikipédia sur la compression de données</link> pour plus d’informations.</p>    
+
+    <steps>
+        <item>
+          <p>Cliquez sur le bouton de menu situé dans le coin supérieur droit de la fenêtre et sélectionnez <gui style="menuitem">Préférences</gui>.</p>
+        </item>
+        <item>
+          <p>Dans la section <gui style="group">Qualité</gui>, faites glisser le curseur <gui>Compression</gui>.</p>
+        </item>
+        <item>
+          <p>Fermez la boîte de dialogue.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

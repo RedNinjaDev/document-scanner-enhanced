@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="ca">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Jorba</mal:name>
+      <mal:email>jaume.jorba@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Miquel-Àngel Burgos i Fradeja</mal:name>
+      <mal:email>miquel.angel.burgos@gmail.com</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Victor Dargallo</mal:name>
+      <mal:email>victordargallo@disroot.org</mal:email>
+      <mal:years>2025</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Configuració de la resolució d'escaneig</title>
+
+    <p>La resolució predeterminada del tipus de document <gui><em>Text</em></gui> és 150 dpi (punts per polzada) i la del tipus de document <gui><em>Imatge</em></gui> és 300 dpi. Per a canviar aquesta configuració:</p>
+
+    <steps>
+      <item>
+        <p>Premeu el botó de menú de la cantonada superior dreta de la finestra i seleccioneu <gui style="menuitem">Preferències</gui>.</p>
+      </item>
+      <item>
+        <p>A la secció <gui style="group">Qualitat</gui>, canvieu el valor de <gui>Resolució del text</gui> o <gui>Resolució de la imatge</gui>.</p>
+      </item>
+      <item>
+        <p>Tanqueu el diàleg.</p>
+      </item>
+    </steps>
+    
+    <p>Les resolucions d'escaneig disponibles per als dos tipus de documents (text i imatge) són els mateixos i s'enumeren a la taula següent:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Resolució del text</em></p></td>
+		<td><p><em>Resolució de la imatge</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (esborrany)</p></td>
+		<td><p>75 dpi (esborrany)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (per defecte)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (per defecte)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (alta resolució)</p></td>
+		<td><p>1200 dpi (alta resolució)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Els documents de <gui><em>text</em></gui> sempre s'escanegen en blanc i negre, mentre que els documents d'<gui><em>imatge</em></gui> sempre s'escanegen en color, en qualsevol resolució.</p>
+    </note>
+
+</page>

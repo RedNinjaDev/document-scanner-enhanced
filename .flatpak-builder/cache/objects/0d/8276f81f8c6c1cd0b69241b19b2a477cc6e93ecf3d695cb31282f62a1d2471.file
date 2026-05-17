@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="tr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sabri Ünal</mal:name>
+      <mal:email>libreajans@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Tarama Çözünürlüğünü Ayarlamak</title>
+
+    <p><gui><em>Metin</em></gui> belge türü için öntanımlı çözünürlük 150 dpi (inç başına nokta) olup <gui><em>Resim</em></gui> belge türü için bu değer 300 dpi olarak tanımlanmıştır. Bu ayarları değiştirmek için:</p>
+
+    <steps>
+      <item>
+        <p>Pencerenin sağ üst köşesindeki menü düğmesine tıklayın ve <gui style="menuitem">Tercihler</gui>'i seçin.</p>
+      </item>
+      <item>
+        <p><gui style="group">Nitelik</gui> bölümünde <gui>Metin Çözünürlüğü</gui> ya da <gui>Resim Çözünürlüğü</gui> değerini değiştirin.</p>
+      </item>
+      <item>
+        <p>İletişim penceresini kapatın.</p>
+      </item>
+    </steps>
+    
+    <p>Her iki belge türü (Metin ve Resim) için kullanılabilir tarama çözünürlükleri aynıdır ve aşağıdaki çizelgede listelenmiştir:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Metin Çözünürlüğü</em></p></td>
+		<td><p><em>Resim Çözünürlüğü</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (taslak)</p></td>
+		<td><p>75 dpi (taslak)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (öntanımlı)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (öntanımlı)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (yüksek çözünürlük)</p></td>
+		<td><p>1200 dpi (yüksek çözünürlük)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p><gui><em>Metin</em></gui> belgeleri her zaman siyah beyaz olarak taranırken, <gui><em>Resim</em></gui> belgeleri çözünürlük farketmeksizin her zaman renkli taranır!</p>
+    </note>
+
+</page>

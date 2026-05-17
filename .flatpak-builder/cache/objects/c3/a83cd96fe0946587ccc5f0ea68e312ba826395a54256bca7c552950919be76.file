@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="sk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Nastavenie rozlíšenia skenovania</title>
+
+    <p>Predvolené rozlíšenie pre typ dokumentu <gui><em>Text</em></gui> je 150 dpi (bodov na palec) a pre typ dokumentu <gui><em>Obrázok</em></gui> je to 300 dpi. Ak chcete tieto nastavenia zmeniť:</p>
+
+    <steps>
+      <item>
+        <p>Stlačte tlačidlo ponuky v pravom hornom rohu okna a vyberte <gui style="menuitem">Nastavenia</gui>.</p>
+      </item>
+      <item>
+        <p>V sekcii <gui style="group">Kvalita</gui> zmeňte hodnotu <gui>Rozlíšenie textu</gui> alebo <gui>Rozlíšenie obrázka</gui>.</p>
+      </item>
+      <item>
+        <p>Zatvorte dialógové okno.</p>
+      </item>
+    </steps>
+    
+    <p>Dostupné rozlíšenia pre skenovanie oboch typov dokumentov (Text a Obrázok) sú rovnaké a sú uvedené v nasledujúcej tabuľke:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Rozlíšenie textu</em></p></td>
+		<td><p><em>Rozlíšenie obrázka</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (návrh)</p></td>
+		<td><p>75 dpi (návrh)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (predvolené)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (predvolené)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (vysoké rozlíšenie)</p></td>
+		<td><p>1200 dpi (vysoké rozlíšenie)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Dokumenty typu <gui><em>Text</em></gui> sa vždy skenujú v čiernobielej forme, zatiaľ čo dokumenty typu <gui><em>Obrázok</em></gui> sa vždy skenujú vo farbe, bez ohľadu na rozlíšenie!</p>
+    </note>
+
+</page>

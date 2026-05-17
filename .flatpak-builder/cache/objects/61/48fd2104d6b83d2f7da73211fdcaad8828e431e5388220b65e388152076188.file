@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="pl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Ustawianie rozdzielczości skanowania</title>
+
+    <p>Domyślna rozdzielczość dla dokumentów typu <gui><em>tekst</em></gui> to 150 DPI (punktów na cal), a dla typu <gui><em>obraz</em></gui> to 300 DPI. Aby zmienić te ustawienia:</p>
+
+    <steps>
+      <item>
+        <p>Kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">Preferencje</gui>.</p>
+      </item>
+      <item>
+        <p>W sekcji <gui style="group">Jakość</gui> zmień wartość opcji <gui>Rozdzielczość tekstu</gui> lub <gui>Rozdzielczość obrazów</gui>.</p>
+      </item>
+      <item>
+        <p>Zamknij okno.</p>
+      </item>
+    </steps>
+    
+    <p>Dostępne rozdzielczości skanowania dla obu typów dokumentów (tekst lub obraz) są takie same:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Rozdzielczość tekstu</em></p></td>
+		<td><p><em>Rozdzielczość obrazów</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 DPI (szkic)</p></td>
+		<td><p>75 DPI (szkic)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 DPI (domyślne)</p></td>
+		<td><p>150 DPI</p></td>
+	</tr>
+	<tr>
+		<td><p>200 DPI</p></td>
+		<td><p>200 DPI</p></td>
+	</tr>
+	<tr>
+		<td><p>300 DPI</p></td>
+		<td><p>300 DPI (domyślne)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 DPI</p></td>
+		<td><p>600 DPI</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 DPI (wysoka rozdzielczość)</p></td>
+		<td><p>1200 DPI (wysoka rozdzielczość)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 DPI</p></td>
+		<td><p>2400 DPI</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Dokumenty typu <gui><em>tekst</em></gui> są zawsze skanowane na czarno-biało, a dokumenty typu <gui><em>obraz</em></gui> są zawsze skanowane w kolorze, niezależnie od rozdzielczości.</p>
+    </note>
+
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="pl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2017-2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Obracanie strony</title>
+
+    <p>Można obrócić stronę przed lub po jej zeskanowaniu. Obecnie są cztery sposoby obracania:</p>
+    
+    <steps>
+      <title>Pasek narzędziowy</title>
+      <item><p>Wybierz stronę do obrócenia klikając ją raz.</p></item>
+      <item><p>Kliknij jedną ze strzałek na pasku narzędziowym, aby obrócić stronę w danym kierunku.</p></item>
+    </steps>
+    <steps>
+      <title>Kliknięcie prawym przyciskiem myszy</title>
+      <item><p>Kliknij stronę do obrócenia prawym przyciskiem myszy.</p></item>
+      <item><p>Wybierz <gui style="menuitem">Obróć w lewo</gui> lub <gui style="menuitem">Obróć w prawo</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Skróty</title>
+      <item><p>Wybierz stronę do obrócenia klikając ją raz.</p></item>
+      <item><p>Naciśnij jeden z tych skrótów klawiszowych:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Polecenie</em></p></td>
+		<td><p><em>Klawisz skrótu</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Obrót w lewo</p></td>
+		<td><p><key>[</key> (lewy nawias kwadratowy)</p></td>
+	</tr>
+	<tr>
+		<td><p>Obrót w prawo</p></td>
+		<td><p><key>]</key> (prawy nawias kwadratowy)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Każda nowo zeskanowana strona będzie używała poprzednio wybranego obrotu.</p></note>
+</page>

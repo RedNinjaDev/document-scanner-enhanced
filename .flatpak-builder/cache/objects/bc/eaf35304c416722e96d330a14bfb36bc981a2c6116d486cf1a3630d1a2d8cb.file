@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="sk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Odoslanie e-mailom</title>
+
+    <p>Aby ste odoslali aktuálny dokument e-mailom, stlačte tlačidlo ponuky v pravom hornom rohu okna a vyberte <gui style="menuitem">E-mail</gui>. Prípadne stlačte <keyseq><key>Ctrl</key><key>E</key></keyseq>. Spustí sa Váš e-mailový program s novou správou, ktorá bude obsahovať naskenovaný dokument ako prílohu.</p>
+    <p>Ak bol typ dokumentu nastavený na „Text“, e-mail bude mať pre každú stranu prílohu vo formáte PDF. Naopak, ak bol typ dokumentu nastavený na „Obrázok“, e-mail bude mať pre každú stranu prílohu vo formáte JPEG.</p>
+    <p>Ďalšie informácie o formátoch súborov nájdete v sekcii <link xref="save"/>.</p>
+</page>

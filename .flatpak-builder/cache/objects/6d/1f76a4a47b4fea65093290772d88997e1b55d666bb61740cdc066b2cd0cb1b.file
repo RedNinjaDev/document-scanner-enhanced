@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanner" xml:lang="id">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2020, 2021, 2023.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Memilih Pemindai</title>
+
+    <p>Jika Anda memiliki beberapa perangkat pemindaian Anda dapat mengubah perangkat pada halaman utama.</p>
+
+    <p>Pemindai lokal secara otomatis terdeteksi setiap kali <app>Pemindai Dokumen</app> dimulai dan setiap kali Anda mencolokkan pemindai USB. Jika Anda menghubungkan pemindai jaringan, Anda akan perlu untuk menjalankan ulang <app>Pemindai Dokumen</app> agar pemindai terdeteksi.</p>
+    
+    <media type="image" src="figures/scanner_selection.png"/>
+</page>

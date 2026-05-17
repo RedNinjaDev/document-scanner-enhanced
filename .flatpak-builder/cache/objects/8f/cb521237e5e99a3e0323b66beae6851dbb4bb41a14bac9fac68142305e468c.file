@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="da">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Gem til en fil</title>
+
+    <steps>
+      <item>
+	<p>Tryk på knappen <gui style="button">Gem skanningen som en fil</gui> på værktøjslinjen i vinduet (eller tryk på <keyseq><key>Ctrl</key><key>S</key></keyseq>).</p>
+      </item>
+      <item>
+	<p>Vælg en af de understøttede filtyper eller ændr filendelsen i feltet <gui>Navn</gui>.</p>
+      </item>
+      <item>
+	<p>Tryk på knappen <gui style="button">Gem</gui>.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Understøttede filtyper</title>
+	<tr>
+		<td><p><em>Type</em></p></td>
+		<td><p><em>Kort beskrivelse</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>En PDF kan indeholde flere sider, ligesom en bog, og den er nem at distribuere. Kun et lille antal Linux-programmer kan ændre i PDF-dokumenter, så dette format anbefales primært til arkivformål. Størrelsen på PDF-dokumentet påvirkes af <link xref="quality">billedkvaliteten</link>. Se <link href="https://da.wikipedia.org/wiki/Portable_Document_Format">Wikipediasiden om PDF</link> for yderligere information.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>JPEG er filformatet brugt af digitale kameraer til at gemme billeder. En JPEG-fil er relativ lille, meget nem at distribuere og egnet til overførsel på sociale netværkssider. De fleste operativsystemer har som standard et JPEG-redigeringsprogram. Hvis du har skannet flere sider vil en JPEG-fil blive oprettet for hver side. Brug denne filtype hvis du ønsker at ændre eller overføre de skannede billeder. Størrelsen på JPEG-filen påvirkes af <link xref="quality">billedkvaliteten</link>. Se <link href="https://da.wikipedia.org/wiki/JPEG">Wikipediasiden om JPEG</link> for yderligere information.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>PNG-filer understøtter tabsfri datakomprimering. Det kan gør filerne meget store og uegnet for distribution. Hvis du har skannet flere sider, så vil en PNG-fil blive oprettet for hver side. Se <link href="http://da.wikipedia.org/wiki/Portable_Network_Graphics">Wikipediasiden om PNG</link> for yderligere information.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

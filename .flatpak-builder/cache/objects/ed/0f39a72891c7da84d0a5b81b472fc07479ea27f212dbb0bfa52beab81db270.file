@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="el">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2017-2018</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Περιστροφή σελίδας</title>
+
+    <p>
+    You can change the rotation of a page either before or after scanning the page.
+    Currently, there are four ways to rotate a page: 
+    </p>
+    
+    <steps>
+      <title>Χρησιμοποιήστε τη Γραμμή εργαλείων</title>
+      <item><p>Επιλέξτε τη σελίδα που θέλετε να περιστρέψετε κάνοντας κλικ σε αυτήν μία φορά.</p></item>
+      <item><p>Πατήστε ένα από τα βέλη στη γραμμή εργαλείων για να περιστρέψετε τη σελίδα στην επιθυμητή κατεύθυνση.</p></item>
+    </steps>
+    <steps>
+      <title>Χρησιμοποιήστε το δεξί κλικ</title>
+      <item><p>Κάντε δεξί κλικ στη σελίδα που θέλετε να περιστρέψετε.</p></item>
+      <item><p>Select <gui style="menuitem">Rotate Left</gui> or
+      <gui style="menuitem">Rotate Right</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Χρήση συντομεύσεων</title>
+      <item><p>Επιλέξτε τη σελίδα που θέλετε να περιστρέψετε κάνοντας κλικ σε αυτήν μία φορά.</p></item>
+      <item><p>Πατήστε ένα από τα ακόλουθα πλήκτρα συντόμευσης:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Εντολή</em></p></td>
+		<td><p><em>Πλήκτρα συντόμευσης</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Περιστροφή αριστερά</p></td>
+		<td><p><key>[</key> (left bracket)</p></td>
+	</tr>
+	<tr>
+		<td><p>Περιστροφή δεξιά</p></td>
+		<td><p><key>]</key> (δεξιά αγκύλη)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Κάθε νέα σαρωμένη σελίδα θα χρησιμοποιήσει την προηγούμενη περιστροφή.</p></note>
+</page>

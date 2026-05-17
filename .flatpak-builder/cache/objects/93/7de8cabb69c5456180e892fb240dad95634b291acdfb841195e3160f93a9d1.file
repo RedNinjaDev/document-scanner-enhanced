@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="pt_BR">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Fábio Nogueira</mal:name>
+      <mal:email>fnogueira@gnome.org</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Leônidas Araújo</mal:name>
+      <mal:email>leorusvellt@hotmail.com</mal:email>
+      <mal:years>2022-2024</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Recortando</title>
+
+    <p>O recurso de recortar permite que você possa usar apenas uma parte de uma imagem digitalizada. Você pode habilitar recorte antes ou depois de digitalizar uma página, e você sempre pode alterar as dimensões do quadro de recorte. Quando recorte está habilitado, uma máscara aparecerá sobre a página atual com a área não será usada mostrada em cinza. Você pode habilitar recortar e escolher as dimensões desejadas via um dos seguintes métodos:</p>
+    
+    <steps>
+      <title>Usando o clique do botão direito</title>
+      <item><p>Clique com botão direito do mouse em qualquer lugar na página.</p></item>
+      <item><p>Selecione <gui style="menuitem">Recortar</gui>.</p></item>
+      <item><p>Escolha um dos quadros de recortes fixos, ou selecione “Personalizar” para definir manualmente as dimensões do quadro de corte arrastando suas bordas.</p></item>
+      <item><p>Clique e segure o quadro para movê-lo para a posição desejada.</p></item>
+      <item><p>Arraste as bordas do quadro para definir as dimensões desejadas.</p></item>
+    </steps>
+
+    <steps>
+      <title>Usando a barra de ferramentas</title>
+      <item><p>Pressione o botão <gui>Recorta a página selecionada</gui> na barra de ferramentas.</p>
+	    <note style="tip"><p>Esse é o mesmo que escolher “Personalizar” na etapa 2 dos métodos supramencionados.</p></note></item>      
+      <item><p>Clique e segure o quadro para movê-lo para a posição desejada.</p></item>
+      <item><p>Arraste as bordas do quadro para definir as dimensões desejadas.</p></item>
+    </steps>
+    
+    <note><p>Cada nova página digitalizada usará o recorte anterior.</p></note>
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="ro">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Decuparea</title>
+
+    <p>Funcționalitatea de decupare vă permite să utilizați doar o parte din imagina scanată. Puteți activa decupare fie înainte sau după scanarea unei pagini, și puteți întotdeauna schimba dimensiunile cadrului de decupare. Când decuparea este activată, o mască va apărea deasupra paginii curente cu zona neutilizată marcată cu gri. Puteți activa decuparea și alege dimensiunile dorite prin una dintre următoarele metode:</p>
+    
+    <steps>
+      <title>Utilizând clic dreapta</title>
+      <item><p>Clic dreapta oriunde în pagină.</p></item>
+      <item><p>Selectați <gui style="menuitem">Decupează</gui>.</p></item>
+      <item><p>Alegeți unul dintre cadrele de decupare, sau selectați „Personalizat” pentru a stabili manual dimensiunile cadrului trăgând de bordurile lui.</p></item>
+      <item><p>Clic și țineți apăsat pe cadru pentru a-l muta la poziția dorită.</p></item>
+      <item><p>Trageți bordurile cadrului pentru a stabili dimensiunile dorite.</p></item>
+    </steps>
+
+    <steps>
+      <title>Utilizând bara de unelte</title>
+      <item><p>Clic pe butonul <gui style="button">Decupează pagina selectată</gui> din bara de unelte.</p>
+	    <note style="tip"><p>Aceasta este la fel ca alegerea „Personalizat” din pasul al 2-lea a metodei menționate mai sus.</p></note></item>      
+      <item><p>Clic și țineți apăsat pe cadru pentru a-l muta la poziția dorită.</p></item>
+      <item><p>Trageți bordurile cadrului pentru a stabili dimensiunile dorite.</p></item>
+    </steps>
+    
+    <note><p>Fiecare pagină nou scanată va folosi decuparea anterioară.</p></note>
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="sr">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Подешавање квалитета слике</title>
+
+    <p>Можете подесити квалитет слике који се користи када се скенирани снимак претвара у датотеку променом овог подешавања у прозорчету поставки. Коришћење ниског квалитета ће резултирати малом величином датотеке, али може приказати замућење или блокове на слици. Висок квалитет ће задржати све скениране информације, али ће захтевати већу датотеку. Погледајте <link href="https://sr.wikipedia.org/wiki/Lossy_compression">Википедијину страницу о сажимању са губитком</link> за више информација.</p>    
+
+    <steps>
+        <item>
+          <p>Притисните дугме менија у горњем десном углу прозора и изаберите <gui style="menuitem">Поставки</gui>.</p>
+        </item>
+        <item>
+          <p>У одељку <gui style="group">Квалитет</gui> превуците клизач <gui>Сажимање</gui>.</p>
+        </item>
+        <item>
+          <p>Затворите прозорче.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

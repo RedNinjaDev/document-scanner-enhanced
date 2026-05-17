@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="bg">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Задаване на качеството на изображението</title>
+
+    <p>Може да нагласите качеството на изображението, което се използва при преобразуване на сканирането във файл, като промените тази настройка в диалоговия прозорец с настройките. Използването на ниско качество ще доведе до малък размер на файла, но изображението може да изглежда размазано или по-квадратно. Високото качество ще запази цялата сканирана информация, но ще има по-голям размер на файла. За повече информация вижте <link href="https://en.wikipedia.org/wiki/Lossy_compression">страницата на Уикипедия за компресиране със загуба</link>.</p>    
+
+    <steps>
+        <item>
+          <p>Натиснете бутона за меню в горния десен ъгъл на прозореца и изберете <gui style="menuitem">Настройки</gui>.</p>
+        </item>
+        <item>
+          <p>В раздела <gui style="group">Качество</gui> влачете плъзгача за <gui>Компресия</gui>.</p>
+        </item>
+        <item>
+          <p>Затворете диалоговия прозорец.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

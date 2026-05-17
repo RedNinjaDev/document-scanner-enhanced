@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index" xml:lang="nl">
+
+    <info>
+        <title type="link" role="trail">Handleiding voor Documentenscanner</title>
+        <title type="text">Handleiding voor Documentenscanner</title>
+        <title type="link">Handleiding voor Documentenscanner</title>
+
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+
+    <title><media type="image" its:translate="no" width="48px" height="48px" src="figures/icon.svg"/>Handleiding voor Documentenscanner</title>
+
+    <section id="acquire" style="2column">
+        <title>Pagina’s inscannen</title>
+    </section>
+
+    <section id="modify" style="2column">
+        <title>Het document wijzigen</title>
+    </section>
+
+    <section id="use" style="2column">
+        <title>Het document gebruiken</title>
+    </section>
+</page>

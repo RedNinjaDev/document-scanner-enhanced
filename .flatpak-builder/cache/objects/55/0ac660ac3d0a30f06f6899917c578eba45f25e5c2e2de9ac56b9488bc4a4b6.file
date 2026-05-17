@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="pt_BR">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Rafael Fontenelle</mal:name>
+      <mal:email>rafaelff@gnome.org</mal:email>
+      <mal:years>2017-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Fábio Nogueira</mal:name>
+      <mal:email>fnogueira@gnome.org</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>  Leônidas Araújo</mal:name>
+      <mal:email>leorusvellt@hotmail.com</mal:email>
+      <mal:years>2022-2024</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Configurando a qualidade da imagem</title>
+
+    <p>Você pode ajustar a qualidade da imagem usada quando a digitalização é convertida em um arquivo alterando essa configuração na caixa de diálogo de preferências. Usar uma qualidade baixa resultará em um tamanho de arquivo pequeno, mas poderá mostrar algum desfoque ou bloqueio na imagem. Uma alta qualidade manterá todas as informações digitalizadas, mas exigirá um tamanho de arquivo maior. Consulte a <link href="https://en.wikipedia.org/wiki/Lossy_compression">página da Wikipedia sobre compactação com perdas</link> para obter mais informações.</p>    
+
+    <steps>
+        <item>
+          <p>Pressione o botão de menu no canto superior direita da janela e selecione <gui style="menuitem">Preferências</gui>.</p>
+        </item>
+        <item>
+          <p>Na seção <gui style="group">Qualidade</gui> arraste o controle deslizante <gui>Compressão</gui>.</p>
+        </item>
+        <item>
+          <p>Feche o diálogo.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

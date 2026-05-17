@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="kk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Автоматты құжат берушіні пайдалану</title>
+
+    <p>Егер сканеріңізде автоматты құжат беруші (ADF) болса, сіз берушіден барлық беттерді келесі әдістердің бірімен сканерлей аласыз:</p>
+      <steps>
+	<title>Пернетақта жарлығын пайдалану</title>
+	<item>
+	  <p><keyseq><key>Ctrl</key><key>F</key></keyseq> басыңыз</p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Сайман панелін пайдалану</title>
+	<item>
+          <p><gui style="button">Сканерлеу</gui> батырмасының оң жағындағы тісті дөңгелекті шертіңіз.</p>
+	</item>
+	<item>
+	  <p><gui style="button">Берушіден барлық беттер</gui> таңдаңыз.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Әдепкі бойынша, сканеріңізде мұндай мүмкіндік болса, беттің екі жағы да сканерленеді. Тек бір жағын сканерлеу үшін:</p>
+    <steps>
+      <item>
+        <p>Терезенің жоғарғы оң жақ бұрышындағы мәзір батырмасын басып, <gui style="menuitem">Баптаулар</gui> таңдаңыз.</p>
+      </item>
+      <item>
+        <p><gui style="group">Сканерлеу</gui> бөлімінде <gui>Сканерлеу жақтары</gui> мәнін өзгертіңіз.</p>
+      </item>
+      <item>
+        <p>Сұхбат терезесін жабыңыз.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

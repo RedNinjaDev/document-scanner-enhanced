@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="ro">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Șerbănescu</mal:name>
+      <mal:email>daniel [at] serbanescu [dot] dk</mal:email>
+      <mal:years>2018-2021</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Stabilirea rezoluției de scanare</title>
+
+    <p>Rezoluția implicită pentru tipul de document <gui><em>Text</em></gui> este de 150 dpi (puncte pe țol) și pentru tipul de document <gui><em>Imagine</em></gui> este de 300 dpi. Pentru a modifica aceste configurări:</p>
+
+    <steps>
+      <item>
+        <p>Apăsați butonul meniu din colțul dreapta sus al ferestrei și selectați <gui style="menuitem">Preferințe</gui>.</p>
+      </item>
+      <item>
+        <p>In <gui style="group">Quality</gui> section change the <gui>Text Resolution</gui> or <gui>Image Resolution</gui> value.</p>
+      </item>
+      <item>
+        <p>Închide dialogul.</p>
+      </item>
+    </steps>
+    
+    <p>Rezoluțiile disponibile pentru ambele tipuri de documente (text și imagine) sunt aceleași și sunt listate în tabelul următor:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Rezoluție text</em></p></td>
+		<td><p><em>Rezoluție imagine</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (ciornă)</p></td>
+		<td><p>75 dpi (ciornă)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (implicită)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (implicită)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (rezoluție mare)</p></td>
+		<td><p>1200 dpi (rezoluție mare)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p>Documentele <gui><em>Text</em></gui> sunt scanate întotdeauna în alb-negru, în timp ce documentele <gui><em>Imagine</em></gui> sunt întotdeauna scanate în culori, la orice rezoluție!</p>
+    </note>
+
+</page>

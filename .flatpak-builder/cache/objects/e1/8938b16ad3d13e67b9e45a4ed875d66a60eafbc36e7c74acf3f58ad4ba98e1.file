@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="de">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2021, 2024</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jürgen Benvenuti</mal:name>
+      <mal:email>gastornis@posteo.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Einstellen der Bildqualität</title>
+
+    <p>Im Einstellungen-Dialog können Sie die Bildqualität bei der Umwandlung in eine Datei ändern. Eine geringe Qualität ergibt eine geringe Dateigröße, aber das Bild kann unscharf sein oder ein Klötzchenmuster zeigen. Eine hohe Qualität erhält alle eingescannten Informationen, führt aber zu einer größeren Datei. Auf der <link href="https://en.wikipedia.org/wiki/Lossy_compression">Wikipedia-Seite zur verlustbehafteten Kompression</link> erhalten Sie weitere Informationen dazu (derzeit nur auf Englisch, September 2023).</p>    
+
+    <steps>
+        <item>
+          <p>Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und wählen Sie <gui style="menuitem">Einstellungen</gui>.</p>
+        </item>
+        <item>
+          <p>Bewegen Sie im Abschnitt <gui style="group">Qualität</gui> den Schieberegler <gui>Kompression</gui>.</p>
+        </item>
+        <item>
+          <p>Schließen Sie den Dialog.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

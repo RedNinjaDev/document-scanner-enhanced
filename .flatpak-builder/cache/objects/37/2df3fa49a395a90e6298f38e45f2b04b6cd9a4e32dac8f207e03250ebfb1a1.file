@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="bg">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Записване във файл</title>
+
+    <steps>
+      <item>
+	<p>Натиснете бутона <gui style="button">Запазване на документа във файл</gui> в горната лента на прозореца (или натиснете <keyseq><key>Ctrl</key><key>S</key></keyseq>).</p>
+      </item>
+      <item>
+	<p>Изберете един от поддържаните типове файлове или променете разширението на файла в полето <gui>Име</gui>.</p>
+      </item>
+      <item>
+	<p>Натиснете бутона <gui style="button">Запазване</gui></p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Поддържани типове файлове</title>
+	<tr>
+		<td><p><em>Тип</em></p></td>
+		<td><p><em>Кратко описание</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>PDF може да съдържа няколко страници, подобно на книга, и е лесен за разпространение. Само малък брой програми за Linux могат да променят PDF документи, така че този формат се препоръчва предимно за архивиране. Размерът на PDF документа се влияе от <link xref="quality">качеството на изображението</link>. За повече информация вижте <link href="https://en.wikipedia.org/wiki/PDF">страницата за PDF в Уикипедия</link>.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>JPEG е файловият формат, използван от цифровите фотоапарати за запазване на снимки. JPEG файлът е сравнително малък, много лесен за разпространение и подходящ за качване в сайтове за социални мрежи. Повечето операционни системи разполагат с JPEG редактор. Ако сте сканирали няколко страници, за всяка страница ще бъде създаден JPEG файл. Използвайте този тип файл, ако искате да променяте или качвате сканираните изображения. Размерът на JPEG файла се влияе от <link xref="quality">качеството на изображението</link>. За повече информация вижте <link href="https://en.wikipedia.org/wiki/JPEG">страницата за JPEG в Уикипедия</link>.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>PNG файловете поддържат компресия на данните без загуба. Това може да направи файловете много големи и неподходящи за разпространение. Ако сте сканирали няколко страници, за всяка страница ще бъде създаден PNG файл. За повече информация вижте <link href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">страницата за PNG в Уикипедия</link>.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

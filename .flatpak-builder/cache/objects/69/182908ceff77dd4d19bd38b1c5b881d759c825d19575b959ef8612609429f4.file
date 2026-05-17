@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="email" xml:lang="nl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Verzenden via e-mail</title>
+
+    <p>Om het huidige document via e-mail te verzenden drukt u op de menuknop in de rechterbovenhoek van het venster en selecteert u <gui style="menuitem">E-mailen</gui>. U kunt ook op <keyseq><key>Ctrl</key><key>E</key></keyseq> drukken. Uw e-mailprogramma wordt dan geopend met een nieuw bericht waaraan het ingescande document toegevoegd is als bijlage.</p>
+    <p>Als het documenttype ingesteld stond op ‘Tekst’, zal de e-mail een PDF-bijlage voor elke pagina bevatten. Als het documenttype ingesteld stond op ‘Afbeelding’, zal de e-mail voor elke pagina een JPEG-bijlage bevatten.</p>
+    <p>Bekijk <link xref="save"/> voor meer informatie over bestandsformaten.</p>
+</page>

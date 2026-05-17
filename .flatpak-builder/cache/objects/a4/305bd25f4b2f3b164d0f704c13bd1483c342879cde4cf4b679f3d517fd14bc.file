@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="id">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2020, 2021, 2023.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Mengatur Kualitas Gambar</title>
+
+    <p>Anda dapat menyesuaikan kualitas gambar yang digunakan saat hasil pindai dikonversi ke berkas dengan mengubah pengaturan ini di dialog preferensi. Menggunakan kualitas rendah akan menghasilkan ukuran berkas yang kecil namun mungkin menunjukkan beberapa keburaman atau kotak-kotak pada gambar. Kualitas tinggi akan menyimpan semua informasi yang dipindai tetapi memerlukan ukuran berkas yang lebih besar. Lihat <link href="https://en.wikipedia.org/wiki/Lossy_compression">halaman Wikipedia kompresi lossy</link> untuk informasi lebih lanjut.</p>    
+
+    <steps>
+        <item>
+          <p>Tekan tombol menu di pojok kanan atas jendela dan pilih <gui style="menuitem">Preferensi</gui>.</p>
+        </item>
+        <item>
+          <p>Dalam bagian <gui style="group">Kualitas</gui> seret penggeser <gui>Kompresi</gui>.</p>
+        </item>
+        <item>
+          <p>Tutup dialog.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="scanning" xml:lang="bg">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <title type="sort">0</title>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <title type="sort" its:translate="no">0</title>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Сканиране на страница</title>
+
+    <p>За сканиране на документ от вашия скенер</p>
+    <steps>
+      <item><p>Свържете скенера към компютъра и го включете.</p></item>
+      <item><p>Oтворете на „<app>Сканиране на документи</app>“.</p></item>
+      <item><p>Натиснете върху колелото вдясно от бутона <gui style="button">Сканиране</gui>.</p></item>
+      <item><p>Изберете типа на документа, който ще сканирате: <gui style="button">текст</gui> или <gui style="button">изображение</gui>.</p>
+	     <media type="image" src="figures/scan_toolbar.png"/></item>
+      <item><p>Натиснете върху бутона „Сканиране“ в лентата с инструменти (или натиснете <keyseq><key>Ctrl</key><key>1</key></keyseq>).</p></item>
+    </steps>
+
+    <note><p>Страницата ще бъде показана в момента на сканирането ѝ. За да спрете сканирането по всяко време, натиснете клавиша <key>Esc</key> на клавиатурата. Всяка страница, която сканирате, се поставя в края на документа.</p></note>
+
+    <p>За да промените качеството на сканирана страница, вижте <link xref="dpi"/>.</p>
+</page>

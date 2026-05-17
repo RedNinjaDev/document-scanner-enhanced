@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="dpi" xml:lang="da">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+  
+	<title>Indstilling af skanningsopløsningen</title>
+
+    <p>Standardopløsningen for dokumenttypen <gui><em>Tekst</em></gui> er 150 dpi (punkter per inch) og for dokumenttypen <gui><em>Billede</em></gui> er den 300 dpi. For at ændre indstillingerne:</p>
+
+    <steps>
+      <item>
+        <p>Tryk på menuknappen i øverste højre hjørne af vinduet og vælg <gui style="menuitem">Indstillinger</gui>.</p>
+      </item>
+      <item>
+        <p>Under sektionen <gui style="group">Kvalitet</gui> ændres værdien for <gui>Tekstopløsning</gui> eller <gui>Billedopløsning</gui>.</p>
+      </item>
+      <item>
+        <p>Luk dialogen.</p>
+      </item>
+    </steps>
+    
+    <p>De tilgængelige skanningsopløsninger for begge dokumenttyper (tekst og billede) er de samme og vises i den følgende tabel:</p>
+    
+    <table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Tekstopløsning</em></p></td>
+		<td><p><em>Billedopløsning</em></p></td>
+	</tr>
+	<tr>
+		<td><p>75 dpi (kladde)</p></td>
+		<td><p>75 dpi (kladde)</p></td>
+	</tr>
+	<tr>
+		<td><p>150 dpi (standard)</p></td>
+		<td><p>150 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>200 dpi</p></td>
+		<td><p>200 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>300 dpi</p></td>
+		<td><p>300 dpi (standard)</p></td>
+	</tr>
+	<tr>
+		<td><p>600 dpi</p></td>
+		<td><p>600 dpi</p></td>
+	</tr>
+	<tr>
+		<td><p>1200 dpi (høj opløsning)</p></td>
+		<td><p>1200 dpi (høj opløsning)</p></td>
+	</tr>
+	<tr>
+		<td><p>2400 dpi</p></td>
+		<td><p>2400 dpi</p></td>
+	</tr>
+    </table>
+    
+    <note style="important"><p><gui><em>Tekstdokumenter</em></gui> skannes altid i sort og hvid, mens <gui><em>Billeddokumenter</em></gui> altid skannes i farve uanset opløsningen!</p>
+    </note>
+
+</page>

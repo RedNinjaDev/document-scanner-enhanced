@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index" xml:lang="eu">
+
+    <info>
+        <title type="link" role="trail">Dokumentuen eskanerraren eskuliburua</title>
+        <title type="text">Dokumentuen eskanerraren eskuliburua</title>
+        <title type="link">Dokumentuen eskanerraren eskuliburua</title>
+
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    </info>
+
+    <title><media type="image" its:translate="no" width="48px" height="48px" src="figures/icon.svg"/>Dokumentuen eskanerraren eskuliburua</title>
+
+    <section id="acquire" style="2column">
+        <title>Orrialdeak eskaneatzea</title>
+    </section>
+
+    <section id="modify" style="2column">
+        <title>Dokumentua moldatzea</title>
+    </section>
+
+    <section id="use" style="2column">
+        <title>Dokumentua erabiltzea</title>
+    </section>
+</page>

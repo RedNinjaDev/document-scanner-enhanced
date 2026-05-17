@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="de">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2017, 2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2021, 2024</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jürgen Benvenuti</mal:name>
+      <mal:email>gastornis@posteo.org</mal:email>
+      <mal:years>2023</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Eine Seite drehen</title>
+
+    <p>Sie können die Ausrichtung einer Seite entweder vor oder nach dem Scannen ändern. Gegenwärtig gibt es vier Möglichkeiten, eine Seite zu drehen:</p>
+    
+    <steps>
+      <title>Aus der Werkzeugleiste</title>
+      <item><p>Wählen Sie die zu drehende Seite aus, indem Sie sie anklicken.</p></item>
+      <item><p>Klicken Sie auf einen der Knöpfe in der Werkzeugleiste, um die Seite in der gewünschten Richtung zu drehen.</p></item>
+    </steps>
+    <steps>
+      <title>Mit einem Rechtsklick</title>
+      <item><p>Klicken Sie mit der rechten Maustaste auf die Seite, die Sie drehen wollen.</p></item>
+      <item><p>Wählen Sie <gui style="menuitem">Links herum drehen</gui> oder <gui style="menuitem">Rechts herum drehen</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Mit einem Tastenkürzel</title>
+      <item><p>Wählen Sie die zu drehende Seite aus, indem Sie sie anklicken.</p></item>
+      <item><p>Drücken Sie eines der folgenden Tastenkürzel:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Befehl</em></p></td>
+		<td><p><em>Tastenkürzel</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Links drehen</p></td>
+		<td><p><key>[</key> (linke eckige Klammer)</p></td>
+	</tr>
+	<tr>
+		<td><p>Rechts drehen</p></td>
+		<td><p><key>]</key> (rechte eckige Klammer)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Jede neu gescannte Seite wird auf die gleiche Weise gedreht wie die vorherige Seite.</p></note>
+</page>

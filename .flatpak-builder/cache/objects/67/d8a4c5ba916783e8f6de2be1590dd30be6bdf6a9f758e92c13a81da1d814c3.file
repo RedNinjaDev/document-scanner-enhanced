@@ -1,0 +1,13 @@
+prefix=/app
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+libs= -ldl -lv4l1 -lm -ltiff -ljpeg      -lavahi-common -lavahi-client -lusb-1.0  
+
+Name: SANE Backends
+Description: Backends for SANE, the universal scanner interface
+Version: 1.4.0
+Requires:
+Libs: -L${libdir} -lsane
+Libs.private: ${libs}
+Cflags: -I${includedir}

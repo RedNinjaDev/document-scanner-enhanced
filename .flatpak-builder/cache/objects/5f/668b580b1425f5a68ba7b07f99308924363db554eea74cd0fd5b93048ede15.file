@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="ru">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Настройка качества изображения</title>
+
+    <p>Вы можете настроить качество изображения, которое используется при преобразовании скана в файл, изменив этот параметр в диалоговом окне параметров. При использовании низкого качества размер файла будет небольшим, но на изображении может появиться размытость или нечеткость. Высокое качество сохранит всю отсканированную информацию, но потребует большего размера файла. Дополнительную информацию см. на <link href="https://en.wikipedia.org/wiki/Lossy_compression">странице Википедии «Сжатие с потерями»</link>.</p>    
+
+    <steps>
+        <item>
+          <p>Нажмите кнопку меню в правом верхнем углу окна и выберите <gui style="menuitem">Параметры</gui>.</p>
+        </item>
+        <item>
+          <p>В разделе <gui style="group">Качество</gui> перетащите ползунок <gui>Сжатие</gui>.</p>
+        </item>
+        <item>
+          <p>Закройте диалоговое окно.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

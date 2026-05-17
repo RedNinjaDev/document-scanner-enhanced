@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="nl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Afdrukken</title>
+
+    <p>U kunt een ingescand document onmiddellijk afdrukken zonder het eerst op te slaan. Dit is handig om kopieën van documenten of foto’s te maken.</p>
+    <steps>
+      <title>Om een document af te drukken</title>
+      <item>
+	<p>Druk op de menuknop in de rechterbovenhoek van het venster en selecteer <gui style="menuitem">Afdrukken</gui>. U kunt ook op <keyseq><key>Ctrl</key><key>P</key></keyseq> drukken.</p>
+      </item>
+      <item>
+	<p>Kies uw gewenste afdrukinstellingen en/of bekijk een afdrukvoorbeeld voor het document, en druk dan op <gui style="button">Afdrukken</gui>.</p>
+        <note><p>Bekijk de <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">de bureaubladhulp</link> voor algemene informatie over afdrukken.</p></note>
+      </item>
+     </steps>
+</page>

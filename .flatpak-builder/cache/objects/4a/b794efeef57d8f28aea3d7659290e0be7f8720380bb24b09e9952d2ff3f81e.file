@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="eu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Orrialdeak biratzea</title>
+
+    <p>Orrialdeen biraketa aldatzeko aukera dago, bai orrialdea eskaneatu aurretik bai ondoren. Momentuz, orrialde bat biratzeko lau modu daude:</p>
+    
+    <steps>
+      <title>Erabili tresna-barra</title>
+      <item><p>Hautatu biratu nahi duzun orrialdea haren gainean klik bakarra eginez.</p></item>
+      <item><p>Sakatu tresna-barrako gezietako bat, orrialdea nahi den norabidean biratzeko.</p></item>
+    </steps>
+    <steps>
+      <title>Erabili eskuineko klika</title>
+      <item><p>Egin eskuineko klik biratu nahi duzun orrialdean.</p></item>
+      <item><p>Hautatu <gui style="menuitem">Biratu ezkerrara</gui> edo <gui style="menuitem">Biratu eskuinera</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Erabili laster-teklak</title>
+      <item><p>Hautatu biratu nahi duzun orrialdea haren gainean klik bakarra eginez.</p></item>
+      <item><p>Sakatu honako laster-tekletako bat:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Komandoa</em></p></td>
+		<td><p><em>Laster-tekla</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Biratu ezkerrera</p></td>
+		<td><p><key>[</key> (ezkerreko kortxetea)</p></td>
+	</tr>
+	<tr>
+		<td><p>Biratu eskuinera</p></td>
+		<td><p><key>]</key> (eskuineko kortxetea)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Eskaneatutako orrialde berri bakoitzak aurreko biraketa erabiliko du.</p></note>
+</page>

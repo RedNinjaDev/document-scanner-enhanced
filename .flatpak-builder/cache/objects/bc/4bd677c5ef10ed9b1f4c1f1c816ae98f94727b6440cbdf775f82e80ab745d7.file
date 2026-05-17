@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="eu">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Irudi-kalitatea ezartzea</title>
+
+    <p>Irudiaren kalitatea doitu egin daiteke eskaneatzea fitxategi batean gordetzen denean, hobespenen elkarrizketa-koadroan ezarpen hori aldatuta. Kalitate baxua erabiltzen bada, fitxategi txikia lortuko da baina irudia lausotuta gordeko da. Kalitate altuarekin, eskaneatutako informazio guztia gordeko da, baina fitxategi handiagoa beharko du. Ikusi <link href="https://eu.wikipedia.org/wiki/Galeradun_konpresio">galeradun konpresioari buruzko wikipedia orria</link> informazio gehiagorako</p>    
+
+    <steps>
+        <item>
+          <p>Sakatu goiko eskuineko izkinan dagoen menu-botoia eta hautatu <gui style="menuitem">Hobespenak</gui>.</p>
+        </item>
+        <item>
+          <p><gui style="group">Kalitatea</gui> atalean, arrastatu <gui>Konpresioa</gui> graduatzailea.</p>
+        </item>
+        <item>
+          <p>Itxi elkarrizketa-koadroa</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

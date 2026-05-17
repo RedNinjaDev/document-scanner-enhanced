@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="it">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Ruotare una pagina</title>
+
+    <p>È possibile modificare la rotazione di una pagina prima o dopo l'acquisizione della pagina. Attualmente, ci sono quattro modi per ruotare una pagina:</p>
+    
+    <steps>
+      <title>Usando la barra degli strumenti</title>
+      <item><p>Selezionare la pagina che si vuole ruotare facendoci clic sopra una volta.</p></item>
+      <item><p>Premere una delle frecce sulla barra degli strumenti per ruotare la pagina nella direzione desiderata.</p></item>
+    </steps>
+    <steps>
+      <title>Usare il clic destro</title>
+      <item><p>Fare clic con il tasto destro sulla pagina che si desidera ruotare.</p></item>
+      <item><p>Selezionare <gui style="menuitem">Ruota a sinistra</gui> o <gui style="menuitem">Ruota a destra</gui>.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Usare le scorciatoie</title>
+      <item><p>Selezionare la pagina che si vuole ruotare facendoci clic sopra una volta.</p></item>
+      <item><p>Premere uno dei seguenti tasti scorciatoia:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Comando</em></p></td>
+		<td><p><em>Scorciatoia</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Ruota a sinistra</p></td>
+		<td><p><key>[</key> (parentesi sinistra)</p></td>
+	</tr>
+	<tr>
+		<td><p>Ruota a destra</p></td>
+		<td><p><key>]</key> (parentesi destra)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Ogni nuova pagina acquisita avrà la rotazione precedente.</p></note>
+</page>

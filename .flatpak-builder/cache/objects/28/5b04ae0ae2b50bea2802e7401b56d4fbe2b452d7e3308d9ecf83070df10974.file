@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="hu">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at ubuntu dot com</mal:email>
+      <mal:years>2014, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Meskó Balázs</mal:name>
+      <mal:email>mesko dot balazs at fsf dot hu</mal:email>
+      <mal:years>2021.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Nyomtatás</title>
+
+    <p>Lehetőség van a beolvasott dokumentum kinyomtatására a dokumentum mentése nélkül. Ez kényelmes megoldás dokumentumok vagy fényképek másolására.</p>
+    <steps>
+      <title>Dokumentum nyomtatása</title>
+      <item>
+	<p>Nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <gui style="menuitem">Nyomtatás</gui> menüpontot. Másik lehetőségként nyomja meg a <keyseq><key>Ctrl</key><key>P</key></keyseq> billentyűkombinációt.</p>
+      </item>
+      <item>
+	<p>Válassza ki a kívánt nyomtatási beállításokat, vagy nézze meg a dokumentum előnézetét, majd nyomja meg a <gui style="button">Nyomtatás</gui> gombot.</p>
+        <note><p>A nyomtatással kapcsolatos általános információkért nézze meg az <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">asztali súgót</link>.</p></note>
+      </item>
+     </steps>
+</page>

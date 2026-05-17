@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="sk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    </info>
+
+	<title>Používanie automatického podávača dokumentov</title>
+
+    <p>Ak váš skener disponuje automatickým podávačom dokumentov (ADF), môžete všetky strany z podávača naskenovať pomocou jednej z nasledujúcich metód:</p>
+      <steps>
+	<title>Použitie klávesovej skratky</title>
+	<item>
+	  <p>Stlačte <keyseq><key>Ctrl</key><key>F</key></keyseq></p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Použitie panela nástrojov</title>
+	<item>
+          <p>Kliknite na ozubené koleso vpravo od tlačidla <gui style="button">Skenovať</gui>.</p>
+	</item>
+	<item>
+	  <p>Vyberte <gui style="button">Všetky strany z podávača</gui>.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Predvolene sa obojstranne naskenujú obe strany strany, ak to váš skener umožňuje. Ak chcete naskenovať len jednu stranu:</p>
+    <steps>
+      <item>
+        <p>Stlačte tlačidlo ponuky v pravom hornom rohu okna a vyberte <gui style="menuitem">Nastavenia</gui>.</p>
+      </item>
+      <item>
+        <p>V sekcii <gui style="group">Skenovanie</gui> zmeňte hodnotu <gui>Obe strany</gui>.</p>
+      </item>
+      <item>
+        <p>Zatvorte dialógové okno.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

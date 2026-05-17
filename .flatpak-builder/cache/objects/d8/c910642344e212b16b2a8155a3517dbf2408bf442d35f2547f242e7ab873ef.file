@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="quality" xml:lang="it">
+
+    <info>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+
+	<title>Impostare la qualità dell'immagine</title>
+
+    <p>È possibile regolare la qualità dell'immagine quando l'acquisizione viene convertita in un file modificando questa impostazione nella finestra di dialogo delle preferenze. L'utilizzo di una qualità bassa comporterà una dimensione del file ridotta ma potrebbe mostrare alcune sfocature o blocchi nell'immagine. Una qualità alta manterrà tutte le informazioni acquisite ma richiederà una dimensione del file maggiore. Per ulteriori informazioni, consultare la <link href="https://it.wikipedia.org/wiki/Compressione_dati_lossy">pagina Wikipedia sulla compressione dati con perdita</link>.</p>    
+
+    <steps>
+        <item>
+          <p>Premere il pulsante del menu nell'angolo in alto a destra della finestra e selezionare <gui style="menuitem">Preferenze</gui>.</p>
+        </item>
+        <item>
+          <p>Nella sezione <gui style="group">Qualità</gui> trascinare il cursore <gui>Compressione</gui>.</p>
+        </item>
+        <item>
+          <p>Chiudere la finestra.</p>
+          <media type="image" src="figures/preferences.png"/>
+        </item>
+    </steps>
+
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="print" xml:lang="fr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    </info>
+  
+	<title>Impression</title>
+
+    <p>Vous pouvez imprimer un document numérisé directement sans avoir à enregistrer le document au préalable. Ceci est pratique pour effectuer des copies de documents ou de photos.</p>
+    <steps>
+      <title>Pour imprimer un document</title>
+      <item>
+	<p>Cliquez sur le bouton de menu situé dans le coin supérieur droit de la fenêtre et sélectionnez <gui style="menuitem">Imprimer</gui>. Vous pouvez aussi appuyer sur <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+      <item>
+	<p>Sélectionnez vos paramètres d’impression désirés et/ou prévisualisez le document, puis cliquez sur <gui style="button">Imprimer</gui>.</p>
+        <note><p>Consultez <link xref="help:gnome-help/printing" href="https://help.gnome.org/users/gnome-help/stable/printing">l’aide du bureau GNOME</link> pour obtenir des informations générales sur l’impression.</p></note>
+      </item>
+     </steps>
+</page>

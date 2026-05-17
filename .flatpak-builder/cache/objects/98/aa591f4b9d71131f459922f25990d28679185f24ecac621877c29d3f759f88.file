@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="save" xml:lang="nl">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-04"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#use"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Nathan Follens</mal:name>
+      <mal:email>nfollens@gnome.org</mal:email>
+      <mal:years>2022, 2025.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dick Groskamp</mal:name>
+      <mal:email>dikgro@yahoo.co.uk</mal:email>
+      <mal:years>2025.</mal:years>
+    </mal:credit>
+  </info>
+  
+	<title>Opslaan naar een bestand</title>
+
+    <steps>
+      <item>
+	<p>Druk op <gui style="button">Document naar een bestand opslaan</gui> in de bovenste balk van het venster (of druk op <keyseq><key>Ctrl</key><key>S</key></keyseq>).</p>
+      </item>
+      <item>
+	<p>Kies een van de ondersteunde bestandstypes, of wijzig de bestandsextensie in het vak <gui>Naam</gui>.</p>
+      </item>
+      <item>
+	<p>Druk op <gui style="button">Opslaan</gui>.</p>
+      </item>
+    </steps>
+    
+    
+<table frame="bottom left right top" rules="rows cols" shade="rows">
+	<title>Ondersteunde bestandstypes</title>
+	<tr>
+		<td><p><em>Type</em></p></td>
+		<td><p><em>Korte beschrijving</em></p></td>
+	</tr>
+	<tr>
+		<td><p>PDF</p></td>
+		<td><p>Een PDF kan meerdere pagina’s bevatten, zoals een boek, en is gemakkelijk te verspreiden. Slechts een handvol Linux-programma’s kunnen PDF-documenten bewerken, dus wordt dit formaat voornamelijk aanbevolen voor archiefdoeleinden. De grootte van het PDF-document is afhankelijk van de <link xref="quality">afbeeldingskwaliteit</link>. Bekijk de <link href="https://nl.wikipedia.org/wiki/Portable_document_format">Wikipedia-pagina over PDF</link> voor meer informatie.</p></td>
+	</tr>
+	<tr>
+		<td><p>JPEG</p></td>
+		<td><p>JPEG is het bestandsformaat dat door digitale camera’s gebruikt wordt om foto’s op te slaan. Een JPEG-bestand is relatief klein, erg gemakkelijk te verspreiden en geschikt om te uploaden naar socialenetwerksites. Bij de meeste besturingssystemen wordt standaard een JPEG-bewerker meegeleverd. Als u meerdere pagina’s ingescand hebt, zal er een JPEG-bestand voor elke pagina aangemaakt worden. Gebruik dit bestandstype als u de ingescande afbeeldingen wilt bewerken of uploaden. De grootte van het JPEG-bestand is afhankelijk van de <link xref="quality">afbeeldingskwaliteit</link>. Bekijk de <link href="https://nl.wikipedia.org/wiki/JPEG">Wikipedia-pagina over JPEG</link> voor meer informatie.</p></td>
+	</tr>
+	<tr>
+		<td><p>PNG</p></td>
+		<td><p>PNG-bestanden ondersteunen verliesloze gegevenscompressie. Hierdoor kunnen bestanden erg groot worden en niet geschikt zijn voor distributie. Als u meerdere pagina’s ingescand hebt, zal er een PNG-bestand voor elke pagina aangemaakt worden. Bekijk de <link href="https://nl.wikipedia.org/wiki/Portable_network_graphics">Wikipedia-pagina over PNG</link> voor meer informatie.</p></td>
+	</tr>
+<!-- TIFF support not available as long as https://gitlab.gnome.org/GNOME/simple-scan/issues/52 is open
+	<tr>
+		<td><p>TIFF</p></td>
+		<td><p>TIFF files contain the raw data from the scanner. This makes them very large and not suitable
+		for distributing. If you have scanned multiple pages, a TIFF file will be created for each page.
+		See the <link href="https://en.wikipedia.org/wiki/TIFF">TIFF Wikipedia page</link>
+		for more information.
+		    </p></td>
+	</tr>
+-->
+</table>    
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="crop" xml:lang="cs">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Ořezávání</title>
+
+    <p>Funkce ořezávání v umožňuje použít jen část naskenovaného obrázku. Ořezání můžete zapnout buď před nebo po naskenování stránky a vždy můžete změnit rozměry ořezového rámu. Když je ořezání zapnuté, objeví se přes aktuální stránku maska, díky které je část, která se zahodí, zašedlá. Zapnout ořezání a nastavit požadované rozměry můžete následujícími způsoby:</p>
+    
+    <steps>
+      <title>Použití pravého kliknutí</title>
+      <item><p>Klikněte pravým tlačítkem kdekoliv na stránce.</p></item>
+      <item><p>Vyberte <gui style="menuitem">Ořezat</gui>.</p></item>
+      <item><p>Zvolte jeden z pevně daných ořezových rámů, nebo vyberte „Vlastní“ a nastavte si jeho rozměry ručně tažením jeho okrajů.</p></item>
+      <item><p>Klikněte na rám, zůstaňte tlačítko držet a přesuňte rám na požadované místo.</p></item>
+      <item><p>Přetáhněte okraje rámu tak, abyste dosáhli požadovaných rozměrů a umístění.</p></item>
+    </steps>
+
+    <steps>
+      <title>Použití nástrojové lišty</title>
+      <item><p>Zmáčkněte na nástrojové liště tlačítko <gui style="button">Oříznout vybranou stránku</gui>.</p>
+	    <note style="tip"><p>Je to to stejné, jako když u shora zmíněných metod zvolíte v kroku 2 „Vlastní“.</p></note></item>      
+      <item><p>Klikněte na rám, zůstaňte tlačítko držet a přesuňte rám na požadované místo.</p></item>
+      <item><p>Přetáhněte okraje rámu tak, abyste dosáhli požadovaných rozměrů a umístění.</p></item>
+    </steps>
+    
+    <note><p>Nově naskenované stránky vždy použijí předchozí ořezání.</p></note>
+</page>

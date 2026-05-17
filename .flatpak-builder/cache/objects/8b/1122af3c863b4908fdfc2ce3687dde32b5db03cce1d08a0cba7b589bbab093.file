@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="ca">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Jorba</mal:name>
+      <mal:email>jaume.jorba@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Miquel-Àngel Burgos i Fradeja</mal:name>
+      <mal:email>miquel.angel.burgos@gmail.com</mal:email>
+      <mal:years>2020</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Victor Dargallo</mal:name>
+      <mal:email>victordargallo@disroot.org</mal:email>
+      <mal:years>2025</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Utilitzar un alimentador automàtic de documents</title>
+
+    <p>Si l'escàner disposa d'un alimentador de documents automàtic (ADF), es poden escanejar totes les pàgines des de l'alimentador a través d'un dels següents mètodes:</p>
+      <steps>
+	<title>Utilitzar una drecera de teclat</title>
+	<item>
+	  <p>Premeu <keyseq><key>Ctrl</key><key>F</key></keyseq></p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Utilitzant la barra d'eines</title>
+	<item>
+          <p>Feu clic a l'engranatge a la dreta del botó <gui style="button">Escaneja</gui>.</p>
+	</item>
+	<item>
+	  <p>Seleccioneu <gui style="button">Totes les pàgines de l'alimentador</gui>.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Per defecte, els dos costats d'una pàgina s'escanejaran si el vostre escàner té aquesta capacitat. Per a escanejar només un costat:</p>
+    <steps>
+      <item>
+        <p>Premeu el botó de menú de la cantonada superior dreta de la finestra i seleccioneu <gui style="menuitem">Preferències</gui>.</p>
+      </item>
+      <item>
+        <p>A la secció <gui style="group">Escaneig</gui>, canvieu el valor de <gui>Cares a escanejar</gui>.</p>
+      </item>
+      <item>
+        <p>Tanqueu el diàleg.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

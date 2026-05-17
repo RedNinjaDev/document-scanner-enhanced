@@ -1,0 +1,5 @@
+[Runtime]
+name=org.gnome.SimpleScan.Debug
+
+[ExtensionOf]
+ref=app/org.gnome.SimpleScan/x86_64/master

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adf" xml:lang="tr">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#acquire"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sabri Ünal</mal:name>
+      <mal:email>libreajans@gmail.com</mal:email>
+      <mal:years>2019, 2020, 2023</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Otomatik Belge Besleyiciyi Kullanmak</title>
+
+    <p>Tarayıcınızda Otomatik Belge Besleyici (ADF) özelliği varsa, aşağıdaki yöntemlerden birini kullanarak besleyicideki tüm sayfaları tarayabilirsiniz:</p>
+      <steps>
+	<title>Klavye Kısayolunu Kullanarak</title>
+	<item>
+	  <p><keyseq><key>Ctrl</key><key>F</key></keyseq> tuşlarına basın</p>
+	</item>      
+      </steps>
+      
+      <steps>
+	<title>Araç Çubuğunu Kullanarak</title>
+	<item>
+          <p><gui style="button">Tara</gui> düğmesinin sağında bulunan dişli düğmesine tıklayın.</p>
+	</item>
+	<item>
+	  <p><gui style="button">Besleyicideki Tüm Sayfalar</gui> seçeneğini seçin.</p>
+	  <media type="image" src="figures/scan_toolbar.png"/>
+	</item>
+      </steps>
+
+    <p>Öntanımlı olarak, tarayıcınızda bu özellik varsa sayfanın iki yüzü de taranır. Sadece tek yüzü taramak için:</p>
+    <steps>
+      <item>
+        <p>Pencerenin sağ üst köşesindeki menü düğmesine tıklayın ve <gui style="menuitem">Tercihler</gui>'i seçin.</p>
+      </item>
+      <item>
+        <p><gui style="group">Tarama</gui> bölümünde <gui>Tarama Yüzleri</gui> değerini değiştirin.</p>
+      </item>
+      <item>
+        <p>İletişim penceresini kapatın.</p>
+        <media type="image" src="figures/preferences.png"/>
+      </item>
+    </steps>
+    
+</page>

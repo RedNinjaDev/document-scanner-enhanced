@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="rotate" xml:lang="kk">
+
+    <info>
+        <revision pkgversion="3.35.90" date="2020-02-07"/>
+        <credit type="author" its:translate="no">
+            <name>Robert Ancell</name>
+            <email>robert.ancell@gmail.com</email>
+        </credit>
+        <credit type="author" its:translate="no">
+            <name>Ali Shtarbanov</name>
+            <email>ametedinov@gmail.com</email>
+        </credit>
+        <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+        <link type="guide" xref="index#modify"/>
+    </info>
+  
+	<title>Бетті бұру</title>
+
+    <p>Беттің бұрылуын оны сканерлеуге дейін де, кейін де өзгертуге болады. Қазіргі уақытта бетті бұрудың төрт жолы бар:</p>
+    
+    <steps>
+      <title>Сайман панелін пайдалану</title>
+      <item><p>Бұрғыңыз келетін бетті бір рет шерту арқылы таңдаңыз.</p></item>
+      <item><p>Бетті қажетті бағытқа бұру үшін сайман панеліндегі бағдаршалардың бірін басыңыз.</p></item>
+    </steps>
+    <steps>
+      <title>Оң жақ шертуді пайдалану</title>
+      <item><p>Бұрғыңыз келетін беттің үстінен оң жақпен шертіңіз.</p></item>
+      <item><p><gui style="menuitem">Солға бұру</gui> немесе <gui style="menuitem">Оңға бұру</gui> таңдаңыз.</p></item>
+    </steps>
+    
+    <steps>
+      <title>Жарлықтарды пайдалану</title>
+      <item><p>Бұрғыңыз келетін бетті бір рет шерту арқылы таңдаңыз.</p></item>
+      <item><p>Келесі жарлық пернелерінің бірін басыңыз:</p>
+	<table frame="bottom left right" rules="rows cols" shade="rows">
+	<tr>
+		<td><p><em>Команда</em></p></td>
+		<td><p><em>Жарлық пернесі</em></p></td>
+	</tr>
+	<tr>
+		<td><p>Солға бұру</p></td>
+		<td><p><key>[</key> (сол жақ жақша)</p></td>
+	</tr>
+	<tr>
+		<td><p>Оңға бұру</p></td>
+		<td><p><key>]</key> (оң жақ жақша)</p></td>
+	</tr>
+	</table>
+      </item>
+    </steps>
+    
+    <note><p>Әрбір жаңа сканерленген бет алдыңғы бұруды пайдаланады.</p></note>
+</page>
