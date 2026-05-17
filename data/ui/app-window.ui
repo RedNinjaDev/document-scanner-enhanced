@@ -168,7 +168,9 @@
                         <property name="spacing">6</property>
                         <property name="halign">center</property>
                         <child>
-                          <object class="AdwSpinner" id="stop_button_spinner" />
+                          <object class="GtkSpinner" id="stop_button_spinner">
+                            <property name="spinning">True</property>
+                          </object>
                         </child>
                         <child>
                           <object class="GtkLabel">

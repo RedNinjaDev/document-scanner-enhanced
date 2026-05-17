@@ -74,7 +74,12 @@
       "Bash(lsscsi)",
       "Read(//sys/bus/usb/devices/**)",
       "Bash(ldconfig -p)",
-      "Bash(git -c commit.gpgsign=false commit -q -m 'Revert failed Brother dsseries bundling attempt *)"
+      "Bash(git -c commit.gpgsign=false commit -q -m 'Revert failed Brother dsseries bundling attempt *)",
+      "Bash(command -v meson valac ninja itstool)",
+      "Bash(pkg-config --modversion gusb sane-backends libgirepository-1.0)",
+      "Bash(pkg-config --modversion gusb sane-backends gobject-introspection-1.0 colord packagekit-glib2)",
+      "Bash(ninja -C _build install)",
+      "Bash(git -c commit.gpgsign=false commit -q -m 'LOCAL-ONLY: downgrade libadwaita+gtk4 reqs for native Ubuntu 24.04 build *)"
     ]
   }
 }
