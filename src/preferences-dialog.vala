@@ -90,6 +90,14 @@ private class PreferencesDialog : Adw.PreferencesDialog
     private unowned Gtk.Switch auto_crop_switch;
     [GtkChild]
     private unowned Gtk.Switch auto_straighten_switch;
+    [GtkChild]
+    private unowned Gtk.Switch autoname_switch;
+    [GtkChild]
+    private unowned Gtk.Entry autoname_endpoint_entry;
+    [GtkChild]
+    private unowned Gtk.PasswordEntry autoname_api_key_entry;
+    [GtkChild]
+    private unowned Gtk.Entry autoname_model_entry;
 
     static string get_dpi_label (DpiItem device) {
         return device.label;
@@ -247,6 +255,36 @@ private class PreferencesDialog : Adw.PreferencesDialog
             settings.set_boolean ("auto-straighten", is_active);
             return false;
         });
+
+        var autoname_enabled = settings.get_boolean ("autoname-enabled");
+        autoname_switch.set_active (autoname_enabled);
+        toggle_autoname_visibility (autoname_enabled);
+        autoname_switch.state_set.connect ((is_active) => {
+            toggle_autoname_visibility (is_active);
+            settings.set_boolean ("autoname-enabled", is_active);
+            return false;
+        });
+
+        autoname_endpoint_entry.set_text (settings.get_string ("autoname-endpoint"));
+        autoname_endpoint_entry.changed.connect (() => {
+            settings.set_string ("autoname-endpoint", autoname_endpoint_entry.get_text ());
+        });
+
+        autoname_api_key_entry.set_text (settings.get_string ("autoname-api-key"));
+        autoname_api_key_entry.changed.connect (() => {
+            settings.set_string ("autoname-api-key", autoname_api_key_entry.get_text ());
+        });
+
+        autoname_model_entry.set_text (settings.get_string ("autoname-model"));
+        autoname_model_entry.changed.connect (() => {
+            settings.set_string ("autoname-model", autoname_model_entry.get_text ());
+        });
+    }
+
+    private void toggle_autoname_visibility (bool enabled) {
+        autoname_endpoint_entry.get_parent ().get_parent ().get_parent ().get_parent ().set_visible (enabled);
+        autoname_api_key_entry.get_parent ().get_parent ().get_parent ().get_parent ().set_visible (enabled);
+        autoname_model_entry.get_parent ().get_parent ().get_parent ().get_parent ().set_visible (enabled);
     }
 
     private void toggle_postproc_visibility(bool enabled) {

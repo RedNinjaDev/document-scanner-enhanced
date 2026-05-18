@@ -404,7 +404,19 @@ public class AppWindow : Adw.ApplicationWindow
 
             /* Default filename to use when saving document. */
             /* To that filename the extension will be added, eg. "Scanned Document.pdf" */
-            save_dialog.initial_name = (_("Scanned Document") + "." + mime_type_to_extension (save_format));
+            string ext = mime_type_to_extension (save_format);
+            string default_name = _("Scanned Document") + "." + ext;
+            if (settings.get_boolean ("autoname-enabled") && book.n_pages > 0)
+            {
+                string? suggested = yield AutoNamer.suggest_filename (
+                    book.get_page (0),
+                    settings.get_string ("autoname-endpoint"),
+                    settings.get_string ("autoname-api-key"),
+                    settings.get_string ("autoname-model"),
+                    ext);
+                if (suggested != null) default_name = suggested;
+            }
+            save_dialog.initial_name = default_name;
         }
         
         var filters = new ListStore (typeof (Gtk.FileFilter));

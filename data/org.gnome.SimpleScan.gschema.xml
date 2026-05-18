@@ -107,5 +107,25 @@
       <summary>Automatically straighten skewed scanned pages</summary>
       <description>When enabled, each new scan is analysed for mild skew (up to about ten degrees) and rotated so the document edges align with the page axes before any auto-crop is applied.</description>
     </key>
+    <key name="autoname-enabled" type="b">
+      <default>false</default>
+      <summary>Suggest a filename when saving by analysing the first page</summary>
+      <description>When enabled, the first page of the document is sent to a configured OpenAI-compatible LLM endpoint and the response is used to pre-fill the Save dialog with a date (if found) and a short descriptive filename.</description>
+    </key>
+    <key name="autoname-endpoint" type="s">
+      <default>'http://localhost:11434/v1/chat/completions'</default>
+      <summary>OpenAI-compatible chat completions endpoint for auto-naming</summary>
+      <description>Full URL of an OpenAI-compatible /v1/chat/completions endpoint. The default targets a local Ollama install.</description>
+    </key>
+    <key name="autoname-api-key" type="s">
+      <default>''</default>
+      <summary>API key for the auto-naming endpoint</summary>
+      <description>Bearer token sent in the Authorization header. Leave blank for local endpoints that do not require auth.</description>
+    </key>
+    <key name="autoname-model" type="s">
+      <default>'gemma3:4b'</default>
+      <summary>Model identifier sent to the auto-naming endpoint</summary>
+      <description>Vision-capable model name. Examples: gemma3:4b (Ollama), gpt-4o-mini (OpenAI), llava (Ollama).</description>
+    </key>
   </schema>
 </schemalist>
