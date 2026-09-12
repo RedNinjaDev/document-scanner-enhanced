@@ -82,6 +82,14 @@ private class PreferencesDialog : Adw.PreferencesDialog
     private unowned Gtk.Switch auto_crop_switch;
     [GtkChild]
     private unowned Gtk.Switch auto_straighten_switch;
+    [GtkChild]
+    private unowned Gtk.Switch autoname_switch;
+    [GtkChild]
+    private unowned Gtk.Entry autoname_endpoint_entry;
+    [GtkChild]
+    private unowned Gtk.PasswordEntry autoname_api_key_entry;
+    [GtkChild]
+    private unowned Gtk.Entry autoname_model_entry;
 
     static string get_dpi_label (DpiItem device) {
         return device.label;
@@ -212,6 +220,20 @@ private class PreferencesDialog : Adw.PreferencesDialog
         settings.bind ("auto-crop", auto_crop_switch, "active", SettingsBindFlags.DEFAULT);
         settings.bind ("auto-straighten", auto_straighten_switch, "active", SettingsBindFlags.DEFAULT);
 
+        // Auto-naming settings
+        settings.bind ("autoname-enabled", autoname_switch, "active", SettingsBindFlags.DEFAULT);
+        toggle_autoname_visibility (autoname_switch.active);
+        autoname_switch.notify["active"].connect (() => { toggle_autoname_visibility (autoname_switch.active); });
+
+        autoname_endpoint_entry.set_text (settings.get_string ("autoname-endpoint"));
+        autoname_endpoint_entry.changed.connect (() => { settings.set_string ("autoname-endpoint", autoname_endpoint_entry.get_text ()); });
+
+        autoname_api_key_entry.set_text (settings.get_string ("autoname-api-key"));
+        autoname_api_key_entry.changed.connect (() => { settings.set_string ("autoname-api-key", autoname_api_key_entry.get_text ()); });
+
+        autoname_model_entry.set_text (settings.get_string ("autoname-model"));
+        autoname_model_entry.changed.connect (() => { settings.set_string ("autoname-model", autoname_model_entry.get_text ()); });
+
         // Postprocessing settings
         settings.bind ("postproc-enabled", postproc_enable_switch, "active", SettingsBindFlags.DEFAULT);
         toggle_postproc_visibility (postproc_enable_switch.active);
@@ -226,6 +248,12 @@ private class PreferencesDialog : Adw.PreferencesDialog
         postproc_args_entry.changed.connect (() => { settings.set_string("postproc-arguments", postproc_args_entry.get_text()); });
 
         settings.bind ("postproc-keep-original", postproc_keep_original_switch, "active", SettingsBindFlags.DEFAULT);
+    }
+
+    private void toggle_autoname_visibility (bool enabled) {
+        autoname_endpoint_entry.get_parent ().get_parent ().get_parent ().get_parent ().set_visible (enabled);
+        autoname_api_key_entry.get_parent ().get_parent ().get_parent ().get_parent ().set_visible (enabled);
+        autoname_model_entry.get_parent ().get_parent ().get_parent ().get_parent ().set_visible (enabled);
     }
 
     private void toggle_postproc_visibility(bool enabled) {
