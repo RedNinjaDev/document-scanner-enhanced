@@ -135,7 +135,7 @@
 
   <template class="AppWindow" parent="AdwApplicationWindow">
     <property name="height_request">480</property>
-    <property name="title" translatable="yes" comments="Title of scan window">Document Scanner</property>
+    <property name="title" translatable="yes" comments="Title of scan window">Document Scanner Enhanced</property>
     <property name="icon_name">org.gnome.SimpleScan</property>
     <signal name="close-request" handler="window_close_request_cb" swapped="no"/>
     <property name="content">
@@ -168,7 +168,9 @@
                         <property name="spacing">6</property>
                         <property name="halign">center</property>
                         <child>
-                          <object class="AdwSpinner" id="stop_button_spinner" />
+                          <object class="GtkSpinner" id="stop_button_spinner">
+                            <property name="spinning">True</property>
+                          </object>
                         </child>
                         <child>
                           <object class="GtkLabel">
