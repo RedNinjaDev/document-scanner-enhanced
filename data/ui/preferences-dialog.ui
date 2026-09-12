@@ -192,7 +192,6 @@
                     <child>
                       <object class="GtkSwitch" id="postproc_enable_switch">
                         <property name="hexpand">False</property>
-                        <property name="active">True</property>
                       </object>
                     </child>
                   </object>
@@ -251,7 +250,6 @@
                       <child>
                         <object class="GtkSwitch" id="postproc_keep_original_switch">
                         <property name="hexpand">False</property>
-                        <property name="active">True</property>
                         </object>
                       </child>
                   </object>
