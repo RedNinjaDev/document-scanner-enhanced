@@ -1358,6 +1358,45 @@ public class AppWindow : Adw.ApplicationWindow
 
     private void page_added_cb (Book book, Page page)
     {
+        page.scan_finished.connect (apply_auto_postprocess);
+        update_page_menu ();
+    }
+
+    private void apply_auto_postprocess (Page page)
+    {
+        page.scan_finished.disconnect (apply_auto_postprocess);
+
+        bool do_crop = settings.get_boolean ("auto-crop");
+        bool do_straighten = settings.get_boolean ("auto-straighten");
+        if (!do_crop && !do_straighten)
+            return;
+
+        var result = DocumentDetector.detect (page, do_straighten);
+        if (result == null)
+        {
+            debug ("Not detecting a document in this page");
+            return;
+        }
+
+        debug ("Document detection: found=%s, skew=%.2f degrees, %.1f%% of the page",
+               result.found_document.to_string (), result.skew_degrees,
+               result.document_fraction * 100.0);
+
+        if (do_straighten && Math.fabs (result.skew_degrees) >= 0.1)
+        {
+            DocumentDetector.deskew (page, result.skew_degrees, result.background_luminance);
+            if (do_crop)
+            {
+                var cropped = DocumentDetector.detect (page, false);
+                if (cropped != null && cropped.found_document)
+                    page.set_custom_crop_region (cropped.crop_x, cropped.crop_y, cropped.crop_width, cropped.crop_height);
+            }
+        }
+        else if (do_crop && result.found_document)
+        {
+            page.set_custom_crop_region (result.crop_x, result.crop_y, result.crop_width, result.crop_height);
+        }
+
         update_page_menu ();
     }
 

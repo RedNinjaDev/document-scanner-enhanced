@@ -97,5 +97,15 @@
       <summary>Whether or not to keep the original, unprocessed file</summary>
       <description>Whether or not to keep the original, unprocessed file. The "_orig" filename will be added to the filename immediately before the file extension. </description>
     </key>
+    <key name="auto-crop" type="b">
+      <default>true</default>
+      <summary>Automatically crop scanned pages to the detected document</summary>
+      <description>When enabled, each new scan is analysed and a Custom Crop rectangle is placed around the detected document (the brighter region against the scanner bed). The crop is fully adjustable afterwards.</description>
+    </key>
+    <key name="auto-straighten" type="b">
+      <default>false</default>
+      <summary>Automatically straighten skewed scanned pages</summary>
+      <description>When enabled, each new scan is analysed for mild skew (up to about ten degrees) and rotated so the document edges align with the page axes before any auto-crop is applied.</description>
+    </key>
   </schema>
 </schemalist>
