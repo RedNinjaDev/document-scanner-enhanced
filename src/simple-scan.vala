@@ -41,9 +41,9 @@ public class SimpleScan : Adw.Application
     {
         Object (
             /* The inhibit () method use this */
-            application_id: "org.gnome.SimpleScan",
+            application_id: "io.github.RedNinjaDev.DocumentScannerEnhanced",
             /* Icon resources will be looked up starting from here */
-            resource_base_path: "/org/gnome/SimpleScan"
+            resource_base_path: "/io/github/RedNinjaDev/DocumentScannerEnhanced"
         );
         register_session = true;
 
@@ -1996,7 +1996,7 @@ public class SimpleScan : Adw.Application
         if (show_version)
         {
             /* Note, not translated so can be easily parsed */
-            stderr.printf ("simple-scan %s\n", VERSION);
+            stderr.printf ("document-scanner-enhanced %s\n", VERSION);
             return Posix.EXIT_SUCCESS;
         }
         if (fix_pdf_filename != null)
@@ -2025,9 +2025,9 @@ public class SimpleScan : Adw.Application
 
         /* Log to a file */
         log_timer = new Timer ();
-        var path = Path.build_filename (Environment.get_user_cache_dir (), "simple-scan", null);
+        var path = Path.build_filename (Environment.get_user_cache_dir (), "document-scanner-enhanced", null);
         DirUtils.create_with_parents (path, 0700);
-        path = Path.build_filename (Environment.get_user_cache_dir (), "simple-scan", "simple-scan.log", null);
+        path = Path.build_filename (Environment.get_user_cache_dir (), "document-scanner-enhanced", "document-scanner-enhanced.log", null);
         log_file = FileStream.open (path, "w");
         if (log_file == null )
         {

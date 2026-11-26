@@ -1,9 +1,9 @@
 {
-    "app-id" : "org.gnome.SimpleScan",
+    "app-id" : "io.github.RedNinjaDev.DocumentScannerEnhanced",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "master",
     "sdk" : "org.gnome.Sdk",
-    "command" : "simple-scan",
+    "command" : "document-scanner-enhanced",
     "tags" : [
         "devel"
     ],
@@ -55,13 +55,14 @@
             ]
         },
         {
-            "name" : "simple-scan",
+            "name" : "document-scanner-enhanced",
             "buildsystem" : "meson",
             "builddir" : true,
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/simple-scan.git"
+                    "url" : "https://github.com/RedNinjaDev/document-scanner-enhanced.git",
+                    "branch" : "main"
                 }
             ]
         }

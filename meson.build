@@ -1,4 +1,4 @@
-project ('simple-scan', ['vala', 'c'],
+project ('document-scanner-enhanced', ['vala', 'c'],
          version: '50.0',
          license: 'GPLv3+',
          default_options: [
@@ -10,7 +10,7 @@ project ('simple-scan', ['vala', 'c'],
 gnome = import ('gnome')
 i18n = import ('i18n')
 
-app_id = 'org.gnome.SimpleScan'
+app_id = 'io.github.RedNinjaDev.DocumentScannerEnhanced'
 
 # Paths
 mandir = join_paths (get_option ('prefix'), get_option ('mandir'))

@@ -13,7 +13,7 @@
 private const int DEFAULT_TEXT_DPI = 150;
 private const int DEFAULT_PHOTO_DPI = 300;
 
-[GtkTemplate (ui = "/org/gnome/SimpleScan/ui/app-window.ui")]
+[GtkTemplate (ui = "/io/github/RedNinjaDev/DocumentScannerEnhanced/ui/app-window.ui")]
 public class AppWindow : Adw.ApplicationWindow
 {
     private const GLib.ActionEntry[] action_entries =
@@ -170,7 +170,7 @@ public class AppWindow : Adw.ApplicationWindow
 
     public AppWindow ()
     {
-        settings = new Settings ("org.gnome.SimpleScan");
+        settings = new Settings ("io.github.RedNinjaDev.DocumentScannerEnhanced");
 
         device_model = new ListStore (typeof (ScanDevice));
         device_drop_down.model = device_model;
@@ -1300,8 +1300,8 @@ public class AppWindow : Adw.ApplicationWindow
             translator_credits = _("translator-credits"),
             copyright = "Copyright © 2009-2018 Canonical Ltd.",
             license_type = Gtk.License.GPL_3_0,
-            application_name = _("Document Scanner"),
-            application_icon = "org.gnome.SimpleScan",
+            application_name = _("Document Scanner Enhanced"),
+            application_icon = "io.github.RedNinjaDev.DocumentScannerEnhanced",
             version = VERSION,
             website = "https://gitlab.gnome.org/GNOME/simple-scan",
             issue_url = "https://gitlab.gnome.org/GNOME/simple-scan/-/issues/",
@@ -1433,7 +1433,7 @@ public class AppWindow : Adw.ApplicationWindow
     {
         preferences_dialog = new PreferencesDialog (settings);
 
-        Gtk.Window.set_default_icon_name ("org.gnome.SimpleScan");
+        Gtk.Window.set_default_icon_name ("io.github.RedNinjaDev.DocumentScannerEnhanced");
 
         var app = Application.get_default () as Gtk.Application;
 
@@ -1479,7 +1479,7 @@ public class AppWindow : Adw.ApplicationWindow
         section.append (_("_Preferences"), "app.preferences");
         section.append (_("_Keyboard Shortcuts"), "app.shortcuts");
         section.append (_("_Help"), "app.help");
-        section.append (_("_About Document Scanner"), "app.about");
+        section.append (_("_About Document Scanner Enhanced"), "app.about");
         menu_button.set_menu_model (gear_menu);
 
         app.add_window (this);
@@ -1534,15 +1534,15 @@ public class AppWindow : Adw.ApplicationWindow
 
                We always return $XDG_STATE_HOME/simple-scan/state, unless we failed to move the state file.
              */
-            var xdg_state_filename = Path.build_filename (Environment.get_user_state_dir (), "simple-scan", "state");
-            var xdg_config_filename = Path.build_filename (Environment.get_user_config_dir (), "simple-scan", "state");
+            var xdg_state_filename = Path.build_filename (Environment.get_user_state_dir (), "document-scanner-enhanced", "state");
+            var xdg_config_filename = Path.build_filename (Environment.get_user_config_dir (), "document-scanner-enhanced", "state");
 
             var xdg_state_file = File.new_for_path (xdg_state_filename);
             var xdg_config_file = File.new_for_path (xdg_config_filename);
 
             if (xdg_config_file.query_exists () && !xdg_state_file.query_exists () ) {
                 try {
-                    var state_dir = Path.build_filename (Environment.get_user_state_dir (), "simple-scan");
+                    var state_dir = Path.build_filename (Environment.get_user_state_dir (), "document-scanner-enhanced");
                     debug ("Creating %s and moving %s to it", state_dir, xdg_config_filename);
                     DirUtils.create_with_parents (state_dir, 0700);
                     xdg_config_file.move (xdg_state_file, FileCopyFlags.NONE, null, null);
@@ -1617,7 +1617,7 @@ public class AppWindow : Adw.ApplicationWindow
         }
     }
 
-    private static string STATE_DIR = Path.build_filename (Environment.get_user_config_dir (), "simple-scan", null);
+    private static string STATE_DIR = Path.build_filename (Environment.get_user_config_dir (), "document-scanner-enhanced", null);
     private void save_state (bool force = false)
     {
         if (!force)

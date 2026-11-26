@@ -12,7 +12,7 @@
 
 public class AutosaveManager
 {
-    private static string AUTOSAVE_DIR = Path.build_filename (Environment.get_user_cache_dir (), "simple-scan", "autosaves");
+    private static string AUTOSAVE_DIR = Path.build_filename (Environment.get_user_cache_dir (), "document-scanner-enhanced", "autosaves");
     private static string AUTOSAVE_FILENAME = "autosave.book";
     private static string AUTOSAVE_PATH = Path.build_filename (AUTOSAVE_DIR, AUTOSAVE_FILENAME);
 
