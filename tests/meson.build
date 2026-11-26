@@ -17,6 +17,7 @@ test_env.set ('PYTHON', python.full_path ())
 tests = {
   'test-autonamer': 'unit',
   'test-document-detector': 'unit',
+  'test-paper-cleaner': 'unit',
   'test-autonamer-e2e': 'e2e',
   'test-llm-live': 'llm',
 }

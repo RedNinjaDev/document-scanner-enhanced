@@ -79,6 +79,8 @@ private class PreferencesDialog : Adw.PreferencesDialog
     [GtkChild]
     private unowned Gtk.Switch postproc_keep_original_switch;
     [GtkChild]
+    private unowned Gtk.Switch clean_background_switch;
+    [GtkChild]
     private unowned Gtk.Switch auto_crop_switch;
     [GtkChild]
     private unowned Gtk.Switch auto_straighten_switch;
@@ -197,6 +199,7 @@ private class PreferencesDialog : Adw.PreferencesDialog
         compression_scale.add_mark (compression_adjustment.upper, Gtk.PositionType.BOTTOM, full_detail_label);
         compression_adjustment.value = settings.get_int ("jpeg-quality");
         compression_adjustment.value_changed.connect (() => { settings.set_int ("jpeg-quality", (int) compression_adjustment.value); });
+        settings.bind ("clean-background", clean_background_switch, "active", SettingsBindFlags.DEFAULT);
 
         var paper_width = settings.get_int ("paper-width");
         var paper_height = settings.get_int ("paper-height");

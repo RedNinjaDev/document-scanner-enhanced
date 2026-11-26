@@ -638,7 +638,8 @@ public class AppWindow : Adw.ApplicationWindow
         save_button.sensitive = false;
         try
         {
-            yield book.save_async (mime_type, settings.get_int ("jpeg-quality"), file,
+            yield book.save_async (mime_type, settings.get_int ("jpeg-quality"),
+                settings.get_boolean ("clean-background"), file,
                 (fraction) =>
             {
                 progress_bar.set_fraction (fraction);
@@ -1214,7 +1215,8 @@ public class AppWindow : Adw.ApplicationWindow
                 filename = "scan.jpg";
             }
             var file = File.new_for_path (Path.build_filename (dir, filename));
-            yield book.save_async (mime_type, settings.get_int ("jpeg-quality"), file,
+            yield book.save_async (mime_type, settings.get_int ("jpeg-quality"),
+                settings.get_boolean ("clean-background"), file,
                 null, null);
             yield book.postprocess_async (mime_type, file, settings.get_boolean ("postproc-enabled"),
                 settings.get_string ("postproc-script"), settings.get_string ("postproc-arguments"),

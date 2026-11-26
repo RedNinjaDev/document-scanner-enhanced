@@ -174,6 +174,25 @@
                 </child>
               </object>
             </child>
+            <child>
+              <object class="AdwActionRow">
+                <property name="title" translatable="yes" comments="Switch to whiten the paper background when saving">Clean _Paper Background</property>
+                <property name="subtitle" translatable="yes" comments="Subtitle for clean paper background switch">Whiten paper when saving for smaller files. Turn off for photos.</property>
+                <property name="use_underline">True</property>
+                <property name="activatable_widget">clean_background_box</property>
+                <child>
+                  <object class="GtkBox" id="clean_background_box">
+                    <property name="valign">center</property>
+                    <property name="homogeneous">True</property>
+                    <child>
+                      <object class="GtkSwitch" id="clean_background_switch">
+                        <property name="hexpand">False</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
           </object>
         </child>
         <child>

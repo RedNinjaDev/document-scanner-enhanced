@@ -71,6 +71,11 @@
       <summary>Quality value to use for JPEG compression</summary>
       <description>Quality value to use for JPEG compression.</description>
     </key>
+    <key name="clean-background" type="b">
+      <default>true</default>
+      <summary>Whiten the paper background when saving</summary>
+      <description>When enabled, near-white areas of colour and greyscale scans are made pure white and midtones slightly darkened as the document is saved. This removes paper grain and tint, making saved files noticeably smaller while keeping print and pencil legible. Turn it off for photos or tinted paper, whose lightest shades would be washed out. The scan shown in the app is not changed.</description>
+    </key>
     <key name="page-delay" type="i">
       <range min="0" max="15000" />
       <default>1000</default>

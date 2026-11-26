@@ -164,11 +164,11 @@ public class Book : Object
         return pages.index (page);
     }
 
-    public async void save_async (string mime_type, int quality, File file,
+    public async void save_async (string mime_type, int quality, bool clean_background, File file,
         ProgressionCallback? progress_cb, Cancellable? cancellable = null) throws Error
     {
         var book_saver = new BookSaver ();
-        yield book_saver.save_async (this, mime_type, quality, file,
+        yield book_saver.save_async (this, mime_type, quality, clean_background, file,
             progress_cb, cancellable);
     }
 
@@ -185,6 +185,7 @@ private class BookSaver
 {
     private uint n_pages;
     private int quality;
+    private bool clean_background;
     private File file;
     private unowned ProgressionCallback progression_callback;
     private double progression;
@@ -199,13 +200,14 @@ private class BookSaver
      * distributes all encode tasks to other threads then yield so
      * the ui can continue operating. The method then return once saving
      * is completed, cancelled, or failed */
-    public async void save_async (Book book, string mime_type, int quality, File file,
+    public async void save_async (Book book, string mime_type, int quality, bool clean_background, File file,
         ProgressionCallback? progression_callback, Cancellable? cancellable) throws Error
     {
         var timer = new Timer ();
 
         this.n_pages = book.n_pages;
         this.quality = quality;
+        this.clean_background = clean_background;
         this.file = file;
         this.cancellable = cancellable;
         this.save_async_callback = save_async.callback;
@@ -308,12 +310,24 @@ private class BookSaver
      * one encode_task issued by save_async and reissue the result with
      * a write_task */
 
+    /* The cropped page image to encode, with the paper background cleaned
+     * when that is enabled. Only 8-bit scans are cleaned: 1- and 2-bit text
+     * scans are already reduced to a few levels and their thresholds would
+     * shift. */
+    private Gdk.Pixbuf get_save_image (Page page)
+    {
+        var image = page.get_image (true);
+        if (clean_background && page.depth >= 8)
+            PaperCleaner.clean (image);
+        return image;
+    }
+
     private void encode_png (owned EncodeTask encode_task)
     {
         var page = encode_task.page;
         var icc_data = page.get_icc_data_encoded ();
         var write_task = new WriteTask ();
-        var image = page.get_image (true);
+        var image = get_save_image (page);
 
         string[] keys = { "x-dpi", "y-dpi", "icc-profile", null };
         string[] values = { "%d".printf (page.dpi), "%d".printf (page.dpi), icc_data, null };
@@ -339,7 +353,7 @@ private class BookSaver
         var page = encode_task.page;
         var icc_data = page.get_icc_data_encoded ();
         var write_task = new WriteTask ();
-        var image = page.get_image (true);
+        var image = get_save_image (page);
 
         string[] keys = { "x-dpi", "y-dpi", "quality", "icc-profile", null };
         string[] values = { "%d".printf (page.dpi), "%d".printf (page.dpi), "%d".printf (quality), icc_data, null };
@@ -366,7 +380,7 @@ private class BookSaver
         var page = encode_task.page;
         var icc_data = page.get_icc_data_encoded ();
         var write_task = new WriteTask ();
-        var image = page.get_image (true);
+        var image = get_save_image (page);
         var webp_data = WebP.encode_rgb (image.get_pixels (),
                                          image.get_width (),
                                          image.get_height (),
@@ -411,7 +425,7 @@ private class BookSaver
     private void encode_pdf (owned EncodeTask encode_task)
     {
         var page = encode_task.page;
-        var image = page.get_image (true);
+        var image = get_save_image (page);
         var width = image.width;
         var height = image.height;
         unowned uint8[] pixels = image.get_pixels ();
