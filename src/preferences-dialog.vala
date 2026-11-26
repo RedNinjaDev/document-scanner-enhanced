@@ -80,6 +80,8 @@ private class PreferencesDialog : Adw.PreferencesDialog
     private unowned Gtk.Switch postproc_keep_original_switch;
     [GtkChild]
     private unowned Gtk.Switch auto_crop_switch;
+    [GtkChild]
+    private unowned Gtk.Switch auto_straighten_switch;
 
     static string get_dpi_label (DpiItem device) {
         return device.label;
@@ -204,7 +206,11 @@ private class PreferencesDialog : Adw.PreferencesDialog
             settings.set_int ("page-delay", page_delay_toggles.active_name.to_int() * 1000);
         });
 
+        // Automatic crop and straighten settings. A GtkSwitch draws its
+        // slider from "active", so binding that property keeps the slider,
+        // the switch state and the setting in step in both directions.
         settings.bind ("auto-crop", auto_crop_switch, "active", SettingsBindFlags.DEFAULT);
+        settings.bind ("auto-straighten", auto_straighten_switch, "active", SettingsBindFlags.DEFAULT);
 
         // Postprocessing settings
         var postproc_enabled = settings.get_boolean ("postproc-enabled");

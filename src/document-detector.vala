@@ -17,7 +17,12 @@ public class DocumentDetectionResult : Object
     public int crop_y;
     public int crop_width;
     public int crop_height;
+    public double skew_degrees;
     public double document_fraction;
+    // Mean luminance of pixels outside the detected bbox — the scanner
+    // background ("bed") on most scans. Used by deskew so the corners
+    // revealed by rotation are filled to match, rather than always white.
+    public uchar background_luminance;
 }
 
 public class DocumentDetector
@@ -25,6 +30,7 @@ public class DocumentDetector
     private const int ANALYSIS_LONG_SIDE = 600;
     private const double MIN_DOCUMENT_FRACTION = 0.05;
     private const double MAX_DOCUMENT_FRACTION = 0.99;
+    private const double SKEW_RANGE_DEGREES = 10.0;
 
     // Shrink the detected bbox by this fraction on every side so the
     // returned crop sits just inside the paper edge.
@@ -214,7 +220,69 @@ public class DocumentDetector
         return x0 >= 0 && y0 >= 0 && x1 > x0 && y1 > y0;
     }
 
-    public static DocumentDetectionResult? detect (Page page)
+    private static double projection_variance (uint8[] mask, int w, int h, double angle_deg)
+    {
+        double tan_a = Math.tan (angle_deg * Math.PI / 180.0);
+
+        // The bin layout is identical for every trial angle, so that the
+        // variances of different angles are comparable: the array always
+        // spans the largest shift the search can produce, and the offset
+        // centres the page in it. A layout that grew with the angle, or an
+        // offset that pushed part of the page past the end of the array,
+        // adds a bias large enough to hide the real skew.
+        int max_shift = (int) (Math.tan (SKEW_RANGE_DEGREES * Math.PI / 180.0) * w / 2.0) + 1;
+        int n_bins = h + 2 * max_shift;
+        int[] proj = new int[n_bins];
+
+        double cx = w / 2.0;
+        for (int y = 0; y < h; y++)
+        {
+            int row = y * w;
+            for (int x = 0; x < w; x++)
+            {
+                if (mask[row + x] == 0) continue;
+                int yp = y + (int) ((x - cx) * tan_a) + max_shift;
+                if (yp >= 0 && yp < n_bins)
+                    proj[yp]++;
+            }
+        }
+
+        // Variance across all bins, including the empty ones above and
+        // below the page: a sharp edge concentrates the mask into fewer
+        // bins and raises it, while a smeared edge spreads it and lowers it.
+        double sum = 0;
+        for (int i = 0; i < n_bins; i++) sum += proj[i];
+        double mean = sum / n_bins;
+        double variance = 0;
+        for (int i = 0; i < n_bins; i++)
+        {
+            double d = proj[i] - mean;
+            variance += d * d;
+        }
+        return variance / n_bins;
+    }
+
+    private static double estimate_skew (uint8[] mask, int w, int h)
+    {
+        double best_angle = 0;
+        double best_var = projection_variance (mask, w, h, 0);
+
+        for (double a = -SKEW_RANGE_DEGREES; a <= SKEW_RANGE_DEGREES; a += 1.0)
+        {
+            double v = projection_variance (mask, w, h, a);
+            if (v > best_var) { best_var = v; best_angle = a; }
+        }
+
+        double coarse = best_angle;
+        for (double a = coarse - 0.9; a <= coarse + 0.9; a += 0.1)
+        {
+            double v = projection_variance (mask, w, h, a);
+            if (v > best_var) { best_var = v; best_angle = a; }
+        }
+        return best_angle;
+    }
+
+    public static DocumentDetectionResult? detect (Page page, bool want_skew)
     {
         if (!page.has_data)
             return null;
@@ -252,6 +320,7 @@ public class DocumentDetector
         if (frac < MIN_DOCUMENT_FRACTION || frac > MAX_DOCUMENT_FRACTION)
         {
             result.found_document = false;
+            result.skew_degrees = 0;
             return result;
         }
 
@@ -277,7 +346,111 @@ public class DocumentDetector
         result.crop_y = page_y0;
         result.crop_width = page_x1 - page_x0 + 1;
         result.crop_height = page_y1 - page_y0 + 1;
+        result.skew_degrees = want_skew ? estimate_skew (mask, ds_w, ds_h) : 0;
+
+        // Estimate background by averaging downsampled-luma pixels that
+        // fall outside the detected bbox. Falls back to black on a full-
+        // coverage scan (no outside pixels).
+        int bg_sum = 0; int bg_count = 0;
+        for (int y = 0; y < ds_h; y++)
+        {
+            int row = y * ds_w;
+            bool y_in = (y >= y0 && y <= y1);
+            for (int x = 0; x < ds_w; x++)
+            {
+                if (y_in && x >= x0 && x <= x1) continue;
+                bg_sum += lum[row + x];
+                bg_count++;
+            }
+        }
+        result.background_luminance = bg_count > 0 ? (uchar)(bg_sum / bg_count) : 0;
 
         return result;
+    }
+
+    public static void deskew (Page page, double degrees, uchar fill_luminance = 0)
+    {
+        if (Math.fabs (degrees) < 0.05)
+            return;
+
+        int src_w = page.width;
+        int src_h = page.height;
+        bool color = page.is_color;
+        int channels = color ? 3 : 1;
+
+        double angle_rad = degrees * Math.PI / 180.0;
+        double cos_a = Math.cos (angle_rad);
+        double sin_a = Math.sin (angle_rad);
+
+        int dst_w = (int) (Math.fabs (src_w * cos_a) + Math.fabs (src_h * sin_a) + 0.5);
+        int dst_h = (int) (Math.fabs (src_w * sin_a) + Math.fabs (src_h * cos_a) + 0.5);
+
+        var dst = new uchar[dst_w * dst_h * channels];
+
+        double scx = src_w / 2.0;
+        double scy = src_h / 2.0;
+        double dcx = dst_w / 2.0;
+        double dcy = dst_h / 2.0;
+
+        uchar[] sample = new uchar[3];
+
+        for (int dy = 0; dy < dst_h; dy++)
+        {
+            double oy = dy - dcy;
+            for (int dx = 0; dx < dst_w; dx++)
+            {
+                double ox = dx - dcx;
+                double sx = ox * cos_a + oy * sin_a + scx;
+                double sy = -ox * sin_a + oy * cos_a + scy;
+
+                int x0 = (int) Math.floor (sx);
+                int y0 = (int) Math.floor (sy);
+                int x1 = x0 + 1;
+                int y1 = y0 + 1;
+                double fx = sx - x0;
+                double fy = sy - y0;
+
+                int r = 0, g = 0, b = 0;
+                for (int j = 0; j < 2; j++)
+                {
+                    int yy = j == 0 ? y0 : y1;
+                    double wy = j == 0 ? (1 - fy) : fy;
+                    for (int i = 0; i < 2; i++)
+                    {
+                        int xx = i == 0 ? x0 : x1;
+                        double wx = i == 0 ? (1 - fx) : fx;
+                        double w = wx * wy;
+
+                        if (xx < 0 || yy < 0 || xx >= src_w || yy >= src_h)
+                        {
+                            r += (int) (fill_luminance * w);
+                            g += (int) (fill_luminance * w);
+                            b += (int) (fill_luminance * w);
+                        }
+                        else
+                        {
+                            page.get_pixel_rgb (xx, yy, sample);
+                            r += (int) (sample[0] * w);
+                            g += (int) (sample[1] * w);
+                            b += (int) (sample[2] * w);
+                        }
+                    }
+                }
+
+                int off = (dy * dst_w + dx) * channels;
+                if (color)
+                {
+                    dst[off + 0] = (uchar) int.min (255, r);
+                    dst[off + 1] = (uchar) int.min (255, g);
+                    dst[off + 2] = (uchar) int.min (255, b);
+                }
+                else
+                {
+                    dst[off] = (uchar) int.min (255, r);
+                }
+            }
+        }
+
+        page.replace_image (dst_w, dst_h, channels, (owned) dst);
     }
 }

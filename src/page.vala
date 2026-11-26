@@ -573,6 +573,36 @@ public class Page : Object
         get_pixel (x, y, rgb, 0);
     }
 
+    public void replace_image (int new_width,
+                               int new_height,
+                               int new_n_channels,
+                               owned uchar[] new_pixels)
+    {
+        return_if_fail (new_width >= 1);
+        return_if_fail (new_height >= 1);
+        return_if_fail (new_n_channels == 1 || new_n_channels == 3);
+
+        has_crop = false;
+        crop_name = null;
+        crop_x = crop_y = crop_width = crop_height = 0;
+
+        scan_direction_ = ScanDirection.TOP_TO_BOTTOM;
+        scan_width = new_width;
+        scan_height = new_height;
+        n_channels = new_n_channels;
+        depth = 8;
+        rowstride = new_width * new_n_channels;
+        pixels = (owned) new_pixels;
+        expected_rows = new_height;
+        scan_line = new_height;
+        has_data = true;
+
+        size_changed ();
+        scan_direction_changed ();
+        crop_changed ();
+        pixels_changed ();
+    }
+
     // FIXME: Copied from page-view, should be shared code
     private uchar get_sample (uchar[] pixels, int offset, int x, int depth, int n_channels, int channel)
     {

@@ -102,5 +102,10 @@
       <summary>Automatically crop scanned pages to the detected document</summary>
       <description>When enabled, each new scan is analysed and a Custom Crop rectangle is placed around the detected document (the brighter region against the scanner bed). The crop is fully adjustable afterwards. This needs a background darker than the paper, such as the black backing of many sheet-fed scanners; against a white lid nothing is detected and the page is left uncropped.</description>
     </key>
+    <key name="auto-straighten" type="b">
+      <default>false</default>
+      <summary>Automatically straighten skewed scanned pages</summary>
+      <description>When enabled, each new scan is analysed for mild skew (up to about ten degrees) and rotated so the document edges align with the page axes before any auto-crop is applied.</description>
+    </key>
   </schema>
 </schemalist>
