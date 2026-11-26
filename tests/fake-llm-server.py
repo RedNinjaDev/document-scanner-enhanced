@@ -12,7 +12,7 @@ to the log file named on its command line:
 The request path picks the behaviour:
 
     /ok            answers with a dated name for a person's insurance claim
-    /nodate        answers with an undated name
+    /nodate        answers with a name that has no date or person
     /empty         answers with empty content, as a reasoning model does when
                    it runs out of tokens
     /reject-flags  refuses requests carrying thinking flags, like a server
@@ -34,8 +34,8 @@ import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 REPLIES = {
-    "/ok": "2026-10-30|Jordan Sample BlueCross Explanation of Benefits",
-    "/nodate": "NONE|Owner's Manual Cordless Drill",
+    "/ok": "2026-10-30|Jordan Sample|Explanation of Benefits from BlueCross",
+    "/nodate": "NONE|NONE|Owner's Manual Cordless Drill",
     "/empty": "",
 }
 

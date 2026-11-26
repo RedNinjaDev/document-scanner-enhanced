@@ -12,7 +12,8 @@
 
 public class AutoNamer
 {
-    private const int MAX_DESC_LEN = 90;
+    internal const int MAX_DESC_LEN = 90;
+    internal const int MAX_PERSON_LEN = 40;
     private const int CURL_TIMEOUT_SEC = 60;
     // Enough for a reasoning model that ignores the request to skip its
     // thinking: one measured a thousand tokens before answering.
@@ -45,12 +46,11 @@ public class AutoNamer
         string? content = extract_content (body);
         if (content == null) return null;
 
-        string date_part, desc_part;
-        parse_date_and_desc (content, out date_part, out desc_part);
+        string date_part, person_part, desc_part;
+        parse_reply (content, out date_part, out person_part, out desc_part);
         if (desc_part == "") return null;
 
-        string name = (date_part != "") ? @"$date_part $desc_part" : desc_part;
-        return @"$name.$extension";
+        return compose_name (date_part, person_part, desc_part) + "." + extension;
     }
 
     private static string? encode_page_jpeg_base64 (Page page)
@@ -79,11 +79,11 @@ public class AutoNamer
         // something "suitable as a filename" run the words together
         // ("bluecrossbillsummary"), which slugify cannot split again.
         const string PROMPT =
-            "What is this scanned document? Reply with one line in the form DATE|TITLE and nothing else.\n" +
+            "What is this scanned document? Reply with one line in the form DATE|PERSON|TITLE and nothing else.\n" +
             "DATE is the document's main date as YYYY-MM-DD (or YYYY-MM, or YYYY, or NONE).\n" +
-            "TITLE is 3 to 8 words in Title Case, separated by spaces: the name of the person the document " +
-            "is about if one is shown, then who it is from and what it is.\n" +
-            "Example: 2025-07-14|Jane Smith Acme Bank Credit Card Statement";
+            "PERSON is the full name of the person the document is about, or NONE if no person is named.\n" +
+            "TITLE is 2 to 6 words in Title Case, separated by spaces, saying what the document is and who it is from.\n" +
+            "Example: 2025-07-14|Jane Smith|Credit Card Statement from Acme Bank";
 
         var sb = new StringBuilder ();
         sb.append ("{\"model\":");
@@ -238,12 +238,14 @@ public class AutoNamer
         return sb.str;
     }
 
-    // First non-empty line is expected to be "<date>|<description>".
-    internal static void parse_date_and_desc (string content,
-                                             out string date_part,
-                                             out string desc_part)
+    // The first non-empty line is expected to be "DATE|PERSON|TITLE". The
+    // older "DATE|TITLE", or a bare title, is accepted too.
+    internal static void parse_reply (string content,
+                                      out string date_part,
+                                      out string person_part,
+                                      out string desc_part)
     {
-        date_part = ""; desc_part = "";
+        date_part = ""; person_part = ""; desc_part = "";
         string? line = null;
         foreach (string raw in content.split ("\n")) {
             string l = raw.strip ();
@@ -251,12 +253,38 @@ public class AutoNamer
         }
         if (line == null) return;
 
-        int sep = line.index_of ("|");
-        string raw_date = sep >= 0 ? line.substring (0, sep).strip () : "";
-        string raw_desc = sep >= 0 ? line.substring (sep + 1).strip () : line;
+        string[] fields = line.split ("|", 3);
+        string raw_date = "", raw_person = "", raw_desc;
+        if (fields.length == 3) {
+            raw_date = fields[0]; raw_person = fields[1]; raw_desc = fields[2];
+        } else if (fields.length == 2) {
+            raw_date = fields[0]; raw_desc = fields[1];
+        } else {
+            raw_desc = fields[0];
+        }
 
-        date_part = normalize_date (raw_date);
+        date_part = normalize_date (raw_date.strip ());
+        person_part = normalize_person (raw_person);
         desc_part = slugify (raw_desc);
+    }
+
+    // "2026-10-30 Jane Smith - Statement from Acme Bank", leaving out
+    // whichever of the date and the person the document doesn't have.
+    internal static string compose_name (string date, string person, string desc)
+    {
+        string name = desc;
+        if (person != "") name = @"$person - $name";
+        if (date != "") name = @"$date $name";
+        return name;
+    }
+
+    internal static string normalize_person (string raw)
+    {
+        string p = raw.strip ();
+        string up = p.up ();
+        if (up == "NONE" || up == "N/A" || up == "UNKNOWN")
+            return "";
+        return slugify (p, MAX_PERSON_LEN);
     }
 
     internal static string normalize_date (string raw)
@@ -277,7 +305,7 @@ public class AutoNamer
     // Insert spaces at camelCase boundaries (small models often ignore the
     // prompt's "spaces between words" instruction and mash them together).
     // Collapse runs of separators and clamp length.
-    internal static string slugify (string raw)
+    internal static string slugify (string raw, int max_len = MAX_DESC_LEN)
     {
         var sb = new StringBuilder ();
         unichar c;
@@ -302,8 +330,8 @@ public class AutoNamer
         } catch (RegexError e) {}
         s = s.strip ();
         // Count characters, not bytes, so an accented letter is never cut in half.
-        if (s.char_count () > MAX_DESC_LEN)
-            s = s.substring (0, s.index_of_nth_char (MAX_DESC_LEN)).strip ();
+        if (s.char_count () > max_len)
+            s = s.substring (0, s.index_of_nth_char (max_len)).strip ();
         return s;
     }
 }

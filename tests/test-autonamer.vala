@@ -82,37 +82,78 @@ void test_dates ()
     check_date ("October 30, 2026", "");
 }
 
-void check_parse (string content, string expected_date, string expected_desc)
+void check_parse (string content, string expected_date, string expected_person, string expected_desc)
 {
-    string date, desc;
-    AutoNamer.parse_date_and_desc (content, out date, out desc);
-    if (date != expected_date || desc != expected_desc)
-        error ("parse (\"%s\"): expected \"%s\" + \"%s\", got \"%s\" + \"%s\"",
-               content.escape (), expected_date, expected_desc, date, desc);
+    string date, person, desc;
+    AutoNamer.parse_reply (content, out date, out person, out desc);
+    if (date != expected_date || person != expected_person || desc != expected_desc)
+        error ("parse (\"%s\"): expected \"%s\" | \"%s\" | \"%s\", got \"%s\" | \"%s\" | \"%s\"",
+               content.escape (), expected_date, expected_person, expected_desc, date, person, desc);
 }
 
 void test_parse_reply ()
 {
-    check_parse ("2026-10-30|Jordan Sample BlueCross Explanation of Benefits",
-                 "2026-10-30", "Jordan Sample Blue Cross Explanation of Benefits");
-    check_parse ("NONE|Owner's Manual Cordless Drill", "", "Owners Manual Cordless Drill");
-    check_parse ("2026-10-30 | Power Bill ", "2026-10-30", "Power Bill");
+    check_parse ("2026-10-30|Jordan Sample|Explanation of Benefits from BlueCross",
+                 "2026-10-30", "Jordan Sample", "Explanation of Benefits from Blue Cross");
+    check_parse ("2024-03-13|Emily R. Carter|Patient Statement", "2024-03-13", "Emily R Carter", "Patient Statement");
+    check_parse (" 2026-10-30 | Marcus Delgado | Power Bill ", "2026-10-30", "Marcus Delgado", "Power Bill");
+}
+
+void test_parse_reply_without_person ()
+{
+    check_parse ("NONE|NONE|Owner's Manual Cordless Drill", "", "", "Owners Manual Cordless Drill");
+    check_parse ("2026|none|Tax Guide", "2026", "", "Tax Guide");
+    check_parse ("2026|N/A|Tax Guide", "2026", "", "Tax Guide");
+    check_parse ("2026||Tax Guide", "2026", "", "Tax Guide");
+}
+
+void test_parse_reply_extra_separators_stay_in_title ()
+{
+    check_parse ("2026|Jane Smith|Statement|Page 1", "2026", "Jane Smith", "Statement Page 1");
+}
+
+void test_parse_two_field_reply ()
+{
+    // The format before the person had a field of its own.
+    check_parse ("2026-10-30|Power Bill", "2026-10-30", "", "Power Bill");
 }
 
 void test_parse_reply_without_separator ()
 {
-    check_parse ("Just A Title", "", "Just A Title");
+    check_parse ("Just A Title", "", "", "Just A Title");
 }
 
 void test_parse_reply_uses_first_line ()
 {
-    check_parse ("\n\n  2024|Tax Return\nHere is why I chose it", "2024", "Tax Return");
+    check_parse ("\n\n  2024|Jane Smith|Tax Return\nHere is why I chose it", "2024", "Jane Smith", "Tax Return");
 }
 
 void test_parse_empty_reply ()
 {
-    check_parse ("", "", "");
-    check_parse ("\n  \n", "", "");
+    check_parse ("", "", "", "");
+    check_parse ("\n  \n", "", "", "");
+}
+
+void test_parse_caps_person_length ()
+{
+    string date, person, desc;
+    AutoNamer.parse_reply ("2026|%s|Letter".printf (string.nfill (60, 'a')), out date, out person, out desc);
+    assert_cmpint (person.char_count (), CompareOperator.EQ, 40);
+}
+
+void check_name (string date, string person, string desc, string expected)
+{
+    var actual = AutoNamer.compose_name (date, person, desc);
+    if (actual != expected)
+        error ("compose_name: expected \"%s\", got \"%s\"", expected, actual);
+}
+
+void test_compose_name ()
+{
+    check_name ("2025-07-14", "Jane Smith", "Statement from Acme Bank", "2025-07-14 Jane Smith - Statement from Acme Bank");
+    check_name ("", "Jane Smith", "Statement from Acme Bank", "Jane Smith - Statement from Acme Bank");
+    check_name ("2025-07", "", "Statement from Acme Bank", "2025-07 Statement from Acme Bank");
+    check_name ("", "", "Owners Manual", "Owners Manual");
 }
 
 void test_extract_content ()
@@ -168,11 +209,11 @@ void test_request_plain ()
     assert_false (req.contains ("chat_template_kwargs"));
 }
 
-void test_request_prompt_asks_for_name_first ()
+void test_request_prompt_asks_for_person ()
 {
     var req = AutoNamer.build_request ("m", "QUJD", true);
-    assert_true (req.contains ("DATE|TITLE"));
-    assert_true (req.contains ("the name of the person the document is about if one is shown, then who it is from"));
+    assert_true (req.contains ("DATE|PERSON|TITLE"));
+    assert_true (req.contains ("PERSON is the full name of the person the document is about, or NONE"));
     // Newlines in the prompt are escaped, not raw, so the JSON stays valid.
     assert_false (req.contains ("\n"));
 }
@@ -196,6 +237,11 @@ int main (string[] args)
     Test.add_func ("/slugify/caps-length-on-character-boundary", test_slugify_caps_length_on_character_boundary);
     Test.add_func ("/date/formats", test_dates);
     Test.add_func ("/parse/reply", test_parse_reply);
+    Test.add_func ("/parse/reply-without-person", test_parse_reply_without_person);
+    Test.add_func ("/parse/extra-separators-stay-in-title", test_parse_reply_extra_separators_stay_in_title);
+    Test.add_func ("/parse/two-field-reply", test_parse_two_field_reply);
+    Test.add_func ("/parse/caps-person-length", test_parse_caps_person_length);
+    Test.add_func ("/compose/name", test_compose_name);
     Test.add_func ("/parse/reply-without-separator", test_parse_reply_without_separator);
     Test.add_func ("/parse/uses-first-line", test_parse_reply_uses_first_line);
     Test.add_func ("/parse/empty-reply", test_parse_empty_reply);
@@ -206,7 +252,7 @@ int main (string[] args)
     Test.add_func ("/extract/error-reply", test_extract_content_error_reply);
     Test.add_func ("/request/thinking-off", test_request_with_thinking_off);
     Test.add_func ("/request/plain", test_request_plain);
-    Test.add_func ("/request/prompt-asks-for-name-first", test_request_prompt_asks_for_name_first);
+    Test.add_func ("/request/prompt-asks-for-person", test_request_prompt_asks_for_person);
     Test.add_func ("/request/escapes-model-name", test_request_escapes_model_name);
     return Test.run ();
 }

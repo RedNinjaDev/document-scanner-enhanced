@@ -20,8 +20,8 @@ All three are under Preferences → Postprocessing, and all are off until you tu
   auto-crop is applied. Unlike the crop, the rotation cannot be undone.
 * **Auto-Name on Save** sends the first page to a vision-capable model behind an OpenAI-compatible
   chat completions endpoint and pre-fills the Save dialog with the document's date, the person it
-  is about (when one is named), who it is from and what it is, like
-  `2024-03-13 Emily Carter Bright Smile Dental Statement.pdf`. The default is a local
+  is about (when one is named), and what it is and who it is from, like
+  `2024-03-13 Emily Carter - Patient Statement from Bright Smile Dental.pdf`. The default is a local
   [Ollama](https://ollama.com) running `qwen3.5:4b`; the endpoint, API key and model are
   configurable.
 

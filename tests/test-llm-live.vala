@@ -10,8 +10,8 @@
  * API key. Each test is skipped when the server can't be reached.
  *
  * The documents are synthetic, with made-up names. The checks are the ones
- * that matter for a filename: the right date, the person's name first,
- * the sender, and words with spaces between them.
+ * that matter for a filename: the right date, the person's name and a dash
+ * before the title, the sender, and words with spaces between them.
  */
 
 using TestUtil;
@@ -72,7 +72,7 @@ void test_insurance_claim ()
         "22|Amount billed: $412.00     Plan paid: $329.60",
         "b24|THIS IS NOT A BILL" });
     if (name == null) return;
-    assert_true (name.has_prefix ("2026-10-30 Jordan Sample "));
+    assert_true (name.has_prefix ("2026-10-30 Jordan Sample - "));
     assert_contains (name, "Blue Cross");
     assert_true (name.has_suffix (".pdf"));
     assert_words_are_spaced (name);
@@ -89,7 +89,7 @@ void test_dental_statement ()
         "b24|Balance due: $36.00" });
     if (name == null) return;
     assert_true (name.has_prefix ("2024-03-13 Emily "));
-    assert_contains (name, "Carter");
+    assert_contains (name, "Carter - ");
     assert_contains (name, "Dental");
     assert_words_are_spaced (name);
 }
@@ -105,10 +105,28 @@ void test_power_bill ()
         "22|Due by November 2, 2026" });
     if (name == null) return;
     assert_true (name.has_prefix ("2026-"));
-    // Name first, straight after the date.
+    // The name straight after the date, then a dash.
     var after_date = name.substring (name.index_of (" ") + 1);
-    assert_true (after_date.has_prefix ("Marcus Delgado "));
+    assert_true (after_date.has_prefix ("Marcus Delgado - "));
     assert_contains (name, "Pacific Power");
+    assert_words_are_spaced (name);
+}
+
+void test_receipt_has_no_person ()
+{
+    var name = name_document ({
+        "b44|Corner Hardware",
+        "28|Receipt",
+        "24|03/15/2026  14:22",
+        "22|Wood screws   $6.49",
+        "22|Sandpaper     $4.99",
+        "b24|Total  $11.48  VISA ****1234" });
+    if (name == null) return;
+    assert_true (name.has_prefix ("2026-03-15 "));
+    // No person, so no dash.
+    assert_false (name.contains (" - "));
+    assert_contains (name, "Receipt");
+    assert_contains (name, "Corner Hardware");
     assert_words_are_spaced (name);
 }
 
@@ -120,6 +138,8 @@ void test_manual_has_no_date ()
         "22|Read all safety warnings before use." });
     if (name == null) return;
     assert_false (Regex.match_simple ("^[0-9]{4}", name));
+    // No person, so no dash.
+    assert_false (name.contains (" - "));
     assert_contains (name, "Manual");
     assert_contains (name, "Drill");
     assert_words_are_spaced (name);
@@ -141,6 +161,7 @@ int main (string[] args)
     Test.add_func ("/llm/insurance-claim", test_insurance_claim);
     Test.add_func ("/llm/dental-statement", test_dental_statement);
     Test.add_func ("/llm/power-bill", test_power_bill);
+    Test.add_func ("/llm/receipt-has-no-person", test_receipt_has_no_person);
     Test.add_func ("/llm/manual-has-no-date", test_manual_has_no_date);
     return Test.run ();
 }

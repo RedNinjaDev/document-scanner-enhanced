@@ -84,7 +84,7 @@ Page small_document ()
 void test_names_document ()
 {
     var name = suggest (small_document (), server.url ("/ok"), "test-model");
-    assert_cmpstr (name, CompareOperator.EQ, "2026-10-30 Jordan Sample Blue Cross Explanation of Benefits.pdf");
+    assert_cmpstr (name, CompareOperator.EQ, "2026-10-30 Jordan Sample - Explanation of Benefits from Blue Cross.pdf");
 
     int n;
     var req = server.new_requests (out n);
@@ -107,7 +107,7 @@ void test_undated_document ()
 void test_uses_requested_extension ()
 {
     var name = suggest (small_document (), server.url ("/ok"), "test-model", "", "png");
-    assert_true (name.has_suffix (" Benefits.png"));
+    assert_true (name.has_suffix (" from Blue Cross.png"));
     int n;
     server.new_requests (out n);
 }
@@ -124,7 +124,7 @@ void test_sends_api_key ()
 void test_retries_without_thinking_flags ()
 {
     var name = suggest (small_document (), server.url ("/reject-flags"), "test-model");
-    assert_cmpstr (name, CompareOperator.EQ, "2026-10-30 Jordan Sample Blue Cross Explanation of Benefits.pdf");
+    assert_cmpstr (name, CompareOperator.EQ, "2026-10-30 Jordan Sample - Explanation of Benefits from Blue Cross.pdf");
 
     int n;
     var req = server.new_requests (out n);
