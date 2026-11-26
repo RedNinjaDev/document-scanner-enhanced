@@ -75,12 +75,14 @@ public class AutoNamer
 
     private static string build_request (string model, string b64_jpeg, bool skip_thinking)
     {
+        // Ask for a title, not a filename: small models told to produce
+        // something "suitable as a filename" run the words together
+        // ("bluecrossbillsummary"), which slugify cannot split again.
         const string PROMPT =
-            "Analyze this scanned document and reply on EXACTLY ONE LINE in this format:\n" +
-            "<date>|<description>\n" +
-            "Where <date> is the document's most prominent date as YYYY-MM-DD (or YYYY-MM, or YYYY, or NONE if no date is visible),\n" +
-            "and <description> is 3 to 6 separate English words with a SINGLE SPACE between each word, suitable as a filename: letters, digits and spaces only — no punctuation, no CamelCase, no underscores, no hyphens.\n" +
-            "Reply with that single line only, no other text.";
+            "What is this scanned document? Reply with one line in the form DATE|TITLE and nothing else.\n" +
+            "DATE is the document's main date as YYYY-MM-DD (or YYYY-MM, or YYYY, or NONE).\n" +
+            "TITLE is 3 to 6 words in Title Case, separated by spaces, naming who it is from and what it is.\n" +
+            "Example: 2025-07-14|Acme Bank Credit Card Statement";
 
         var sb = new StringBuilder ();
         sb.append ("{\"model\":");
