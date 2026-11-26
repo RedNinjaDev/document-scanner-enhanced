@@ -1358,6 +1358,30 @@ public class AppWindow : Adw.ApplicationWindow
 
     private void page_added_cb (Book book, Page page)
     {
+        page.scan_finished.connect (apply_auto_postprocess);
+        update_page_menu ();
+    }
+
+    private void apply_auto_postprocess (Page page)
+    {
+        page.scan_finished.disconnect (apply_auto_postprocess);
+
+        if (!settings.get_boolean ("auto-crop"))
+            return;
+
+        var result = DocumentDetector.detect (page);
+        if (result == null)
+        {
+            debug ("Not detecting a document in this page");
+            return;
+        }
+
+        debug ("Document detection: found=%s, %.1f%% of the page",
+               result.found_document.to_string (), result.document_fraction * 100.0);
+
+        if (result.found_document)
+            page.set_custom_crop_region (result.crop_x, result.crop_y, result.crop_width, result.crop_height);
+
         update_page_menu ();
     }
 

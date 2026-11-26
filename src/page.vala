@@ -392,6 +392,32 @@ public class Page : Object
         crop_changed ();
     }
 
+    public void set_custom_crop_region (int x, int y, int w, int h)
+    {
+        return_if_fail (w >= 1);
+        return_if_fail (h >= 1);
+
+        var pw = width;
+        var ph = height;
+
+        if (x < 0) { w += x; x = 0; }
+        if (y < 0) { h += y; y = 0; }
+        if (x >= pw) x = pw - 1;
+        if (y >= ph) y = ph - 1;
+        if (x + w > pw) w = pw - x;
+        if (y + h > ph) h = ph - y;
+        if (w < 1) w = 1;
+        if (h < 1) h = 1;
+
+        crop_name = null;
+        has_crop = true;
+        crop_x = x;
+        crop_y = y;
+        crop_width = w;
+        crop_height = h;
+        crop_changed ();
+    }
+
     public void set_custom_crop (int width, int height)
     {
         return_if_fail (width >= 1);
@@ -535,6 +561,16 @@ public class Page : Object
     public unowned uchar[] get_pixels ()
     {
         return pixels;
+    }
+
+    public void get_pixel_rgb (int x, int y, uchar[] rgb)
+    {
+        if (x < 0 || y < 0 || x >= width || y >= height)
+        {
+            rgb[0] = rgb[1] = rgb[2] = 0xFF;
+            return;
+        }
+        get_pixel (x, y, rgb, 0);
     }
 
     // FIXME: Copied from page-view, should be shared code

@@ -78,6 +78,8 @@ private class PreferencesDialog : Adw.PreferencesDialog
     private unowned Gtk.Entry postproc_args_entry;
     [GtkChild]
     private unowned Gtk.Switch postproc_keep_original_switch;
+    [GtkChild]
+    private unowned Gtk.Switch auto_crop_switch;
 
     static string get_dpi_label (DpiItem device) {
         return device.label;
@@ -201,6 +203,8 @@ private class PreferencesDialog : Adw.PreferencesDialog
         page_delay_toggles.notify["active-name"].connect(() => {
             settings.set_int ("page-delay", page_delay_toggles.active_name.to_int() * 1000);
         });
+
+        settings.bind ("auto-crop", auto_crop_switch, "active", SettingsBindFlags.DEFAULT);
 
         // Postprocessing settings
         var postproc_enabled = settings.get_boolean ("postproc-enabled");
