@@ -81,9 +81,9 @@ public class AutoNamer
         const string PROMPT =
             "What is this scanned document? Reply with one line in the form DATE|TITLE and nothing else.\n" +
             "DATE is the document's main date as YYYY-MM-DD (or YYYY-MM, or YYYY, or NONE).\n" +
-            "TITLE is 3 to 8 words in Title Case, separated by spaces, naming who it is from and what it is, " +
-            "followed by the name of the person it relates to if one is shown.\n" +
-            "Example: 2025-07-14|Acme Bank Credit Card Statement Jane Smith";
+            "TITLE is 3 to 8 words in Title Case, separated by spaces: the name of the person the document " +
+            "is about if one is shown, then who it is from and what it is.\n" +
+            "Example: 2025-07-14|Jane Smith Acme Bank Credit Card Statement";
 
         var sb = new StringBuilder ();
         sb.append ("{\"model\":");
@@ -301,8 +301,9 @@ public class AutoNamer
             s = (new Regex ("\\s+")).replace (s, s.length, 0, " ");
         } catch (RegexError e) {}
         s = s.strip ();
-        if (s.length > MAX_DESC_LEN)
-            s = s.substring (0, MAX_DESC_LEN).strip ();
+        // Count characters, not bytes, so an accented letter is never cut in half.
+        if (s.char_count () > MAX_DESC_LEN)
+            s = s.substring (0, s.index_of_nth_char (MAX_DESC_LEN)).strip ();
         return s;
     }
 }

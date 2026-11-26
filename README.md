@@ -19,9 +19,11 @@ All three are under Preferences → Postprocessing, and all are off until you tu
 * **Auto-Straighten** rotates each new scan to correct skew of up to about ten degrees, before any
   auto-crop is applied. Unlike the crop, the rotation cannot be undone.
 * **Auto-Name on Save** sends the first page to a vision-capable model behind an OpenAI-compatible
-  chat completions endpoint and pre-fills the Save dialog with a name like
-  `2024-03-13 Dental Statement.pdf`. The default is a local [Ollama](https://ollama.com) running
-  `qwen3.5:4b`; the endpoint, API key and model are configurable.
+  chat completions endpoint and pre-fills the Save dialog with the document's date, the person it
+  is about (when one is named), who it is from and what it is, like
+  `2024-03-13 Emily Carter Bright Smile Dental Statement.pdf`. The default is a local
+  [Ollama](https://ollama.com) running `qwen3.5:4b`; the endpoint, API key and model are
+  configurable.
 
 Auto-Crop and Auto-Straighten detect the document as the brighter region against the scanner bed,
 so they need a background darker than the paper, such as the black backing of many sheet-fed
