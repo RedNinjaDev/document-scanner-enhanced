@@ -12,7 +12,7 @@
 
 public class AutoNamer
 {
-    private const int MAX_DESC_LEN = 60;
+    private const int MAX_DESC_LEN = 90;
     private const int CURL_TIMEOUT_SEC = 60;
     // Enough for a reasoning model that ignores the request to skip its
     // thinking: one measured a thousand tokens before answering.
@@ -81,8 +81,9 @@ public class AutoNamer
         const string PROMPT =
             "What is this scanned document? Reply with one line in the form DATE|TITLE and nothing else.\n" +
             "DATE is the document's main date as YYYY-MM-DD (or YYYY-MM, or YYYY, or NONE).\n" +
-            "TITLE is 3 to 6 words in Title Case, separated by spaces, naming who it is from and what it is.\n" +
-            "Example: 2025-07-14|Acme Bank Credit Card Statement";
+            "TITLE is 3 to 8 words in Title Case, separated by spaces, naming who it is from and what it is, " +
+            "followed by the name of the person it relates to if one is shown.\n" +
+            "Example: 2025-07-14|Acme Bank Credit Card Statement Jane Smith";
 
         var sb = new StringBuilder ();
         sb.append ("{\"model\":");
@@ -283,6 +284,8 @@ public class AutoNamer
         for (int i = 0; raw.get_next_char (ref i, out c); ) {
             if (c.isalnum () || c == ' ' || c == '-' || c == '_')
                 sb.append_unichar (c);
+            else if (c == '\'' || c == 0x2019)
+                continue;  // Owner's -> Owners, not "Owner s"
             else
                 sb.append_c (' ');
         }
