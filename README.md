@@ -25,9 +25,11 @@ All three are under Preferences → Postprocessing, and all are off until you tu
   [Ollama](https://ollama.com) running `qwen3.5:4b`; the endpoint, API key and model are
   configurable.
 
-Auto-Crop and Auto-Straighten detect the document as the brighter region against the scanner bed,
-so they need a background darker than the paper, such as the black backing of many sheet-fed
-scanners. Against a white flatbed lid nothing is detected and the page is left as scanned.
+Auto-Crop detects the document as the brighter region against the scanner bed, so it needs a
+background darker than the paper, such as the black backing of many sheet-fed scanners. Against a
+white flatbed lid there is nothing to crop and the page is left uncropped. Auto-Straighten works
+either way: it measures the skew from the paper's edges or, against a white lid, from the lines of
+text.
 
 # Building from source
 

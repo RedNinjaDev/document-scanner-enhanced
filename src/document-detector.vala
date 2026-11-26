@@ -241,7 +241,10 @@ public class DocumentDetector
             for (int x = 0; x < w; x++)
             {
                 if (mask[row + x] == 0) continue;
-                int yp = y + (int) ((x - cx) * tan_a) + max_shift;
+                // Round to the nearest bin. Truncating rounds both halves of
+                // the page towards the centre line, which shortens every shift
+                // and made the search overshoot the real skew by about 0.35°.
+                int yp = y + (int) Math.floor ((x - cx) * tan_a + 0.5) + max_shift;
                 if (yp >= 0 && yp < n_bins)
                     proj[yp]++;
             }
@@ -341,24 +344,33 @@ public class DocumentDetector
         int page_x1 = int.min (page.width - 1, (x1 - inset_x) * step);
         int page_y1 = int.min (page.height - 1, (y1 - inset_y) * step);
 
-        result.found_document = true;
+        // Paper reaching every edge of the scan means no bed is visible: a
+        // flatbed with a white lid, or a sheet that fills the scan. There is
+        // nothing to crop, but the lines of text still show any skew.
+        bool fills_scan = x0 == 0 && y0 == 0 && x1 == ds_w - 1 && y1 == ds_h - 1;
+
+        result.found_document = !fills_scan;
         result.crop_x = page_x0;
         result.crop_y = page_y0;
         result.crop_width = page_x1 - page_x0 + 1;
         result.crop_height = page_y1 - page_y0 + 1;
         result.skew_degrees = want_skew ? estimate_skew (mask, ds_w, ds_h) : 0;
 
-        // Estimate background by averaging downsampled-luma pixels that
-        // fall outside the detected bbox. Falls back to black on a full-
-        // coverage scan (no outside pixels).
+        // Estimate the background by averaging the downsampled pixels
+        // outside the detected bbox. When the paper fills the scan there are
+        // none, so use the outermost ring of pixels instead: the edge of the
+        // paper or the lid, which is what straightening should blend into.
         int bg_sum = 0; int bg_count = 0;
         for (int y = 0; y < ds_h; y++)
         {
             int row = y * ds_w;
             bool y_in = (y >= y0 && y <= y1);
+            bool y_edge = (y == 0 || y == ds_h - 1);
             for (int x = 0; x < ds_w; x++)
             {
-                if (y_in && x >= x0 && x <= x1) continue;
+                bool outside = !(y_in && x >= x0 && x <= x1);
+                bool edge = y_edge || x == 0 || x == ds_w - 1;
+                if (fills_scan ? !edge : !outside) continue;
                 bg_sum += lum[row + x];
                 bg_count++;
             }
