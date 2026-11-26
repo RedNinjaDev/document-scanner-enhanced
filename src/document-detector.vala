@@ -380,6 +380,37 @@ public class DocumentDetector
         return result;
     }
 
+    // What the app does to each new scan when Auto-Crop or Auto-Straighten
+    // is on: straighten first, then crop to the document. Returns the
+    // detection made on the page as scanned, or null when there was nothing
+    // to analyse or neither option is on.
+    public static DocumentDetectionResult? auto_process (Page page, bool crop, bool straighten)
+    {
+        if (!crop && !straighten)
+            return null;
+
+        var result = detect (page, straighten);
+        if (result == null)
+            return null;
+
+        if (straighten && Math.fabs (result.skew_degrees) >= 0.1)
+        {
+            deskew (page, result.skew_degrees, result.background_luminance);
+            if (crop)
+            {
+                var cropped = detect (page, false);
+                if (cropped != null && cropped.found_document)
+                    page.set_custom_crop_region (cropped.crop_x, cropped.crop_y, cropped.crop_width, cropped.crop_height);
+            }
+        }
+        else if (crop && result.found_document)
+        {
+            page.set_custom_crop_region (result.crop_x, result.crop_y, result.crop_width, result.crop_height);
+        }
+
+        return result;
+    }
+
     public static void deskew (Page page, double degrees, uchar fill_luminance = 0)
     {
         if (Math.fabs (degrees) < 0.05)

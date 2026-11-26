@@ -1383,7 +1383,7 @@ public class AppWindow : Adw.ApplicationWindow
         if (!do_crop && !do_straighten)
             return;
 
-        var result = DocumentDetector.detect (page, do_straighten);
+        var result = DocumentDetector.auto_process (page, do_crop, do_straighten);
         if (result == null)
         {
             debug ("Not detecting a document in this page");
@@ -1393,21 +1393,6 @@ public class AppWindow : Adw.ApplicationWindow
         debug ("Document detection: found=%s, skew=%.2f degrees, %.1f%% of the page",
                result.found_document.to_string (), result.skew_degrees,
                result.document_fraction * 100.0);
-
-        if (do_straighten && Math.fabs (result.skew_degrees) >= 0.1)
-        {
-            DocumentDetector.deskew (page, result.skew_degrees, result.background_luminance);
-            if (do_crop)
-            {
-                var cropped = DocumentDetector.detect (page, false);
-                if (cropped != null && cropped.found_document)
-                    page.set_custom_crop_region (cropped.crop_x, cropped.crop_y, cropped.crop_width, cropped.crop_height);
-            }
-        }
-        else if (do_crop && result.found_document)
-        {
-            page.set_custom_crop_region (result.crop_x, result.crop_y, result.crop_width, result.crop_height);
-        }
 
         update_page_menu ();
     }

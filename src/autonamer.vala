@@ -73,7 +73,7 @@ public class AutoNamer
         }
     }
 
-    private static string build_request (string model, string b64_jpeg, bool skip_thinking)
+    internal static string build_request (string model, string b64_jpeg, bool skip_thinking)
     {
         // Ask for a title, not a filename: small models told to produce
         // something "suitable as a filename" run the words together
@@ -177,7 +177,7 @@ public class AutoNamer
     // Extract the assistant message content from a chat-completions response.
     // Looks for the first "content":"..." string. Robust enough for the shapes
     // OpenAI / Ollama / OpenRouter return for non-streamed responses.
-    private static string? extract_content (string body)
+    internal static string? extract_content (string body)
     {
         try {
             var re = new Regex ("\"content\"\\s*:\\s*\"((?:[^\"\\\\]|\\\\.)*)\"",
@@ -206,7 +206,7 @@ public class AutoNamer
         }
     }
 
-    private static string unescape_json_string (string s)
+    internal static string unescape_json_string (string s)
     {
         var sb = new StringBuilder ();
         int i = 0;
@@ -239,7 +239,7 @@ public class AutoNamer
     }
 
     // First non-empty line is expected to be "<date>|<description>".
-    private static void parse_date_and_desc (string content,
+    internal static void parse_date_and_desc (string content,
                                              out string date_part,
                                              out string desc_part)
     {
@@ -259,7 +259,7 @@ public class AutoNamer
         desc_part = slugify (raw_desc);
     }
 
-    private static string normalize_date (string raw)
+    internal static string normalize_date (string raw)
     {
         try {
             var re_ymd = new Regex ("^(\\d{4})-(\\d{2})-(\\d{2})$");
@@ -277,7 +277,7 @@ public class AutoNamer
     // Insert spaces at camelCase boundaries (small models often ignore the
     // prompt's "spaces between words" instruction and mash them together).
     // Collapse runs of separators and clamp length.
-    private static string slugify (string raw)
+    internal static string slugify (string raw)
     {
         var sb = new StringBuilder ();
         unichar c;

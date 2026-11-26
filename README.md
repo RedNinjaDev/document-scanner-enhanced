@@ -83,6 +83,27 @@ sudo ninja -C _build install
 A Flatpak manifest is in `build-aux/flatpak/`, but a sandboxed build only sees the SANE backends
 bundled with it, not proprietary drivers installed on the host.
 
+# Tests
+
+```
+meson test -C _build
+```
+
+runs the unit tests (document detection, straightening, and turning a model's reply into a
+filename), end-to-end tests of auto-naming against a scripted fake model server, and checks of the
+settings schema, desktop file and AppStream metadata. They need no scanner, model or network.
+
+```
+meson test -C _build --setup llm --suite llm --verbose
+```
+
+runs live auto-naming tests on synthetic documents against a real model and prints the names it
+suggests. They are left out of the default run because a model's answers can drift. They use the
+app's default Ollama endpoint and model; set `LLM_ENDPOINT`, `LLM_MODEL` and `LLM_API_KEY` to try
+another. Each test is skipped when the server can't be reached.
+
+The tests are in `tests/`. Pages are drawn with Cairo, so no sample scans are needed.
+
 # Debugging
 
 There is a `--debug` command line switch to enable more verbose logging:

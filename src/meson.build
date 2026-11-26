@@ -13,6 +13,19 @@ if webp_dep.found () and (not colord_dep.found () or webpmux_dep.found ()) # Web
     dependencies += [ webp_dep, webpmux_dep ]
 endif
 
+app_c_args = [ '-DVERSION="@0@"'.format (meson.project_version ()),
+               '-DGETTEXT_PACKAGE="simple-scan"',
+               '-DLOCALE_DIR="@0@"'.format (localedir),
+               '-DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE' ]
+
+# The parts of the app the tests build against: scanned pages, document
+# detection and auto-naming, without the user interface.
+testable_sources = files ('config.vapi',
+                          'autonamer.vala',
+                          'document-detector.vala',
+                          'page.vala',
+                          'scanner.vala')
+
 simple_scan = executable ('document-scanner-enhanced',
                           [ 'config.vapi',
                             'app-window.vala',
@@ -34,9 +47,6 @@ simple_scan = executable ('document-scanner-enhanced',
                             'autosave-manager.vala' ] + resources,
                           dependencies: dependencies,
                           vala_args: vala_args,
-                          c_args: [ '-DVERSION="@0@"'.format (meson.project_version ()),
-                                    '-DGETTEXT_PACKAGE="simple-scan"',
-                                    '-DLOCALE_DIR="@0@"'.format (localedir),
-                                    '-DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE' ],
+                          c_args: app_c_args,
                           link_args: [ '-lm' ],
                           install: true )
